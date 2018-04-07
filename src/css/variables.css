@@ -1,0 +1,23 @@
+/* color */
+$bg: #ffffff;
+$grey: #333;
+
+
+/* original */
+$border : 1px #4b4b4b solid;
+
+
+/* design */
+
+
+/* font */
+$font-family-base: Meiryo, Arial, sans-serif;
+
+
+/* root */
+:root{
+  --background-color: $bg;
+  --font-color: $grey;
+  --font-family-base: $font-family-base;
+  --border: $border;
+}

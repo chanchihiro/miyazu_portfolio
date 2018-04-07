@@ -1,0 +1,15 @@
+{
+  "modules": false, 
+  "input": "./src/css/styles.css",
+  "plugins": {
+    "autoprefixer": {
+      "grid": true,
+      "browsers": [
+        "last 2 versions"
+      ]
+    },
+    "postcss-import": {},
+    "postcss-simple-vars": {},
+    "postcss-nested": {},
+  }
+}

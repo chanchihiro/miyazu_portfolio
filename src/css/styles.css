@@ -1,0 +1,26 @@
+/* import file */
+@import "./reset.css";
+@import "./variables.css";
+
+/* responsive  適宜変更 */
+$min-width: (min-width: 0) and (max-width: 543px);
+$middle-width: (min-width: 0) and (max-width: 543px);
+$max-width: (min-width: 544px);
+
+
+/* main */
+body {
+  background-color: var(--background-color);
+  height: 100vh;
+  width: 100%;
+  #miyazu-wrapper {
+  	position: absolute;
+  	border: var(--border);
+  	width: 90%;
+  	height: 90vh;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  	background-color: #fafafa;
+  }
+}
