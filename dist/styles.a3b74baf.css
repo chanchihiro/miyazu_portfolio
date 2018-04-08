@@ -5,55 +5,80 @@ Licensed under the BSD License.
 http://yuilibrary.com/license/
 */
 
+
 html{color:#000;background:#FFF}
+
 
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
 
+
 table{border-collapse:collapse;border-spacing:0}
+
 
 fieldset,img{border:0}
 
+
 address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+
 
 ol,ul{list-style:none}
 
+
 caption,th{text-align:left}
+
 
 h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
 
+
 q:before,q:after{content:''}
+
 
 abbr,acronym{border:0;font-variant:normal}
 
+
 sup{vertical-align:text-top}
+
 
 sub{vertical-align:text-bottom}
 
+
 input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}
 
+
 legend{color:#000}
+
 
 #yui3-css-stamp.cssreset{display:none}/* color */
 /* original */
 /* design */
 /* font */
+/* 初期化用 */
+a{text-decoration: none;color: #000;}
+button{background-color: transparent;border: none;cursor: pointer;outline: none;padding: 0;-webkit-appearance: none;-moz-appearance: none;appearance: none;}
 /* root */
 :root{
   --background-color: #ffffff;
   --font-color: #333;
-  --font-family-base: Meiryo, Arial, sans-serif;
+  --font-family-base: "Sawarabi Mincho";
   --border: 1px #4b4b4b solid;
+  --font-size: 14px;
 }/* import file */
+
 
 /* responsive  適宜変更 */
 
+
 /* main */
+
 
 body {
   background-color: var(--background-color);
   height: 100vh;
   width: 100%;
+  font-size: var(--font-size);
+  font-family: var(--font-family-base);
 }
+
 
 body #miyazu-wrapper {
   	position: absolute;
@@ -66,3 +91,153 @@ body #miyazu-wrapper {
 	        transform: translate(-50%, -50%);
   	background-color: #fafafa;
   }
+
+
+body #miyazu-wrapper #miyazu-slides #miyazu-slides-slide1 {
+  			width: 64%;
+  			height: 64vh;
+  			border: var(--border);
+  			background-color: #EAEAE8;
+  			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			        transform: translate(-50%, -50%);
+  		}
+
+
+body #miyazu-wrapper #miyazu-slides #miyazu-slides-button_arrow_left {
+  			position: absolute;
+			top: 50%;
+			left: 15%;
+			-webkit-transform: translate(-50%, -50%);
+			        transform: translate(-50%, -50%);
+  		}
+
+
+body #miyazu-wrapper #miyazu-slides #miyazu-slides-button_arrow_left img {
+  				width: 40px;
+  			}
+
+
+body #miyazu-wrapper #miyazu-slides #miyazu-slides-button_arrow_right {
+  			position: absolute;
+			top: 50%;
+			right: 12%;
+			-webkit-transform: translate(-50%, -50%);
+			        transform: translate(-50%, -50%);
+  		}
+
+
+body #miyazu-wrapper #miyazu-slides #miyazu-slides-button_arrow_right img {
+  				width: 40px;
+  			}
+
+
+body #miyazu-wrapper #miyazu-banners {
+  		position: absolute;
+  		bottom: 2rem;
+  		right: 3rem;
+  	}
+
+
+body #miyazu-wrapper #miyazu-banners #miyazu-banner a {
+  				margin-bottom: 0.7rem;
+  				display: block;
+  			}
+
+
+body #miyazu-wrapper #miyazu-banners #miyazu-banner a img {
+  					width: 320px;
+  					border: var(--border);
+  				}
+
+
+body #miyazu-wrapper #miyazu-modal-news {
+  		position: absolute;
+  		bottom: -1px;
+  		left: -1px;
+  		border: var(--border);
+  		padding: 1.2rem 2rem;
+  		color: #4b4b4b;
+  		background-color: #ffffff;
+  	}
+
+
+body #miyazu-wrapper #miyazu-modal-news #miyazu-modal-button_close {
+  			font-size: 1.2rem;
+  			position: absolute;
+  			right: 0;
+  			top: 0;
+  			margin: 1rem 1.5rem;
+  		}
+
+
+body #miyazu-wrapper #miyazu-modal-news #miyazu-modal-title {
+  			font-size: 1.8rem;
+  			font-family: 'Amiri', serif;
+  			margin-bottom: 12px;
+  		}
+
+
+body #miyazu-wrapper #miyazu-modal-news #miyazu-modal-date {
+  			font-family: 'Amiri', serif;
+  			font-size: 0.9rem;
+  			display: inline-block;
+  			margin-right: 1.2rem;
+  			margin-left: 1rem;
+  			margin-bottom: 0.4rem;
+  		}
+
+
+body #miyazu-wrapper #miyazu-modal-news #miyazu-modal-content {
+  			font-size: 0.8rem;
+  			display: inline-block;
+  		}
+
+
+body #miyazu-wrapper #miyazu-modal-news #miyazu-modal-button_more {
+  			font-size: 0.8rem;
+  			float: right;
+  			color: #4b4b4b;
+  		}
+
+
+body #miyazu-footer {
+  	position: absolute;
+  	top: 50%;
+  	left: -4.5%;
+  	-webkit-transform: rotate(90deg);
+  	        transform: rotate(90deg);
+  }
+
+
+body #miyazu-footer #miyazu-footer-text {
+  		font-size: 0.8rem;
+  		color: #ABABAB;
+  		font-family: 'Amiri', serif;
+  	}
+
+
+body #miyazu-sns {
+  	position: absolute;
+  	top: 40%;
+  	right: -23px;
+  }
+
+
+body #miyazu-sns a {
+  		display: block;
+  		text-align: center;
+  		border: var(--border);
+  		width: 46px;
+  		height: 46px;
+  		border-radius: 50%;
+  		background-color: #ffffff;
+  		margin-bottom: 0.9rem;
+  	}
+
+
+
+
+

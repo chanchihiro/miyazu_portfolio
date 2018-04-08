@@ -87,7 +87,7 @@ exports.default = add;
 function add(number1, number2) {
   return number1 + number2;
 }
-},{}],6:[function(require,module,exports) {
+},{}],13:[function(require,module,exports) {
 'use strict';
 
 var _add = require('./modules/add');
@@ -103,7 +103,7 @@ var number2 = 200;
 var total = (0, _add2.default)(number1, number2);
 
 console.log(total);
-},{"./modules/add":15}],19:[function(require,module,exports) {
+},{"./modules/add":15}],29:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -133,7 +133,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '60542' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '55047' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -272,5 +272,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[19,6])
+},{}]},{},[29,13])
 //# sourceMappingURL=/app.b6bd5372.map
