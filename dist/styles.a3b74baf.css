@@ -103,7 +103,55 @@ body #miyazu-wrapper #miyazu-slides #miyazu-slides-slide1 {
 			left: 50%;
 			-webkit-transform: translate(-50%, -50%);
 			        transform: translate(-50%, -50%);
+			background-image: url(slide1.66ad2b13.png);
+			background-size: cover;
+			background-position: 0 -20px;
   		}
+
+
+body #miyazu-wrapper #miyazu-slides #miyazu-slides-slide1 #miyazu-slides-slide1-texts {
+				position: absolute;
+				top: 2rem;
+				left: 2rem;
+				width: 400px;
+			}
+
+
+body #miyazu-wrapper #miyazu-slides #miyazu-slides-slide1 #miyazu-slides-slide1-texts #miyazu-slides-slide1-text {
+					background-color: #ffffff;
+					display: inline-block;
+					border-bottom: var(--border);
+					font-size: 1.6rem;
+					padding: 0.3rem 1rem;
+					color: #4b4b4b;
+					margin-bottom: 0.5rem;
+				}
+
+
+body #miyazu-wrapper #miyazu-slides #miyazu-slides-slide1 #b1 {
+		  		position: absolute;
+		  		-webkit-transform: rotate(45deg);
+		  		        transform: rotate(45deg);
+		  		width: 300px;
+		  		left: -100px;
+		  		bottom: 50px;
+		  		background-color: #4b4b4b;
+		  		border: none;
+		  		height: 1px;
+		  	  	}
+
+
+body #miyazu-wrapper #miyazu-slides #miyazu-slides-slide1 #b2 {
+		  		position: absolute;
+		  		width: 300px;
+		  		-webkit-transform: rotate(45deg);
+		  		        transform: rotate(45deg);
+		  		right: -100px;
+		  		top: 50px;
+		  		background-color: #4b4b4b;
+		  		border: none;
+		  		height: 1px;
+		  	  	}
 
 
 body #miyazu-wrapper #miyazu-slides #miyazu-slides-button_arrow_left {
