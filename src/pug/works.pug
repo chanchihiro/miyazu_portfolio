@@ -5,14 +5,11 @@ html(lang="ja")
     include _head.pug
   body
     div#miyazu-wrapper
+     include _header.pug
      div#miyazu-nav
-     div#miyazu-sns
-      ul
-       li
-        a(href="#") a
-       li
-        a(href="#") a
-       li
-        a(href="#") a
+     include _nav.pug
+     div#miyazu-paragraph
+      h2#miyazu-paragraph-title WORKS
+      p サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル
     footer#miyazu-footer
      p#miyazu-footer-text ©︎MIYAZU DAIZO All Rights Reserved.

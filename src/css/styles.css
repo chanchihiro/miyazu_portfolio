@@ -15,6 +15,7 @@ body {
   height: 100vh;
   width: 100%;
   font-size: var(--font-size);
+  color: #4b4b4b;
   font-family: var(--font-family-base);
   #miyazu-wrapper {
   	position: absolute;
@@ -25,6 +26,36 @@ body {
 	left: 50%;
 	transform: translate(-50%, -50%);
   	background-color: #fafafa;
+  	#miyazu-nav {
+  		width: 60%;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%, -22px);
+  		ul {
+  			li {
+  				display: inline;
+  				background-color: #ffffff;
+  				a {
+  					padding: 0.2rem 2rem;
+  					border: var(--border);
+  					display: inline-block;
+  					font-family: 'Amiri', serif;
+  					color: #4b4b4b;
+	  				img {
+	  					width: 240px;
+	  				}
+  				}
+  			}
+  			li:nth-child(3) {
+  				border: none;
+  				padding: 0px 1rem;
+  				margin: 0px 1rem;
+  				a {
+  					border: none;
+  				}
+  			}
+  		}
+  	}
   	#miyazu-slides {
   		#miyazu-slides-slide1 {
   			width: 64%;
@@ -147,6 +178,19 @@ body {
   		}
   	}
   }
+  #miyazu-paragraph {
+  	background-color: #ffffff;
+  	width: 90%;
+  	margin: 0 auto;
+  	box-sizing: border-box;
+  	padding: 2rem;
+  	border: var(--border);
+  	margin-top: 4rem;
+  	#miyazu-paragraph-title {
+  		font-family: var(--font-family-sub);
+  		font-size: 1.8rem;
+  	}
+  }
   #miyazu-footer {
   	position: absolute;
   	top: 50%;
@@ -168,9 +212,19 @@ body {
   		border: var(--border);
   		width: 46px;
   		height: 46px;
+  		line-height: 60px;
   		border-radius: 50%;
   		background-color: #ffffff;
   		margin-bottom: 0.9rem;
+  		#miyazu-sns-button_twitter {
+  			width: 1.4rem;
+  		}
+  		#miyazu-sns-button_facebook {
+  			width: 0.9rem;
+  		}
+  		#miyazu-sns-button_uni {
+  			width: 1.6rem;
+  		}
   	}
   }
 }

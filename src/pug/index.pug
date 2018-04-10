@@ -5,7 +5,7 @@ html(lang="ja")
     include _head.pug
   body
     div#miyazu-wrapper
-     div#miyazu-nav
+     include _header.pug
      div#miyazu-slides
       button#miyazu-slides-button_arrow_left
        img(src="../images/arrow2.png")
@@ -37,13 +37,6 @@ html(lang="ja")
        p#miyazu-modal-date 2018.04.10
        p#miyazu-modal-content Webサイトを公開しました。
       a(href="#")#miyazu-modal-button_more もっとみる
-     div#miyazu-sns
-      ul
-       li
-        a(href="#") a
-       li
-        a(href="#") a
-       li
-        a(href="#") a
+     include _nav.pug
     footer#miyazu-footer
      p#miyazu-footer-text ©︎MIYAZU DAIZO All Rights Reserved.

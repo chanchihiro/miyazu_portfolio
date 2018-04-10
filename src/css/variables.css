@@ -13,6 +13,7 @@ $border : 1px #4b4b4b solid;
 /* font */
 $font-size-base: 14px;
 $font-family-base: "Sawarabi Mincho";
+$font-family-sub: 'Amiri', serif;
 @import url('https://fonts.googleapis.com/css?family=Amiri');
 
 
@@ -26,6 +27,7 @@ button{background-color: transparent;border: none;cursor: pointer;outline: none;
   --background-color: $bg;
   --font-color: $grey;
   --font-family-base: $font-family-base;
+  --font-family-sub: $font-family-sub;
   --border: $border;
   --font-size: $font-size-base;
 }
