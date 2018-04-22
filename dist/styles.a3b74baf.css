@@ -92,6 +92,7 @@ body #miyazu-wrapper {
 	-webkit-transform: translate(-50%, -50%);
 	        transform: translate(-50%, -50%);
   	background-color: #fafafa;
+  	min-height: 600px;
   }
 
 
@@ -116,6 +117,7 @@ body #miyazu-wrapper #miyazu-nav ul li a {
   					display: inline-block;
   					font-family: 'Amiri', serif;
   					color: #4b4b4b;
+  					background-color: #fff;
   				}
 
 
@@ -296,13 +298,16 @@ body #miyazu-wrapper #miyazu-modal-news #miyazu-modal-button_more {
 
 body #miyazu-paragraph {
   	background-color: #ffffff;
-  	width: 90%;
+  	width: 80%;
   	margin: 0 auto;
   	-webkit-box-sizing: border-box;
   	        box-sizing: border-box;
-  	padding: 2rem;
+  	padding: 1.2rem 3.6rem 1.3rem;
   	border: var(--border);
   	margin-top: 4rem;
+  	display: -webkit-box;
+  	display: -ms-flexbox;
+  	display: flex;
   }
 
 
@@ -310,6 +315,165 @@ body #miyazu-paragraph #miyazu-paragraph-title {
   		font-family: var(--font-family-sub);
   		font-size: 1.8rem;
   	}
+
+
+body #miyazu-paragraph #miyazu-paragraph-text {
+  		margin-left: 3rem;
+  		margin-top: 4px;
+  		line-height: 2;
+  		letter-spacing: 2px;
+  	}
+
+
+body #miyazu-news {
+  	width: 780px;
+  	margin: 4rem auto;
+  	-webkit-box-sizing: border-box;
+  	        box-sizing: border-box;
+  	border: var(--border);
+  	background-color: #ffffff;
+  	height: 84%;
+  	overflow: scroll;
+  	color: #4b4b4b;
+  	padding: 0px 4rem;
+  }
+
+
+body #miyazu-news hr {
+  		background-color: #4b4b4b;
+  		border: none;
+  		height: 1px;
+  	}
+
+
+body #miyazu-news h2 {
+  		text-align: center;
+  		font-size: 1.4rem;
+  		font-family: var(--font-family-sub);
+  		padding: 2rem 0rem;
+  	}
+
+
+body #miyazu-news #miyazu-news-date {
+		font-family: 'Amiri', serif;
+		font-size: 0.9rem;
+		display: inline-block;
+		margin-right: 1.2rem;
+		margin-top: 1rem;
+		margin-bottom: 0.3rem;
+	}
+
+
+body #miyazu-news #miyazu-news-content {
+		font-size: 0.8rem;
+		display: inline-block;
+	}
+
+
+body #miyazu-news #miyazu-news-button {
+		color: #4b4b4b;
+		float: right;
+		font-size: 0.8rem;
+		margin-top: 1rem;
+		margin-bottom: 0.3rem;
+	}
+
+
+body #miyazu-profile {
+  	width: 600px;
+  	margin: 0 auto;
+  	-webkit-box-sizing: border-box;
+  	        box-sizing: border-box;
+  	padding: 5rem 0px;
+  }
+
+
+body #miyazu-profile img {
+  		width: 100%;
+  		border: var(--border);
+  		margin-bottom: 1.6rem;
+  	}
+
+
+body #miyazu-profile .miyazu-profile-text {
+  		margin-bottom: 2rem;
+  	}
+
+
+body #miyazu-profile .miyazu-profile-text h2 {
+  			font-size: 1.4rem;
+  			margin-bottom: 0.3rem;
+  		}
+
+
+body #miyazu-profile .miyazu-profile-text p {
+  			margin-bottom: 0.3rem;
+  		}
+
+
+body #miyazu-profile .miyazu-profile-text #miyazu-profole-english {
+  			font-family: var(--font-family-sub);
+  		}
+
+
+body #miyazu-works {
+  	width: 80%;
+  	margin: 0 auto;
+  	-webkit-box-sizing: border-box;
+  	        box-sizing: border-box;
+  	display: -webkit-box;
+  	display: -ms-flexbox;
+  	display: flex;
+  	margin-top: 1.5%;
+  }
+
+
+body #miyazu-works #miyazu-works-big {
+  		background-color: #fafafa;
+  		width: 50%;
+  		height: 44vh;
+  		margin-right: 2%;
+  		-ms-flex-preferred-size: 50%;
+  		    flex-basis: 50%;
+  		overflow: hidden;
+  		cursor: pointer;
+  		-webkit-box-sizing: border-box;
+  		        box-sizing: border-box;
+  		border: var(--border);
+  	}
+
+
+body #miyazu-works .miyazu-works-smalls {
+  		display: -webkit-box;
+  		display: -ms-flexbox;
+  		display: flex;
+  		-ms-flex-preferred-size: 50%;
+  		    flex-basis: 50%;
+  		-ms-flex-wrap: wrap;
+  		    flex-wrap: wrap;
+  		height: 46vh;
+  	}
+
+
+body #miyazu-works .miyazu-works-smalls .miyazu-works-small {
+	  		-webkit-box-align: end;
+	  		    -ms-flex-align: end;
+	  		        align-items: flex-end;
+	  		background-color: #fafafa;
+	  		width: 48%;
+	  		margin-right: 3%;
+	  		cursor: pointer;
+	  		margin-bottom: 3%;
+	  		-webkit-box-sizing: border-box;
+	  		        box-sizing: border-box;
+	  		border: var(--border);
+	  	}
+
+
+body #miyazu-works .miyazu-works-smalls .miyazu-works-small:nth-child(2n) {
+	  		margin-right: 0px;
+	  		width: 49%;
+	  	}
 
 
 body #miyazu-footer {
