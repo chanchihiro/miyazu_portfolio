@@ -65,12 +65,9 @@ button{background-color: transparent;border: none;cursor: pointer;outline: none;
   --font-size: 14px;
 }/* import file */
 
-
 /* responsive  適宜変更 */
 
-
 /* main */
-
 
 body {
   background-color: var(--background-color);
@@ -80,7 +77,6 @@ body {
   color: #4b4b4b;
   font-family: var(--font-family-base);
 }
-
 
 body #miyazu-wrapper {
   	position: absolute;
@@ -95,7 +91,6 @@ body #miyazu-wrapper {
   	min-height: 600px;
   }
 
-
 body #miyazu-wrapper #miyazu-nav {
   		width: 60%;
 		position: absolute;
@@ -104,12 +99,11 @@ body #miyazu-wrapper #miyazu-nav {
 		        transform: translate(-50%, -22px);
   	}
 
-
 body #miyazu-wrapper #miyazu-nav ul li {
   				display: inline;
   				background-color: #ffffff;
+  				margin: 0rem 0.4rem;
   			}
-
 
 body #miyazu-wrapper #miyazu-nav ul li a {
   					padding: 0.2rem 2rem;
@@ -120,23 +114,21 @@ body #miyazu-wrapper #miyazu-nav ul li a {
   					background-color: #fff;
   				}
 
-
 body #miyazu-wrapper #miyazu-nav ul li a img {
 	  					width: 240px;
+	  					opacity: 0;
 	  				}
-
 
 body #miyazu-wrapper #miyazu-nav ul li:nth-child(3) {
   				border: none;
   				padding: 0px 1rem;
   				margin: 0px 1rem;
+  				opacity: 0;
   			}
-
 
 body #miyazu-wrapper #miyazu-nav ul li:nth-child(3) a {
   					border: none;
   				}
-
 
 body #miyazu-wrapper #miyazu-slides #miyazu-slides-slide1 {
   			width: 64%;
@@ -153,14 +145,12 @@ body #miyazu-wrapper #miyazu-slides #miyazu-slides-slide1 {
 			background-position: 0 -20px;
   		}
 
-
 body #miyazu-wrapper #miyazu-slides #miyazu-slides-slide1 #miyazu-slides-slide1-texts {
 				position: absolute;
 				top: 2rem;
 				left: 2rem;
 				width: 400px;
 			}
-
 
 body #miyazu-wrapper #miyazu-slides #miyazu-slides-slide1 #miyazu-slides-slide1-texts #miyazu-slides-slide1-text {
 					background-color: #ffffff;
@@ -171,7 +161,6 @@ body #miyazu-wrapper #miyazu-slides #miyazu-slides-slide1 #miyazu-slides-slide1-
 					color: #4b4b4b;
 					margin-bottom: 0.5rem;
 				}
-
 
 body #miyazu-wrapper #miyazu-slides #miyazu-slides-slide1 #b1 {
 		  		position: absolute;
@@ -185,7 +174,6 @@ body #miyazu-wrapper #miyazu-slides #miyazu-slides-slide1 #b1 {
 		  		height: 1px;
 		  	  	}
 
-
 body #miyazu-wrapper #miyazu-slides #miyazu-slides-slide1 #b2 {
 		  		position: absolute;
 		  		width: 300px;
@@ -198,7 +186,6 @@ body #miyazu-wrapper #miyazu-slides #miyazu-slides-slide1 #b2 {
 		  		height: 1px;
 		  	  	}
 
-
 body #miyazu-wrapper #miyazu-slides #miyazu-slides-button_arrow_left {
   			position: absolute;
 			top: 50%;
@@ -207,11 +194,9 @@ body #miyazu-wrapper #miyazu-slides #miyazu-slides-button_arrow_left {
 			        transform: translate(-50%, -50%);
   		}
 
-
 body #miyazu-wrapper #miyazu-slides #miyazu-slides-button_arrow_left img {
   				width: 40px;
   			}
-
 
 body #miyazu-wrapper #miyazu-slides #miyazu-slides-button_arrow_right {
   			position: absolute;
@@ -221,11 +206,9 @@ body #miyazu-wrapper #miyazu-slides #miyazu-slides-button_arrow_right {
 			        transform: translate(-50%, -50%);
   		}
 
-
 body #miyazu-wrapper #miyazu-slides #miyazu-slides-button_arrow_right img {
   				width: 40px;
   			}
-
 
 body #miyazu-wrapper #miyazu-banners {
   		position: absolute;
@@ -233,18 +216,15 @@ body #miyazu-wrapper #miyazu-banners {
   		right: 3rem;
   	}
 
-
 body #miyazu-wrapper #miyazu-banners #miyazu-banner a {
   				margin-bottom: 0.7rem;
   				display: block;
   			}
 
-
 body #miyazu-wrapper #miyazu-banners #miyazu-banner a img {
   					width: 320px;
   					border: var(--border);
   				}
-
 
 body #miyazu-wrapper #miyazu-modal-news {
   		position: absolute;
@@ -256,7 +236,6 @@ body #miyazu-wrapper #miyazu-modal-news {
   		background-color: #ffffff;
   	}
 
-
 body #miyazu-wrapper #miyazu-modal-news #miyazu-modal-button_close {
   			font-size: 1.2rem;
   			position: absolute;
@@ -265,13 +244,11 @@ body #miyazu-wrapper #miyazu-modal-news #miyazu-modal-button_close {
   			margin: 1rem 1.5rem;
   		}
 
-
 body #miyazu-wrapper #miyazu-modal-news #miyazu-modal-title {
   			font-size: 1.8rem;
   			font-family: 'Amiri', serif;
   			margin-bottom: 12px;
   		}
-
 
 body #miyazu-wrapper #miyazu-modal-news #miyazu-modal-date {
   			font-family: 'Amiri', serif;
@@ -282,12 +259,10 @@ body #miyazu-wrapper #miyazu-modal-news #miyazu-modal-date {
   			margin-bottom: 0.4rem;
   		}
 
-
 body #miyazu-wrapper #miyazu-modal-news #miyazu-modal-content {
   			font-size: 0.8rem;
   			display: inline-block;
   		}
-
 
 body #miyazu-wrapper #miyazu-modal-news #miyazu-modal-button_more {
   			font-size: 0.8rem;
@@ -295,10 +270,10 @@ body #miyazu-wrapper #miyazu-modal-news #miyazu-modal-button_more {
   			color: #4b4b4b;
   		}
 
-
 body #miyazu-paragraph {
   	background-color: #ffffff;
   	width: 80%;
+  	max-width: 1080px;
   	margin: 0 auto;
   	-webkit-box-sizing: border-box;
   	        box-sizing: border-box;
@@ -310,12 +285,10 @@ body #miyazu-paragraph {
   	display: flex;
   }
 
-
 body #miyazu-paragraph #miyazu-paragraph-title {
   		font-family: var(--font-family-sub);
   		font-size: 1.8rem;
   	}
-
 
 body #miyazu-paragraph #miyazu-paragraph-text {
   		margin-left: 3rem;
@@ -323,7 +296,6 @@ body #miyazu-paragraph #miyazu-paragraph-text {
   		line-height: 2;
   		letter-spacing: 2px;
   	}
-
 
 body #miyazu-news {
   	width: 780px;
@@ -338,13 +310,11 @@ body #miyazu-news {
   	padding: 0px 4rem;
   }
 
-
 body #miyazu-news hr {
   		background-color: #4b4b4b;
   		border: none;
   		height: 1px;
   	}
-
 
 body #miyazu-news h2 {
   		text-align: center;
@@ -352,7 +322,6 @@ body #miyazu-news h2 {
   		font-family: var(--font-family-sub);
   		padding: 2rem 0rem;
   	}
-
 
 body #miyazu-news #miyazu-news-date {
 		font-family: 'Amiri', serif;
@@ -363,12 +332,10 @@ body #miyazu-news #miyazu-news-date {
 		margin-bottom: 0.3rem;
 	}
 
-
 body #miyazu-news #miyazu-news-content {
 		font-size: 0.8rem;
 		display: inline-block;
 	}
-
 
 body #miyazu-news #miyazu-news-button {
 		color: #4b4b4b;
@@ -378,7 +345,6 @@ body #miyazu-news #miyazu-news-button {
 		margin-bottom: 0.3rem;
 	}
 
-
 body #miyazu-profile {
   	width: 600px;
   	margin: 0 auto;
@@ -387,37 +353,33 @@ body #miyazu-profile {
   	padding: 5rem 0px;
   }
 
-
 body #miyazu-profile img {
   		width: 100%;
   		border: var(--border);
   		margin-bottom: 1.6rem;
   	}
 
-
 body #miyazu-profile .miyazu-profile-text {
   		margin-bottom: 2rem;
   	}
-
 
 body #miyazu-profile .miyazu-profile-text h2 {
   			font-size: 1.4rem;
   			margin-bottom: 0.3rem;
   		}
 
-
 body #miyazu-profile .miyazu-profile-text p {
   			margin-bottom: 0.3rem;
+  			font-size: 0.8rem;
   		}
-
 
 body #miyazu-profile .miyazu-profile-text #miyazu-profole-english {
   			font-family: var(--font-family-sub);
   		}
 
-
 body #miyazu-works {
   	width: 80%;
+  	max-width: 1080px;
   	margin: 0 auto;
   	-webkit-box-sizing: border-box;
   	        box-sizing: border-box;
@@ -426,7 +388,6 @@ body #miyazu-works {
   	display: flex;
   	margin-top: 1.5%;
   }
-
 
 body #miyazu-works #miyazu-works-big {
   		background-color: #fafafa;
@@ -442,7 +403,6 @@ body #miyazu-works #miyazu-works-big {
   		border: var(--border);
   	}
 
-
 body #miyazu-works .miyazu-works-smalls {
   		display: -webkit-box;
   		display: -ms-flexbox;
@@ -453,7 +413,6 @@ body #miyazu-works .miyazu-works-smalls {
   		    flex-wrap: wrap;
   		height: 46vh;
   	}
-
 
 body #miyazu-works .miyazu-works-smalls .miyazu-works-small {
 	  		-webkit-box-align: end;
@@ -469,12 +428,10 @@ body #miyazu-works .miyazu-works-smalls .miyazu-works-small {
 	  		border: var(--border);
 	  	}
 
-
 body #miyazu-works .miyazu-works-smalls .miyazu-works-small:nth-child(2n) {
 	  		margin-right: 0px;
 	  		width: 49%;
 	  	}
-
 
 body #miyazu-footer {
   	position: absolute;
@@ -484,20 +441,17 @@ body #miyazu-footer {
   	        transform: rotate(90deg);
   }
 
-
 body #miyazu-footer #miyazu-footer-text {
   		font-size: 0.8rem;
   		color: #ABABAB;
   		font-family: 'Amiri', serif;
   	}
 
-
 body #miyazu-sns {
   	position: absolute;
   	top: 40%;
   	right: -23px;
   }
-
 
 body #miyazu-sns a {
   		display: block;
@@ -511,16 +465,13 @@ body #miyazu-sns a {
   		margin-bottom: 0.9rem;
   	}
 
-
 body #miyazu-sns a #miyazu-sns-button_twitter {
   			width: 1.4rem;
   		}
 
-
 body #miyazu-sns a #miyazu-sns-button_facebook {
   			width: 0.9rem;
   		}
-
 
 body #miyazu-sns a #miyazu-sns-button_uni {
   			width: 1.6rem;

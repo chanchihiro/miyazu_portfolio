@@ -77,7 +77,7 @@ parcelRequire = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({22:[function(require,module,exports) {
+})({21:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -138,13 +138,13 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":22}],20:[function(require,module,exports) {
+},{"./bundle-url":21}],18:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":16}],18:[function(require,module,exports) {
+},{"_css_loader":16}],19:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
@@ -156,7 +156,7 @@ module.exports = reloadCSS;
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./reset.css":20,"./variables.css":18,"./../images/slide1.png":19,"_css_loader":16}],193:[function(require,module,exports) {
+},{"./reset.css":18,"./variables.css":19,"./../images/slide1.png":20,"_css_loader":16}],24:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -186,7 +186,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '52763' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '56724' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -325,7 +325,7 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}],194:[function(require,module,exports) {
+},{}],26:[function(require,module,exports) {
 var getBundleURL = require('./bundle-url').getBundleURL;
 
 function loadBundlesLazy(bundles) {
@@ -406,7 +406,7 @@ LazyPromise.prototype.catch = function (onError) {
   if (this.promise === null) this.promise = new Promise(this.executor);
   return this.promise.catch(onError);
 };
-},{"./bundle-url":22}],0:[function(require,module,exports) {
-var b=require(194);b.load([["slide1.66ad2b13.png",19]]);
-},{}]},{},[193,0])
+},{"./bundle-url":21}],0:[function(require,module,exports) {
+var b=require(26);b.load([["slide1.66ad2b13.png",20]]);
+},{}]},{},[24,0])
 //# sourceMappingURL=/styles.a3b74baf.map
