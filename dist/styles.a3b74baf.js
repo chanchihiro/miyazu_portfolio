@@ -77,7 +77,7 @@ parcelRequire = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({21:[function(require,module,exports) {
+})({22:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -138,7 +138,7 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":21}],18:[function(require,module,exports) {
+},{"./bundle-url":22}],18:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
@@ -150,13 +150,19 @@ module.exports = reloadCSS;
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
+},{"_css_loader":16}],20:[function(require,module,exports) {
+
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
 },{"_css_loader":16}],3:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./reset.css":18,"./variables.css":19,"./../images/slide1.png":20,"_css_loader":16}],24:[function(require,module,exports) {
+},{"./reset.css":18,"./variables.css":19,"./lib/slick.css":20,"./../images/slide1.png":9,"_css_loader":16}],24:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -186,7 +192,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '56724' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '55878' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -406,7 +412,7 @@ LazyPromise.prototype.catch = function (onError) {
   if (this.promise === null) this.promise = new Promise(this.executor);
   return this.promise.catch(onError);
 };
-},{"./bundle-url":21}],0:[function(require,module,exports) {
-var b=require(26);b.load([["slide1.66ad2b13.png",20]]);
+},{"./bundle-url":22}],0:[function(require,module,exports) {
+var b=require(26);b.load([["slide1.66ad2b13.png",9]]);
 },{}]},{},[24,0])
 //# sourceMappingURL=/styles.a3b74baf.map

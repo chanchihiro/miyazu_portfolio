@@ -77,7 +77,7 @@ parcelRequire = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({63:[function(require,module,exports) {
+})({23:[function(require,module,exports) {
 
 // shim for using process in browser
 var process = module.exports = {};
@@ -264,7 +264,7 @@ process.chdir = function (dir) {
 process.umask = function () {
     return 0;
 };
-},{}],60:[function(require,module,exports) {
+},{}],21:[function(require,module,exports) {
 var global = (1,eval)("this");
 var process = require("process");
 /*!
@@ -10632,7 +10632,7 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-},{"process":63}],61:[function(require,module,exports) {
+},{"process":23}],15:[function(require,module,exports) {
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 /*
@@ -11083,16 +11083,19 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     }return o;
   };
 });
-},{"jquery":60}],52:[function(require,module,exports) {
-'use strict';
+},{"jquery":21}],4:[function(require,module,exports) {
+"use strict";
 
-require('./lib/slick/slick.min.js');
+require("../js/lib/slick/slick.min.js");
 
 /* main */
 $(document).ready(function () {
-  $('#miyazu-slides').slick({});
+  console.log("うんこ");
+  $('.miyazu-slides').slick({});
 }); /* import file */
-},{"./lib/slick/slick.min.js":61}],93:[function(require,module,exports) {
+// var jquery = require("jquery");
+// window.$ = window.jQuery = jquery;
+},{"../js/lib/slick/slick.min.js":15}],49:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -11122,7 +11125,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '52621' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '55878' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -11261,5 +11264,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[93,52])
+},{}]},{},[49,4])
 //# sourceMappingURL=/app.b6bd5372.map

@@ -63,7 +63,120 @@ button{background-color: transparent;border: none;cursor: pointer;outline: none;
   --font-family-sub: 'Amiri', serif;
   --border: 1px #4b4b4b solid;
   --font-size: 14px;
-}/* import file */
+}/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+/* import file */
 
 /* responsive  適宜変更 */
 
@@ -130,7 +243,7 @@ body #miyazu-wrapper #miyazu-nav ul li:nth-child(3) a {
   					border: none;
   				}
 
-body #miyazu-wrapper #miyazu-slides #miyazu-slides-slide1 {
+body #miyazu-wrapper .miyazu-slides #miyazu-slides-slide1 {
   			width: 64%;
   			height: 64vh;
   			border: var(--border);
@@ -145,14 +258,14 @@ body #miyazu-wrapper #miyazu-slides #miyazu-slides-slide1 {
 			background-position: 0 -20px;
   		}
 
-body #miyazu-wrapper #miyazu-slides #miyazu-slides-slide1 #miyazu-slides-slide1-texts {
+body #miyazu-wrapper .miyazu-slides #miyazu-slides-slide1 #miyazu-slides-slide1-texts {
 				position: absolute;
 				top: 2rem;
 				left: 2rem;
 				width: 400px;
 			}
 
-body #miyazu-wrapper #miyazu-slides #miyazu-slides-slide1 #miyazu-slides-slide1-texts #miyazu-slides-slide1-text {
+body #miyazu-wrapper .miyazu-slides #miyazu-slides-slide1 #miyazu-slides-slide1-texts #miyazu-slides-slide1-text {
 					background-color: #ffffff;
 					display: inline-block;
 					border-bottom: var(--border);
@@ -162,7 +275,7 @@ body #miyazu-wrapper #miyazu-slides #miyazu-slides-slide1 #miyazu-slides-slide1-
 					margin-bottom: 0.5rem;
 				}
 
-body #miyazu-wrapper #miyazu-slides #miyazu-slides-slide1 #b1 {
+body #miyazu-wrapper .miyazu-slides #miyazu-slides-slide1 #b1 {
 		  		position: absolute;
 		  		-webkit-transform: rotate(45deg);
 		  		        transform: rotate(45deg);
@@ -174,7 +287,7 @@ body #miyazu-wrapper #miyazu-slides #miyazu-slides-slide1 #b1 {
 		  		height: 1px;
 		  	  	}
 
-body #miyazu-wrapper #miyazu-slides #miyazu-slides-slide1 #b2 {
+body #miyazu-wrapper .miyazu-slides #miyazu-slides-slide1 #b2 {
 		  		position: absolute;
 		  		width: 300px;
 		  		-webkit-transform: rotate(45deg);
@@ -186,7 +299,7 @@ body #miyazu-wrapper #miyazu-slides #miyazu-slides-slide1 #b2 {
 		  		height: 1px;
 		  	  	}
 
-body #miyazu-wrapper #miyazu-slides #miyazu-slides-button_arrow_left {
+body #miyazu-wrapper .miyazu-slides #miyazu-slides-button_arrow_left {
   			position: absolute;
 			top: 50%;
 			left: 15%;
@@ -194,11 +307,11 @@ body #miyazu-wrapper #miyazu-slides #miyazu-slides-button_arrow_left {
 			        transform: translate(-50%, -50%);
   		}
 
-body #miyazu-wrapper #miyazu-slides #miyazu-slides-button_arrow_left img {
+body #miyazu-wrapper .miyazu-slides #miyazu-slides-button_arrow_left img {
   				width: 40px;
   			}
 
-body #miyazu-wrapper #miyazu-slides #miyazu-slides-button_arrow_right {
+body #miyazu-wrapper .miyazu-slides #miyazu-slides-button_arrow_right {
   			position: absolute;
 			top: 50%;
 			right: 12%;
@@ -206,7 +319,7 @@ body #miyazu-wrapper #miyazu-slides #miyazu-slides-button_arrow_right {
 			        transform: translate(-50%, -50%);
   		}
 
-body #miyazu-wrapper #miyazu-slides #miyazu-slides-button_arrow_right img {
+body #miyazu-wrapper .miyazu-slides #miyazu-slides-button_arrow_right img {
   				width: 40px;
   			}
 

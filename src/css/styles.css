@@ -1,6 +1,7 @@
 /* import file */
 @import "./reset.css";
 @import "./variables.css";
+@import "./lib/slick.css";
 
 /* responsive  適宜変更 */
 $min-width: (min-width: 0) and (max-width: 543px);
@@ -60,7 +61,7 @@ body {
   			}
   		}
   	}
-  	#miyazu-slides {
+  	.miyazu-slides {
   		#miyazu-slides-slide1 {
   			width: 64%;
   			height: 64vh;
