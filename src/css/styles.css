@@ -2,6 +2,7 @@
 @import "./reset.css";
 @import "./variables.css";
 @import "./lib/slick.css";
+@import "./lib/slick-theme.css";
 
 /* responsive  適宜変更 */
 $min-width: (min-width: 0) and (max-width: 543px);
@@ -62,53 +63,19 @@ body {
   		}
   	}
   	.miyazu-slides {
-  		#miyazu-slides-slide1 {
-  			width: 64%;
-  			height: 64vh;
-  			border: var(--border);
-  			background-color: #EAEAE8;
-  			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			background-image: url(../images/slide1.png);
-			background-size: cover;
-			background-position: 0 -20px;
-			#miyazu-slides-slide1-texts {
-				position: absolute;
-				top: 2rem;
-				left: 2rem;
-				width: 400px;
-				#miyazu-slides-slide1-text {
-					background-color: #ffffff;
-					display: inline-block;
-					border-bottom: var(--border);
-					font-size: 1.6rem;
-					padding: 0.3rem 1rem;
-					color: #4b4b4b;
-					margin-bottom: 0.5rem;
-				}
-			}
-		  	#b1 {
-		  		position: absolute;
-		  		transform: rotate(45deg);
-		  		width: 300px;
-		  		left: -100px;
-		  		bottom: 50px;
-		  		background-color: #4b4b4b;
-		  		border: none;
-		  		height: 1px;
-		  	  	}
-		  	#b2 {
-		  		position: absolute;
-		  		width: 300px;
-		  		transform: rotate(45deg);
-		  		right: -100px;
-		  		top: 50px;
-		  		background-color: #4b4b4b;
-		  		border: none;
-		  		height: 1px;
-		  	  	}
+  		width: 100%;
+  		height: 100%;
+  		display: flex;
+		justify-content: center;
+		align-items: center;
+  		.miyazu-slides-slide {
+  			width: 70%;
+  			margin: 0 auto;
+  			img {
+  				width: 64%;
+  				margin: 0 auto;
+  				border: var(--border);
+  			}
   		}
   		#miyazu-slides-button_arrow_left {
   			position: absolute;

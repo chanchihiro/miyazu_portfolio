@@ -77,7 +77,7 @@ parcelRequire = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({22:[function(require,module,exports) {
+})({21:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -138,7 +138,7 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":22}],18:[function(require,module,exports) {
+},{"./bundle-url":21}],18:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
@@ -156,13 +156,19 @@ module.exports = reloadCSS;
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":16}],3:[function(require,module,exports) {
+},{"_css_loader":16}],66:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./reset.css":18,"./variables.css":19,"./lib/slick.css":20,"./../images/slide1.png":9,"_css_loader":16}],24:[function(require,module,exports) {
+},{"./../../images/ajax-loader.gif":67,"./../../js/lib/slick/fonts/slick.eot":110,"./../../js/lib/slick/fonts/slick.woff":111,"./../../js/lib/slick/fonts/slick.ttf":112,"./../../js/lib/slick/fonts/slick.svg":113,"_css_loader":16}],3:[function(require,module,exports) {
+
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+},{"./reset.css":18,"./variables.css":19,"./lib/slick.css":20,"./lib/slick-theme.css":66,"_css_loader":16}],162:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -192,7 +198,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '55878' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '65033' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -331,7 +337,7 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}],26:[function(require,module,exports) {
+},{}],163:[function(require,module,exports) {
 var getBundleURL = require('./bundle-url').getBundleURL;
 
 function loadBundlesLazy(bundles) {
@@ -412,7 +418,7 @@ LazyPromise.prototype.catch = function (onError) {
   if (this.promise === null) this.promise = new Promise(this.executor);
   return this.promise.catch(onError);
 };
-},{"./bundle-url":22}],0:[function(require,module,exports) {
-var b=require(26);b.load([["slide1.66ad2b13.png",9]]);
-},{}]},{},[24,0])
+},{"./bundle-url":21}],0:[function(require,module,exports) {
+var b=require(163);b.load([["ajax-loader.5951cde3.gif",67],["slick.29d4c64f.eot",110],["slick.526dd301.woff",111],["slick.efb232c4.ttf",112],["slick.fcb6734e.svg",113]]);
+},{}]},{},[162,0])
 //# sourceMappingURL=/styles.a3b74baf.map

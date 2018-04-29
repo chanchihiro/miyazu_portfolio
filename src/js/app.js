@@ -1,10 +1,16 @@
 /* import file */
-// var jquery = require("jquery");
-// window.$ = window.jQuery = jquery; 
-import "../js/lib/slick/slick.min.js"
+
 /* main */
 $(document).ready(function(){
-  console.log("うんこ");
+  // slick.js
   $('.miyazu-slides').slick({
+  	autoplay: true,
+  	draggable: true,
+  	infinite: true,
+  	centerMode: true,
+  	prevArrow: '<img src="../images/arrow.png" class="slide-arrow prev-arrow">',
+  	nextArrow: '<img src="../images/arrow2.png" class="slide-arrow next-arrow">'
   });
+
+  
 });
