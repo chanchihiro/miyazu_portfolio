@@ -77,7 +77,7 @@ parcelRequire = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({21:[function(require,module,exports) {
+})({29:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -107,7 +107,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],16:[function(require,module,exports) {
+},{}],17:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -138,37 +138,37 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":21}],18:[function(require,module,exports) {
+},{"./bundle-url":29}],19:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":16}],19:[function(require,module,exports) {
+},{"_css_loader":17}],20:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":16}],20:[function(require,module,exports) {
+},{"_css_loader":17}],21:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":16}],66:[function(require,module,exports) {
+},{"_css_loader":17}],22:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./../../images/ajax-loader.gif":67,"./../../js/lib/slick/fonts/slick.eot":110,"./../../js/lib/slick/fonts/slick.woff":111,"./../../js/lib/slick/fonts/slick.ttf":112,"./../../js/lib/slick/fonts/slick.svg":113,"_css_loader":16}],3:[function(require,module,exports) {
+},{"./../../images/ajax-loader.gif":23,"./../../js/lib/slick/fonts/slick.eot":25,"./../../js/lib/slick/fonts/slick.woff":26,"./../../js/lib/slick/fonts/slick.ttf":27,"./../../js/lib/slick/fonts/slick.svg":28,"_css_loader":17}],3:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./reset.css":18,"./variables.css":19,"./lib/slick.css":20,"./lib/slick-theme.css":66,"_css_loader":16}],162:[function(require,module,exports) {
+},{"./reset.css":19,"./variables.css":20,"./lib/slick.css":21,"./lib/slick-theme.css":22,"_css_loader":17}],31:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -198,7 +198,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '65033' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '49514' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -337,7 +337,7 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}],163:[function(require,module,exports) {
+},{}],33:[function(require,module,exports) {
 var getBundleURL = require('./bundle-url').getBundleURL;
 
 function loadBundlesLazy(bundles) {
@@ -418,7 +418,7 @@ LazyPromise.prototype.catch = function (onError) {
   if (this.promise === null) this.promise = new Promise(this.executor);
   return this.promise.catch(onError);
 };
-},{"./bundle-url":21}],0:[function(require,module,exports) {
-var b=require(163);b.load([["ajax-loader.5951cde3.gif",67],["slick.29d4c64f.eot",110],["slick.526dd301.woff",111],["slick.efb232c4.ttf",112],["slick.fcb6734e.svg",113]]);
-},{}]},{},[162,0])
+},{"./bundle-url":29}],0:[function(require,module,exports) {
+var b=require(33);b.load([["ajax-loader.5951cde3.gif",23],["slick.29d4c64f.eot",25],["slick.526dd301.woff",26],["slick.efb232c4.ttf",27],["slick.fcb6734e.svg",28]]);
+},{}]},{},[31,0])
 //# sourceMappingURL=/styles.a3b74baf.map

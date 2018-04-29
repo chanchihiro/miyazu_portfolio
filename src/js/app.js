@@ -12,5 +12,7 @@ $(document).ready(function(){
   	nextArrow: '<img src="../images/arrow2.png" class="slide-arrow next-arrow">'
   });
 
-  
+  $('#miyazu-modal-button_close').on('click',function(){
+  	$('#miyazu-modal-news').css('display','none');
+  });
 });
