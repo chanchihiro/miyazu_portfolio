@@ -29,15 +29,16 @@ body {
   	background-color: #fafafa;
   	min-height: 600px;
   	#miyazu-nav {
-  		width: 60%;
+  		width: 900px;
 		position: absolute;
 		left: 50%;
 		transform: translate(-50%, -22px);
+		z-index: 100;
+		display: flex;
   		ul {
   			li {
   				display: inline;
   				background-color: #ffffff;
-  				margin: 0rem 0.4rem;
   				a {
   					padding: 0.2rem 2rem;
   					border: var(--border);
@@ -45,9 +46,9 @@ body {
   					font-family: 'Amiri', serif;
   					color: #4b4b4b;
   					background-color: #fff;
+  					letter-spacing: 2px;
 	  				img {
 	  					width: 240px;
-	  					opacity: 0;
 	  				}
   				}
   			}
@@ -55,7 +56,6 @@ body {
   				border: none;
   				padding: 0px 1rem;
   				margin: 0px 1rem;
-  				opacity: 0;
   				a {
   					border: none;
   				}
@@ -73,6 +73,7 @@ body {
   			margin: 0 auto;
   			img {
   				width: 64%;
+   				min-width: 700px;
   				margin: 0 auto;
   				border: var(--border);
   			}
@@ -105,7 +106,7 @@ body {
   				margin-bottom: 0.7rem;
   				display: block;
   				img {
-  					width: 320px;
+  					width: 280px;
   					border: var(--border);
   				}
   			}
@@ -279,7 +280,7 @@ body {
   #miyazu-footer {
   	position: absolute;
   	top: 50%;
-  	left: -4.5%;
+  	left: -140px;
   	transform: rotate(90deg);
   	#miyazu-footer-text {
   		font-size: 0.8rem;
