@@ -68,6 +68,24 @@ body {
   		display: flex;
 		justify-content: center;
 		align-items: center;
+		.prev-arrow {
+			position: relative;
+			z-index: 100;
+			width: 450px;
+			height: 15px;
+			left: 140px;
+			background-image: url(../images/arrow2.png);
+			background-size: cover;
+		}
+		.next-arrow {
+			position: relative;
+			z-index: 100;
+			right: 140px;
+			width: 450px;
+			height: 15px;
+			background-image: url(../images/arrow.png);
+			background-size: cover;
+		}
   		.miyazu-slides-slide {
   			width: 70%;
   			margin: 0 auto;
@@ -106,7 +124,7 @@ body {
   				margin-bottom: 0.7rem;
   				display: block;
   				img {
-  					width: 280px;
+  					width: 320px;
   					border: var(--border);
   				}
   			}
@@ -157,7 +175,7 @@ body {
   	max-width: 1080px;
   	margin: 0 auto;
   	box-sizing: border-box;
-  	padding: 1.2rem 3.6rem 1.3rem;
+  	padding: 1.2rem 3.6rem 1.4rem;
   	border: var(--border);
   	margin-top: 4rem;
   	display: flex;
@@ -167,8 +185,8 @@ body {
   	}
   	#miyazu-paragraph-text {
   		margin-left: 3rem;
-  		margin-top: 4px;
-  		line-height: 2;
+  		margin-top: 6px;
+  		line-height: 1.7;
   		letter-spacing: 2px;
   	}
   }
@@ -263,6 +281,9 @@ body {
   		cursor: pointer;
   		box-sizing: border-box;
   		border: var(--border);
+  		background-image: url(../images/slide1.png);
+  		background-position: center;
+  		background-size: cover;
   	}
   	.miyazu-works-smalls {
   		display: flex;
@@ -278,6 +299,9 @@ body {
 	  		margin-bottom: 3%;
 	  		box-sizing: border-box;
 	  		border: var(--border);
+	  		background-image: url(../images/slide1.png);
+	  		background-position: center;
+	  		background-size: cover;
 	  	}
 	  	.miyazu-works-small:nth-child(2n) {
 	  		margin-right: 0px;

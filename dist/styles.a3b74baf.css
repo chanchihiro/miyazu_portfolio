@@ -462,6 +462,26 @@ body #miyazu-wrapper .miyazu-slides {
 		        align-items: center;
   	}
 
+body #miyazu-wrapper .miyazu-slides .prev-arrow {
+			position: relative;
+			z-index: 100;
+			width: 450px;
+			height: 15px;
+			left: 140px;
+			background-image: url(arrow2.e54e5543.png);
+			background-size: cover;
+		}
+
+body #miyazu-wrapper .miyazu-slides .next-arrow {
+			position: relative;
+			z-index: 100;
+			right: 140px;
+			width: 450px;
+			height: 15px;
+			background-image: url(arrow.2b8fda1f.png);
+			background-size: cover;
+		}
+
 body #miyazu-wrapper .miyazu-slides .miyazu-slides-slide {
   			width: 70%;
   			margin: 0 auto;
@@ -510,7 +530,7 @@ body #miyazu-wrapper #miyazu-banners #miyazu-banner a {
   			}
 
 body #miyazu-wrapper #miyazu-banners #miyazu-banner a img {
-  					width: 280px;
+  					width: 320px;
   					border: var(--border);
   				}
 
@@ -565,7 +585,7 @@ body #miyazu-paragraph {
   	margin: 0 auto;
   	-webkit-box-sizing: border-box;
   	        box-sizing: border-box;
-  	padding: 1.2rem 3.6rem 1.3rem;
+  	padding: 1.2rem 3.6rem 1.4rem;
   	border: var(--border);
   	margin-top: 4rem;
   	display: -webkit-box;
@@ -580,8 +600,8 @@ body #miyazu-paragraph #miyazu-paragraph-title {
 
 body #miyazu-paragraph #miyazu-paragraph-text {
   		margin-left: 3rem;
-  		margin-top: 4px;
-  		line-height: 2;
+  		margin-top: 6px;
+  		line-height: 1.7;
   		letter-spacing: 2px;
   	}
 
@@ -697,6 +717,9 @@ body #miyazu-works #miyazu-works-big {
   		-webkit-box-sizing: border-box;
   		        box-sizing: border-box;
   		border: var(--border);
+  		background-image: url(slide1.66ad2b13.png);
+  		background-position: center;
+  		background-size: cover;
   	}
 
 body #miyazu-works .miyazu-works-smalls {
@@ -722,6 +745,9 @@ body #miyazu-works .miyazu-works-smalls .miyazu-works-small {
 	  		-webkit-box-sizing: border-box;
 	  		        box-sizing: border-box;
 	  		border: var(--border);
+	  		background-image: url(slide1.66ad2b13.png);
+	  		background-position: center;
+	  		background-size: cover;
 	  	}
 
 body #miyazu-works .miyazu-works-smalls .miyazu-works-small:nth-child(2n) {

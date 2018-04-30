@@ -8,10 +8,11 @@ $(document).ready(function(){
   	draggable: true,
   	infinite: true,
   	centerMode: true,
-  	prevArrow: '<img src="../images/arrow.png" class="slide-arrow prev-arrow">',
-  	nextArrow: '<img src="../images/arrow2.png" class="slide-arrow next-arrow">'
+  	prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+  	nextArrow: '<button class="slide-arrow next-arrow"></button>',
   });
 
+  // banners
   $('#miyazu-modal-button_close').on('click',function(){
   	$('#miyazu-modal-news').css('display','none');
   });

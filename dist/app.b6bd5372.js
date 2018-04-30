@@ -88,15 +88,16 @@ $(document).ready(function () {
     draggable: true,
     infinite: true,
     centerMode: true,
-    prevArrow: '<img src="../images/arrow.png" class="slide-arrow prev-arrow">',
-    nextArrow: '<img src="../images/arrow2.png" class="slide-arrow next-arrow">'
+    prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+    nextArrow: '<button class="slide-arrow next-arrow"></button>'
   });
 
+  // banners
   $('#miyazu-modal-button_close').on('click', function () {
     $('#miyazu-modal-news').css('display', 'none');
   });
 });
-},{}],40:[function(require,module,exports) {
+},{}],129:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -265,5 +266,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[40,4])
+},{}]},{},[129,4])
 //# sourceMappingURL=/app.b6bd5372.map
