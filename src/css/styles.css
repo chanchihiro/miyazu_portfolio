@@ -20,6 +20,7 @@ body {
   font-family: var(--font-family-base);
   #miyazu-wrapper {
   	position: absolute;
+  	display: none;
   	border: var(--border);
   	width: 90%;
   	height: 90vh;

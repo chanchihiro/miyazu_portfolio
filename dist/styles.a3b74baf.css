@@ -396,6 +396,7 @@ body {
 
 body #miyazu-wrapper {
   	position: absolute;
+  	display: none;
   	border: var(--border);
   	width: 90%;
   	height: 90vh;
