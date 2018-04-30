@@ -403,7 +403,7 @@ body #miyazu-wrapper {
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
 	        transform: translate(-50%, -50%);
-  	background-color: #fafafa;
+  	background-color: #f7f7f7;
   	min-height: 600px;
   }
 

@@ -88,6 +88,11 @@ $(document).ready(function () {
     draggable: true,
     infinite: true,
     centerMode: true,
+    pauseOnHover: false,
+    speed: 340,
+    autoplaySpeed: 5000,
+    cssEase: 'ease-out',
+    slidesToShow: 1,
     prevArrow: '<button class="slide-arrow prev-arrow"></button>',
     nextArrow: '<button class="slide-arrow next-arrow"></button>'
   });
@@ -97,7 +102,7 @@ $(document).ready(function () {
     $('#miyazu-modal-news').css('display', 'none');
   });
 });
-},{}],129:[function(require,module,exports) {
+},{}],157:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -266,5 +271,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[129,4])
+},{}]},{},[157,4])
 //# sourceMappingURL=/app.b6bd5372.map
