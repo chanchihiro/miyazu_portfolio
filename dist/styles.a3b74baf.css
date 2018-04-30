@@ -634,35 +634,43 @@ body #miyazu-news #miyazu-news-button {
 	}
 
 body #miyazu-profile {
-  	width: 600px;
+  	width: 720px;
   	margin: 0 auto;
   	-webkit-box-sizing: border-box;
   	        box-sizing: border-box;
   	padding: 5rem 0px;
+  	overflow: scroll;
+  	text-align: center;
   }
 
 body #miyazu-profile img {
   		width: 100%;
+  		max-width: 520px;
   		border: var(--border);
   		margin-bottom: 1.6rem;
   	}
 
 body #miyazu-profile .miyazu-profile-text {
-  		margin-bottom: 2rem;
+  		text-align: left;
+  		margin-bottom: 1.2rem;
   	}
 
 body #miyazu-profile .miyazu-profile-text h2 {
-  			font-size: 1.4rem;
+  			font-size: 0.9rem;
   			margin-bottom: 0.3rem;
+  			font-weight: bold;
   		}
 
 body #miyazu-profile .miyazu-profile-text p {
   			margin-bottom: 0.3rem;
   			font-size: 0.8rem;
+  			letter-spacing: 1px;
+  			line-height: 1.7;
   		}
 
 body #miyazu-profile .miyazu-profile-text #miyazu-profole-english {
   			font-family: var(--font-family-sub);
+  			letter-spacing: 0px;
   		}
 
 body #miyazu-works {
