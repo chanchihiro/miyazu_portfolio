@@ -188,17 +188,28 @@ body {
   	@media screen and $min-width {
   		width: 87%;
   		margin-top: 3rem;
-  		padding: 0;
+  		padding: 1rem 0rem 1.7rem;
+  		display: block;
+  		margin-bottom: 1.4rem;
   	}
   	#miyazu-paragraph-title {
   		font-family: var(--font-family-sub);
   		font-size: 1.8rem;
+  		@media screen and $min-width {
+  			text-align: center;
+  		}
   	}
   	#miyazu-paragraph-text {
   		margin-left: 3rem;
   		margin-top: 6px;
   		line-height: 1.7;
   		letter-spacing: 2px;
+  		@media screen and $min-width {
+  			margin-left: 0;
+  			width: 90%;
+  			margin: 0 auto;
+  			text-align: justify;
+  		}
   	}
   }
   #miyazu-news {
@@ -322,6 +333,12 @@ body {
   	box-sizing: border-box;
   	display: flex;
   	margin-top: 1.5%;
+  	@media screen and $min-width {
+  		width: 87%;
+  		flex-direction: column;
+  		margin-top: 0;
+  		padding-bottom: 2rem;
+  	}
   	#miyazu-works-big {
   		background-color: #fafafa;
   		width: 50%;
@@ -335,12 +352,20 @@ body {
   		background-image: url(../images/slide1.png);
   		background-position: center;
   		background-size: cover;
+  		@media screen and $min-width {
+  			flex-basis: 100%;
+  			width: 100%;
+  			margin-bottom: 1.6rem;
+  		}
   	}
   	.miyazu-works-smalls {
   		display: flex;
   		flex-basis: 50%;
   		flex-wrap: wrap;
   		height: 46vh;
+  		@media screen and $min-width {
+
+  		}
 	  	.miyazu-works-small {
 	  		align-items: flex-end;
 	  		background-color: #fafafa;
