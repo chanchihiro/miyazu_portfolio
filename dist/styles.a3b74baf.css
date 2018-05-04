@@ -396,7 +396,6 @@ body {
 
 body #miyazu-wrapper {
   	position: absolute;
-  	display: none;
   	border: var(--border);
   	width: 90%;
   	height: 90vh;
@@ -407,6 +406,13 @@ body #miyazu-wrapper {
   	background-color: #f7f7f7;
   	min-height: 600px;
   }
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body #miyazu-wrapper {
+  		overflow: scroll
+  }
+  	}
 
 body #miyazu-wrapper #miyazu-nav {
   		width: 900px;
@@ -419,6 +425,13 @@ body #miyazu-wrapper #miyazu-nav {
 		display: -ms-flexbox;
 		display: flex;
   	}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body #miyazu-wrapper #miyazu-nav {
+			display: none
+  	}
+		}
 
 body #miyazu-wrapper #miyazu-nav ul li {
   				display: inline;
@@ -594,6 +607,15 @@ body #miyazu-paragraph {
   	display: flex;
   }
 
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body #miyazu-paragraph {
+  		width: 87%;
+  		margin-top: 3rem;
+  		padding: 0
+  }
+  	}
+
 body #miyazu-paragraph #miyazu-paragraph-title {
   		font-family: var(--font-family-sub);
   		font-size: 1.8rem;
@@ -619,17 +641,52 @@ body #miyazu-news {
   	padding: 0px 4rem;
   }
 
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body #miyazu-news {
+  		margin: 3rem auto;
+  		width: 87%;
+  		padding: 0px 1rem
+  }
+  	}
+
 body #miyazu-news hr {
   		background-color: #4b4b4b;
   		border: none;
   		height: 1px;
   	}
 
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body #miyazu-news hr {
+  			display: none
+  	}
+  		}
+
 body #miyazu-news h2 {
   		text-align: center;
   		font-size: 1.4rem;
   		font-family: var(--font-family-sub);
   		padding: 2rem 0rem;
+  	}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body #miyazu-news h2 {
+  			padding: 1rem 0px 0px
+  	}
+  		}
+
+body #miyazu-news #miyazu-news-content1 {
+  		overflow: hidden;
+  	}
+
+body #miyazu-news #miyazu-news-content2 {
+  		overflow: hidden;
+  	}
+
+body #miyazu-news #miyazu-news-content3 {
+  		overflow: hidden;
   	}
 
 body #miyazu-news #miyazu-news-date {
@@ -640,6 +697,14 @@ body #miyazu-news #miyazu-news-date {
 		margin-top: 1rem;
 		margin-bottom: 0.3rem;
 	}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body #miyazu-news #miyazu-news-date {
+			margin-bottom: 0px;
+			line-height: 1
+	}
+		}
 
 body #miyazu-news #miyazu-news-content {
 		font-size: 0.8rem;
@@ -654,6 +719,14 @@ body #miyazu-news #miyazu-news-button {
 		margin-bottom: 0.3rem;
 	}
 
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body #miyazu-news #miyazu-news-button {
+			overflow: hidden;
+			margin-top: 0.5rem
+	}
+		}
+
 body #miyazu-profile {
   	width: 720px;
   	margin: 0 auto;
@@ -664,8 +737,16 @@ body #miyazu-profile {
   	text-align: center;
   }
 
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body #miyazu-profile {
+  		width: 96%;
+  		padding: 3rem 0px
+  }
+  	}
+
 body #miyazu-profile img {
-  		width: 100%;
+  		width: 90%;
   		max-width: 520px;
   		border: var(--border);
   		margin-bottom: 1.6rem;
@@ -675,6 +756,15 @@ body #miyazu-profile .miyazu-profile-text {
   		text-align: left;
   		margin-bottom: 1.2rem;
   	}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body #miyazu-profile .miyazu-profile-text {
+  			width: 90%;
+  			margin: 0 auto;
+  			text-align: justify
+  	}
+  		}
 
 body #miyazu-profile .miyazu-profile-text h2 {
   			font-size: 0.9rem;
@@ -692,6 +782,10 @@ body #miyazu-profile .miyazu-profile-text p {
 body #miyazu-profile .miyazu-profile-text #miyazu-profole-english {
   			font-family: var(--font-family-sub);
   			letter-spacing: 0px;
+  		}
+
+body #miyazu-profile .miyazu-profile-text #miyazu-profole-japan {
+  			margin-bottom: 1.4rem;
   		}
 
 body #miyazu-works {
@@ -775,6 +869,13 @@ body #miyazu-sns {
   	top: 40%;
   	right: -23px;
   }
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body #miyazu-sns {
+  		display: none
+  }
+  	}
 
 body #miyazu-sns a {
   		display: block;

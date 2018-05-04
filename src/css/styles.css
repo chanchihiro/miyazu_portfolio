@@ -5,9 +5,9 @@
 @import "./lib/slick-theme.css";
 
 /* responsive  適宜変更 */
-$min-width: (min-width: 0) and (max-width: 543px);
-$middle-width: (min-width: 0) and (max-width: 543px);
-$max-width: (min-width: 544px);
+$min-width: (min-width: 0) and (max-width: 768px);
+$middle-width: (min-width: 0) and (max-width: 768px);
+$max-width: (min-width: 769px);
 
 
 /* main */
@@ -20,7 +20,6 @@ body {
   font-family: var(--font-family-base);
   #miyazu-wrapper {
   	position: absolute;
-  	display: none;
   	border: var(--border);
   	width: 90%;
   	height: 90vh;
@@ -29,6 +28,9 @@ body {
 	transform: translate(-50%, -50%);
   	background-color: #f7f7f7;
   	min-height: 600px;
+  	@media screen and $min-width {
+  		overflow: scroll;
+  	}
   	#miyazu-nav {
   		width: 900px;
 		position: absolute;
@@ -36,6 +38,9 @@ body {
 		transform: translate(-50%, -22px);
 		z-index: 100;
 		display: flex;
+		@media screen and $min-width {
+			display: none;
+		}
   		ul {
   			li {
   				display: inline;
@@ -180,6 +185,11 @@ body {
   	border: var(--border);
   	margin-top: 4rem;
   	display: flex;
+  	@media screen and $min-width {
+  		width: 87%;
+  		margin-top: 3rem;
+  		padding: 0;
+  	}
   	#miyazu-paragraph-title {
   		font-family: var(--font-family-sub);
   		font-size: 1.8rem;
@@ -201,16 +211,36 @@ body {
   	overflow: scroll;
   	color: #4b4b4b;
   	padding: 0px 4rem;
+  	@media screen and $min-width {
+  		margin: 3rem auto;
+  		width: 87%;
+  		padding: 0px 1rem;
+  	}
   	hr {
   		background-color: #4b4b4b;
   		border: none;
   		height: 1px;
+  		@media screen and $min-width {
+  			display: none;
+  		}
   	}
   	h2 {
   		text-align: center;
   		font-size: 1.4rem;
   		font-family: var(--font-family-sub);
   		padding: 2rem 0rem;
+  		@media screen and $min-width {
+  			padding: 1rem 0px 0px;
+  		}
+  	}
+  	#miyazu-news-content1 {
+  		overflow: hidden;
+  	}
+  	#miyazu-news-content2 {
+  		overflow: hidden;
+  	}
+  	#miyazu-news-content3 {
+  		overflow: hidden;
   	}
 	#miyazu-news-date {
 		font-family: 'Amiri', serif;
@@ -219,6 +249,10 @@ body {
 		margin-right: 1.2rem;
 		margin-top: 1rem;
 		margin-bottom: 0.3rem;
+		@media screen and $min-width {
+			margin-bottom: 0px;
+			line-height: 1;
+		}
 	}
 	#miyazu-news-content {
 		font-size: 0.8rem;
@@ -230,6 +264,10 @@ body {
 		font-size: 0.8rem;
 		margin-top: 1rem;
 		margin-bottom: 0.3rem;
+		@media screen and $min-width {
+			overflow: hidden;
+			margin-top: 0.5rem;
+		}
 	}
   }
   #miyazu-profile {
@@ -239,8 +277,12 @@ body {
   	padding: 5rem 0px;
   	overflow: scroll;
   	text-align: center;
+  	@media screen and $min-width {
+  		width: 96%;
+  		padding: 3rem 0px;
+  	}
   	img {
-  		width: 100%;
+  		width: 90%;
   		max-width: 520px;
   		border: var(--border);
   		margin-bottom: 1.6rem;
@@ -248,6 +290,11 @@ body {
   	.miyazu-profile-text {
   		text-align: left;
   		margin-bottom: 1.2rem;
+  		@media screen and $min-width {
+  			width: 90%;
+  			margin: 0 auto;
+  			text-align: justify;
+  		}
   		h2 {
   			font-size: 0.9rem;
   			margin-bottom: 0.3rem;
@@ -262,6 +309,9 @@ body {
   		#miyazu-profole-english {
   			font-family: var(--font-family-sub);
   			letter-spacing: 0px;
+  		}
+  		#miyazu-profole-japan {
+  			margin-bottom: 1.4rem;
   		}
   	}
   }
@@ -325,6 +375,9 @@ body {
   	position: absolute;
   	top: 40%;
   	right: -23px;
+  	@media screen and $min-width {
+  		display: none;
+  	}
   	a {
   		display: block;
   		text-align: center;
