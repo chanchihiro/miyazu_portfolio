@@ -2,4 +2,5 @@ yarn-error.log
 /node_modules
 /.cache
 yarn.lock
+/public
 memo.md
