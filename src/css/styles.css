@@ -19,7 +19,7 @@ body {
   color: #4b4b4b;
   font-family: var(--font-family-base);
   #miyazu-wrapper {
-  	position: absolute;
+  	position: fixed;
   	border: var(--border);
   	width: 90%;
   	height: 90vh;
@@ -29,7 +29,10 @@ body {
   	background-color: #f7f7f7;
   	min-height: 600px;
   	@media screen and $min-width {
+  		position: fixed;
   		overflow: scroll;
+  		height: 80vh;
+  		min-height: initial;
   	}
   	#miyazu-nav {
   		width: 900px;
@@ -129,6 +132,7 @@ body {
   					width: auto;
   					height: 100%;
   					vertical-align:middle;
+  					border: none;
   				}
   			}
   		}
@@ -163,7 +167,7 @@ body {
   		right: 3rem;
   		@media screen and $min-width {
   			position: static;
-  			width: 90%;
+  			width: 87%;
   			margin: 0 auto;
   		}
   		#miyazu-banner {
@@ -190,10 +194,11 @@ body {
   		background-color: #ffffff;
   		overflow: hidden;
   		@media screen and $min-width {
-  			width: 90%;
+  			width: 87%;
   			position: static;
-  			padding: 0;
+  			padding: 1.4rem;
   			margin: 0 auto 3rem;
+  			box-sizing: border-box;
   		}
   		#miyazu-modal-button_close {
   			font-size: 1.2rem;
@@ -210,7 +215,8 @@ body {
   			font-family: 'Amiri', serif;
   			margin-bottom: 12px;
   			@media screen and $min-width {
-  				text-align: center;
+  				font-size: 1.3rem;
+  				margin-bottom: 0.8rem;
   			}
   		}
   		#miyazu-modal-date {
@@ -220,13 +226,25 @@ body {
   			margin-right: 1.2rem;
   			margin-left: 1rem;
   			margin-bottom: 0.4rem;
+  			@media screen and $min-width {
+  				margin-left: 0;
+  				margin-bottom: 0;
+  				margin-right: 0;
+  				line-height: 1;
+  				display: block;
+  			}
   		}
   		#miyazu-modal-content {
   			font-size: 0.8rem;
   			display: inline-block;
+  			@media screen and $min-width {
+  				font-size: 0.7rem;
+  				line-height: 1.4;
+  				margin-bottom: 1rem;
+  			}
   		}
   		#miyazu-modal-button_more {
-  			font-size: 0.8rem;
+  			font-size: 0.7rem;
   			float: right;
   			color: #4b4b4b;
   		}

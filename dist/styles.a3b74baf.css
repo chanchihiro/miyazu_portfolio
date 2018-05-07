@@ -395,7 +395,7 @@ body {
 }
 
 body #miyazu-wrapper {
-  	position: absolute;
+  	position: fixed;
   	border: var(--border);
   	width: 90%;
   	height: 90vh;
@@ -410,7 +410,10 @@ body #miyazu-wrapper {
 @media screen and (min-width: 0) and (max-width: 768px) {
 
 body #miyazu-wrapper {
-  		overflow: scroll
+  		position: fixed;
+  		overflow: scroll;
+  		height: 80vh;
+  		min-height: initial
   }
   	}
 
@@ -561,7 +564,8 @@ body #miyazu-wrapper .miyazu-slides .miyazu-slides-slide img {
   					min-width: initial;
   					width: auto;
   					height: 100%;
-  					vertical-align:middle
+  					vertical-align:middle;
+  					border: none
   			}
   				}
 
@@ -613,7 +617,7 @@ body #miyazu-wrapper #miyazu-banners {
 
 body #miyazu-wrapper #miyazu-banners {
   			position: static;
-  			width: 90%;
+  			width: 87%;
   			margin: 0 auto
   	}
   		}
@@ -649,10 +653,12 @@ body #miyazu-wrapper #miyazu-modal-news {
 @media screen and (min-width: 0) and (max-width: 768px) {
 
 body #miyazu-wrapper #miyazu-modal-news {
-  			width: 90%;
+  			width: 87%;
   			position: static;
-  			padding: 0;
-  			margin: 0 auto 3rem
+  			padding: 1.4rem;
+  			margin: 0 auto 3rem;
+  			-webkit-box-sizing: border-box;
+  			        box-sizing: border-box
   	}
   		}
 
@@ -680,7 +686,8 @@ body #miyazu-wrapper #miyazu-modal-news #miyazu-modal-title {
 @media screen and (min-width: 0) and (max-width: 768px) {
 
 body #miyazu-wrapper #miyazu-modal-news #miyazu-modal-title {
-  				text-align: center
+  				font-size: 1.3rem;
+  				margin-bottom: 0.8rem
   		}
   			}
 
@@ -693,13 +700,33 @@ body #miyazu-wrapper #miyazu-modal-news #miyazu-modal-date {
   			margin-bottom: 0.4rem;
   		}
 
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body #miyazu-wrapper #miyazu-modal-news #miyazu-modal-date {
+  				margin-left: 0;
+  				margin-bottom: 0;
+  				margin-right: 0;
+  				line-height: 1;
+  				display: block
+  		}
+  			}
+
 body #miyazu-wrapper #miyazu-modal-news #miyazu-modal-content {
   			font-size: 0.8rem;
   			display: inline-block;
   		}
 
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body #miyazu-wrapper #miyazu-modal-news #miyazu-modal-content {
+  				font-size: 0.7rem;
+  				line-height: 1.4;
+  				margin-bottom: 1rem
+  		}
+  			}
+
 body #miyazu-wrapper #miyazu-modal-news #miyazu-modal-button_more {
-  			font-size: 0.8rem;
+  			font-size: 0.7rem;
   			float: right;
   			color: #4b4b4b;
   		}
