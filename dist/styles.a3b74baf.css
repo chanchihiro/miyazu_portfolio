@@ -397,8 +397,8 @@ body {
 body #miyazu-wrapper {
   	position: fixed;
   	border: var(--border);
-  	width: 90%;
-  	height: 90vh;
+  	width: 94%;
+  	height: 94vh;
 	top: 50%;
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
