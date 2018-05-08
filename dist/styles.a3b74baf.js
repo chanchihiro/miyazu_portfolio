@@ -168,7 +168,7 @@ module.exports = reloadCSS;
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./reset.css":17,"./variables.css":18,"./lib/slick.css":21,"./lib/slick-theme.css":22,"./../images/arrow2.png":19,"./../images/arrow.png":20,"./../images/slide1.png":9,"_css_loader":16}],153:[function(require,module,exports) {
+},{"./reset.css":17,"./variables.css":18,"./lib/slick.css":21,"./lib/slick-theme.css":22,"./../images/arrow2.png":19,"./../images/arrow.png":20,"./../images/slide1.png":9,"_css_loader":16}],155:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -337,7 +337,7 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}],154:[function(require,module,exports) {
+},{}],156:[function(require,module,exports) {
 var getBundleURL = require('./bundle-url').getBundleURL;
 
 function loadBundlesLazy(bundles) {
@@ -419,6 +419,6 @@ LazyPromise.prototype.catch = function (onError) {
   return this.promise.catch(onError);
 };
 },{"./bundle-url":25}],0:[function(require,module,exports) {
-var b=require(154);b.load([["ajax-loader.5951cde3.gif",26],["slick.29d4c64f.eot",27],["slick.526dd301.woff",28],["slick.efb232c4.ttf",29],["slick.fcb6734e.svg",30],["arrow2.e54e5543.png",19],["arrow.2b8fda1f.png",20],["slide1.66ad2b13.png",9]]);
-},{}]},{},[153,0])
+var b=require(156);b.load([["ajax-loader.5951cde3.gif",26],["slick.29d4c64f.eot",27],["slick.526dd301.woff",28],["slick.efb232c4.ttf",29],["slick.fcb6734e.svg",30],["arrow2.e54e5543.png",19],["arrow.2b8fda1f.png",20],["slide1.66ad2b13.png",9]]);
+},{}]},{},[155,0])
 //# sourceMappingURL=/styles.a3b74baf.map

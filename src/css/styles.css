@@ -27,7 +27,7 @@ body {
 		border-radius: 50%;
 		width: 42px;
 		height: 42px;
-		position: absolute;
+		position: fixed;
 		z-index: 200;
 		right: 1px;
 		top: 20px;
