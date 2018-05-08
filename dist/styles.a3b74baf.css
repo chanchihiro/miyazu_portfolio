@@ -413,7 +413,8 @@ body #miyazu-wrapper {
   		position: fixed;
   		overflow: scroll;
   		height: 80vh;
-  		min-height: initial
+  		min-height: initial;
+  		-webkit-overflow-scrolling: touch
   }
   	}
 
