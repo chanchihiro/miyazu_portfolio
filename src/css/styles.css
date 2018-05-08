@@ -18,6 +18,30 @@ body {
   font-size: var(--font-size);
   color: #4b4b4b;
   font-family: var(--font-family-base);
+  .miyazu-nav-hamburger {
+  	display: none;
+  	@media screen and $min-width {
+  		display: block;
+		background-color: #fff;
+		border: var(--border);
+		border-radius: 50%;
+		width: 42px;
+		height: 42px;
+		position: absolute;
+		z-index: 200;
+		right: 1px;
+		top: 20px;
+		line-height: 30px;
+		box-sizing: border-box;
+		padding: 14px 0px;
+		.line {
+			height: 1px;
+			width: 18px;
+			margin: 0 auto 4px;
+			background-color: #222222;
+		}
+  	}
+  }
   #miyazu-wrapper {
   	position: fixed;
   	border: var(--border);
@@ -31,7 +55,7 @@ body {
   	@media screen and $min-width {
   		position: fixed;
   		overflow: scroll;
-  		height: 80vh;
+  		height: 88vh;
   		min-height: initial;
   		-webkit-overflow-scrolling: touch;
   	}
@@ -43,12 +67,26 @@ body {
 		z-index: 100;
 		display: flex;
 		@media screen and $min-width {
-			display: none;
+			background-color: rgba(255,255,255,1);
+			width: 100%;
+			height: 200%;
+			transform: initial;
+			top: 0;
+			left: 0;
 		}
   		ul {
+  			@media screen and $min-width { 
+  				margin: 0 auto;
+  				margin-top: 2rem;
+  			}
   			li {
   				display: inline;
   				background-color: #ffffff;
+  				font-size: 1.1rem;
+  				@media screen and $min-width {
+  					display: block;
+  					text-align: center;
+  				}
   				a {
   					padding: 0.2rem 2rem;
   					border: var(--border);
@@ -57,8 +95,14 @@ body {
   					color: #4b4b4b;
   					background-color: #fff;
   					letter-spacing: 2px;
+  					@media screen and $min-width {
+  						border: none;
+  					}
 	  				img {
 	  					width: 240px;
+	  					@media screen and $min-width {
+	  						display: none;
+	  					}
 	  				}
   				}
   			}
@@ -66,6 +110,9 @@ body {
   				border: none;
   				padding: 0px 1rem;
   				margin: 0px 1rem;
+  				@media screen and $min-width { 
+  					display: none;
+  				}
   				a {
   					border: none;
   				}
@@ -82,7 +129,7 @@ body {
 			display: block;
 			width: auto;
 			height: auto;
-			margin-bottom: 2rem;
+			margin-bottom: 3rem;
 		}
 		.prev-arrow {
 			position: relative;
@@ -477,27 +524,56 @@ body {
   	top: 40%;
   	right: -23px;
   	@media screen and $min-width {
-  		display: none;
+  		z-index: 300;
+  		display: flex;
+  		right: 50%;
+  		transform: translate(50%, -50%);
   	}
-  	a {
-  		display: block;
-  		text-align: center;
-  		border: var(--border);
-  		width: 46px;
-  		height: 46px;
-  		line-height: 60px;
-  		border-radius: 50%;
-  		background-color: #ffffff;
-  		margin-bottom: 0.9rem;
-  		#miyazu-sns-button_twitter {
-  			width: 1.4rem;
-  		}
-  		#miyazu-sns-button_facebook {
-  			width: 0.9rem;
-  		}
-  		#miyazu-sns-button_uni {
-  			width: 1.6rem;
-  		}
+  	ul {
+  		margin: 0 auto;
+	  	li {
+	  		float: left;
+		  	a {
+		  		display: block;
+		  		text-align: center;
+		  		border: var(--border);
+		  		width: 46px;
+		  		height: 46px;
+		  		line-height: 60px;
+		  		border-radius: 50%;
+		  		background-color: #ffffff;
+		  		margin-bottom: 0.9rem;
+		  		@media screen and $min-width {
+		  			width: 30px;
+		  			height: 30px;
+		  			line-height: 36px;
+		  			margin-right: 14px;
+		  		}
+		  		#miyazu-sns-button_twitter {
+		  			width: 1.4rem;
+		  			@media screen and $min-width {
+		  				width: 1rem;
+		  			}
+		  		}
+		  		#miyazu-sns-button_facebook {
+		  			width: 0.9rem;
+		  			@media screen and $min-width {
+		  				width: 0.6rem;
+		  			}
+		  		}
+		  		#miyazu-sns-button_uni {
+		  			width: 1.6rem;
+		  			@media screen and $min-width {
+		  				width: 1.1rem;
+		  			}
+		  		}
+		  	}
+	  	}
+	  	li:last-child {
+	  		@media screen and $min-width {
+	  			margin: 0;
+	  		}
+	  	}
   	}
   }
 }

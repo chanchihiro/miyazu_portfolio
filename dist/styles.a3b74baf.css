@@ -394,6 +394,36 @@ body {
   font-family: var(--font-family-base);
 }
 
+body .miyazu-nav-hamburger {
+  	display: none;
+  }
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body .miyazu-nav-hamburger {
+  		display: block;
+		background-color: #fff;
+		border: var(--border);
+		border-radius: 50%;
+		width: 42px;
+		height: 42px;
+		position: absolute;
+		z-index: 200;
+		right: 1px;
+		top: 20px;
+		line-height: 30px;
+		-webkit-box-sizing: border-box;
+		        box-sizing: border-box;
+		padding: 14px 0px
+  }
+		body .miyazu-nav-hamburger .line {
+			height: 1px;
+			width: 18px;
+			margin: 0 auto 4px;
+			background-color: #222222;
+		}
+  	}
+
 body #miyazu-wrapper {
   	position: fixed;
   	border: var(--border);
@@ -412,7 +442,7 @@ body #miyazu-wrapper {
 body #miyazu-wrapper {
   		position: fixed;
   		overflow: scroll;
-  		height: 80vh;
+  		height: 88vh;
   		min-height: initial;
   		-webkit-overflow-scrolling: touch
   }
@@ -433,14 +463,37 @@ body #miyazu-wrapper #miyazu-nav {
 @media screen and (min-width: 0) and (max-width: 768px) {
 
 body #miyazu-wrapper #miyazu-nav {
-			display: none
+			background-color: rgba(255,255,255,1);
+			width: 100%;
+			height: 200%;
+			-webkit-transform: initial;
+			        transform: initial;
+			top: 0;
+			left: 0
   	}
 		}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body #miyazu-wrapper #miyazu-nav ul { 
+  				margin: 0 auto;
+  				margin-top: 2rem
+  		}
+  			}
 
 body #miyazu-wrapper #miyazu-nav ul li {
   				display: inline;
   				background-color: #ffffff;
+  				font-size: 1.1rem;
   			}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body #miyazu-wrapper #miyazu-nav ul li {
+  					display: block;
+  					text-align: center
+  			}
+  				}
 
 body #miyazu-wrapper #miyazu-nav ul li a {
   					padding: 0.2rem 2rem;
@@ -452,15 +505,36 @@ body #miyazu-wrapper #miyazu-nav ul li a {
   					letter-spacing: 2px;
   				}
 
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body #miyazu-wrapper #miyazu-nav ul li a {
+  						border: none
+  				}
+  					}
+
 body #miyazu-wrapper #miyazu-nav ul li a img {
 	  					width: 240px;
 	  				}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body #miyazu-wrapper #miyazu-nav ul li a img {
+	  						display: none
+	  				}
+	  					}
 
 body #miyazu-wrapper #miyazu-nav ul li:nth-child(3) {
   				border: none;
   				padding: 0px 1rem;
   				margin: 0px 1rem;
   			}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body #miyazu-wrapper #miyazu-nav ul li:nth-child(3) { 
+  					display: none
+  			}
+  				}
 
 body #miyazu-wrapper #miyazu-nav ul li:nth-child(3) a {
   					border: none;
@@ -486,7 +560,7 @@ body #miyazu-wrapper .miyazu-slides {
 			display: block;
 			width: auto;
 			height: auto;
-			margin-bottom: 2rem
+			margin-bottom: 3rem
   	}
 		}
 
@@ -1059,33 +1133,85 @@ body #miyazu-sns {
 @media screen and (min-width: 0) and (max-width: 768px) {
 
 body #miyazu-sns {
-  		display: none
+  		z-index: 300;
+  		display: -webkit-box;
+  		display: -ms-flexbox;
+  		display: flex;
+  		right: 50%;
+  		-webkit-transform: translate(50%, -50%);
+  		        transform: translate(50%, -50%)
   }
   	}
 
-body #miyazu-sns a {
-  		display: block;
-  		text-align: center;
-  		border: var(--border);
-  		width: 46px;
-  		height: 46px;
-  		line-height: 60px;
-  		border-radius: 50%;
-  		background-color: #ffffff;
-  		margin-bottom: 0.9rem;
+body #miyazu-sns ul {
+  		margin: 0 auto;
   	}
 
-body #miyazu-sns a #miyazu-sns-button_twitter {
-  			width: 1.4rem;
-  		}
+body #miyazu-sns ul li {
+	  		float: left;
+	  	}
 
-body #miyazu-sns a #miyazu-sns-button_facebook {
-  			width: 0.9rem;
-  		}
+body #miyazu-sns ul li a {
+		  		display: block;
+		  		text-align: center;
+		  		border: var(--border);
+		  		width: 46px;
+		  		height: 46px;
+		  		line-height: 60px;
+		  		border-radius: 50%;
+		  		background-color: #ffffff;
+		  		margin-bottom: 0.9rem;
+		  	}
 
-body #miyazu-sns a #miyazu-sns-button_uni {
-  			width: 1.6rem;
-  		}
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body #miyazu-sns ul li a {
+		  			width: 30px;
+		  			height: 30px;
+		  			line-height: 36px;
+		  			margin-right: 14px
+		  	}
+		  		}
+
+body #miyazu-sns ul li a #miyazu-sns-button_twitter {
+		  			width: 1.4rem;
+		  		}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body #miyazu-sns ul li a #miyazu-sns-button_twitter {
+		  				width: 1rem
+		  		}
+		  			}
+
+body #miyazu-sns ul li a #miyazu-sns-button_facebook {
+		  			width: 0.9rem;
+		  		}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body #miyazu-sns ul li a #miyazu-sns-button_facebook {
+		  				width: 0.6rem
+		  		}
+		  			}
+
+body #miyazu-sns ul li a #miyazu-sns-button_uni {
+		  			width: 1.6rem;
+		  		}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body #miyazu-sns ul li a #miyazu-sns-button_uni {
+		  				width: 1.1rem
+		  		}
+		  			}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body #miyazu-sns ul li:last-child {
+	  			margin: 0
+	  	}
+	  		}
 
 
 

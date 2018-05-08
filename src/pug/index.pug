@@ -4,8 +4,13 @@ html(lang="ja")
   head
     include _head.pug
   body
+    div.miyazu-nav-hamburger
+     div.line
+     div.line
+     div.line
     div#miyazu-wrapper
      include _header.pug
+     include _nav.pug
      div.miyazu-slides
       div.miyazu-slides-slide
        img(src="../images/slide1.png")
@@ -36,5 +41,4 @@ html(lang="ja")
      footer#miyazu-footer
        p#miyazu-footer-text ©︎MIYAZU DAIZO All Rights Reserved.
      include _footer.pug
-     include _nav.pug
     include _scripts.pug
