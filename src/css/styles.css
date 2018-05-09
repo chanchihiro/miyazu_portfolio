@@ -73,11 +73,12 @@ body {
 			transform: initial;
 			top: 0;
 			left: 0;
+			position: fixed;
 		}
   		ul {
   			@media screen and $min-width { 
   				margin: 0 auto;
-  				margin-top: 2rem;
+  				margin-top: 4rem;
   			}
   			li {
   				display: inline;
@@ -528,6 +529,8 @@ body {
   		display: flex;
   		right: 50%;
   		transform: translate(50%, -50%);
+  		top: 48%;
+  		position: fixed;
   	}
   	ul {
   		margin: 0 auto;
@@ -544,9 +547,9 @@ body {
 		  		background-color: #ffffff;
 		  		margin-bottom: 0.9rem;
 		  		@media screen and $min-width {
-		  			width: 30px;
-		  			height: 30px;
-		  			line-height: 36px;
+		  			width: 36px;
+		  			height: 36px;
+		  			line-height: 42px;
 		  			margin-right: 14px;
 		  		}
 		  		#miyazu-sns-button_twitter {

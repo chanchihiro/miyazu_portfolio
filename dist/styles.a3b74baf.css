@@ -469,7 +469,8 @@ body #miyazu-wrapper #miyazu-nav {
 			-webkit-transform: initial;
 			        transform: initial;
 			top: 0;
-			left: 0
+			left: 0;
+			position: fixed
   	}
 		}
 
@@ -477,7 +478,7 @@ body #miyazu-wrapper #miyazu-nav {
 
 body #miyazu-wrapper #miyazu-nav ul { 
   				margin: 0 auto;
-  				margin-top: 2rem
+  				margin-top: 4rem
   		}
   			}
 
@@ -1139,7 +1140,9 @@ body #miyazu-sns {
   		display: flex;
   		right: 50%;
   		-webkit-transform: translate(50%, -50%);
-  		        transform: translate(50%, -50%)
+  		        transform: translate(50%, -50%);
+  		top: 48%;
+  		position: fixed
   }
   	}
 
@@ -1166,9 +1169,9 @@ body #miyazu-sns ul li a {
 @media screen and (min-width: 0) and (max-width: 768px) {
 
 body #miyazu-sns ul li a {
-		  			width: 30px;
-		  			height: 30px;
-		  			line-height: 36px;
+		  			width: 36px;
+		  			height: 36px;
+		  			line-height: 42px;
 		  			margin-right: 14px
 		  	}
 		  		}

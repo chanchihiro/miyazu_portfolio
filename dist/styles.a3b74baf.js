@@ -77,7 +77,7 @@ parcelRequire = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({25:[function(require,module,exports) {
+})({31:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -138,19 +138,13 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":25}],17:[function(require,module,exports) {
+},{"./bundle-url":31}],18:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":16}],18:[function(require,module,exports) {
-
-        var reloadCSS = require('_css_loader');
-        module.hot.dispose(reloadCSS);
-        module.hot.accept(reloadCSS);
-      
-},{"_css_loader":16}],21:[function(require,module,exports) {
+},{"_css_loader":16}],19:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
@@ -162,13 +156,19 @@ module.exports = reloadCSS;
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./../../images/ajax-loader.gif":26,"./../../js/lib/slick/fonts/slick.eot":27,"./../../js/lib/slick/fonts/slick.woff":28,"./../../js/lib/slick/fonts/slick.ttf":29,"./../../js/lib/slick/fonts/slick.svg":30,"_css_loader":16}],3:[function(require,module,exports) {
+},{"_css_loader":16}],23:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./reset.css":17,"./variables.css":18,"./lib/slick.css":21,"./lib/slick-theme.css":22,"./../images/arrow2.png":19,"./../images/arrow.png":20,"./../images/slide1.png":9,"_css_loader":16}],155:[function(require,module,exports) {
+},{"./../../images/ajax-loader.gif":25,"./../../js/lib/slick/fonts/slick.eot":27,"./../../js/lib/slick/fonts/slick.woff":28,"./../../js/lib/slick/fonts/slick.ttf":29,"./../../js/lib/slick/fonts/slick.svg":30,"_css_loader":16}],3:[function(require,module,exports) {
+
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+},{"./reset.css":18,"./variables.css":19,"./lib/slick.css":22,"./lib/slick-theme.css":23,"./../images/arrow2.png":20,"./../images/arrow.png":21,"./../images/slide1.png":12,"_css_loader":16}],57:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -198,7 +198,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '54047' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '60152' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -337,7 +337,7 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}],156:[function(require,module,exports) {
+},{}],58:[function(require,module,exports) {
 var getBundleURL = require('./bundle-url').getBundleURL;
 
 function loadBundlesLazy(bundles) {
@@ -418,7 +418,7 @@ LazyPromise.prototype.catch = function (onError) {
   if (this.promise === null) this.promise = new Promise(this.executor);
   return this.promise.catch(onError);
 };
-},{"./bundle-url":25}],0:[function(require,module,exports) {
-var b=require(156);b.load([["ajax-loader.5951cde3.gif",26],["slick.29d4c64f.eot",27],["slick.526dd301.woff",28],["slick.efb232c4.ttf",29],["slick.fcb6734e.svg",30],["arrow2.e54e5543.png",19],["arrow.2b8fda1f.png",20],["slide1.66ad2b13.png",9]]);
-},{}]},{},[155,0])
+},{"./bundle-url":31}],0:[function(require,module,exports) {
+var b=require(58);b.load([["ajax-loader.5951cde3.gif",25],["slick.29d4c64f.eot",27],["slick.526dd301.woff",28],["slick.efb232c4.ttf",29],["slick.fcb6734e.svg",30],["arrow2.e54e5543.png",20],["arrow.2b8fda1f.png",21],["slide1.66ad2b13.png",12]]);
+},{}]},{},[57,0])
 //# sourceMappingURL=/styles.a3b74baf.map
