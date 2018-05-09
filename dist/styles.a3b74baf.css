@@ -428,7 +428,7 @@ body #miyazu-wrapper {
   	position: fixed;
   	border: var(--border);
   	width: 94%;
-  	height: 94vh;
+  	height: 92vh;
 	top: 50%;
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
@@ -485,7 +485,7 @@ body #miyazu-wrapper #miyazu-nav ul {
 body #miyazu-wrapper #miyazu-nav ul li {
   				display: inline;
   				background-color: #ffffff;
-  				font-size: 1.1rem;
+  				font-size: 0.8rem;
   			}
 
 @media screen and (min-width: 0) and (max-width: 768px) {
@@ -1150,9 +1150,12 @@ body #miyazu-sns ul {
   		margin: 0 auto;
   	}
 
+@media screen and (min-width: 0) and (max-width: 768px) {
+
 body #miyazu-sns ul li {
-	  		float: left;
+	  			float: left
 	  	}
+	  		}
 
 body #miyazu-sns ul li a {
 		  		display: block;

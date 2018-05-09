@@ -46,7 +46,7 @@ body {
   	position: fixed;
   	border: var(--border);
   	width: 94%;
-  	height: 94vh;
+  	height: 92vh;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -83,7 +83,7 @@ body {
   			li {
   				display: inline;
   				background-color: #ffffff;
-  				font-size: 1.1rem;
+  				font-size: 0.8rem;
   				@media screen and $min-width {
   					display: block;
   					text-align: center;
@@ -535,7 +535,9 @@ body {
   	ul {
   		margin: 0 auto;
 	  	li {
-	  		float: left;
+	  		@media screen and $min-width {
+	  			float: left;
+	  		}
 		  	a {
 		  		display: block;
 		  		text-align: center;

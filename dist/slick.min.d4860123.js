@@ -264,7 +264,7 @@ process.chdir = function (dir) {
 process.umask = function () {
     return 0;
 };
-},{}],26:[function(require,module,exports) {
+},{}],31:[function(require,module,exports) {
 var global = (1,eval)("this");
 var process = require("process");
 /*!
@@ -11083,7 +11083,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     }return o;
   };
 });
-},{"jquery":26}],33:[function(require,module,exports) {
+},{"jquery":31}],33:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -11113,7 +11113,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '60152' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '50919' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
