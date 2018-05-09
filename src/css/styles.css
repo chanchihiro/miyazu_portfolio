@@ -67,18 +67,21 @@ body {
 		z-index: 100;
 		display: flex;
 		@media screen and $min-width {
-			background-color: rgba(255,255,255,1);
 			width: 100%;
-			height: 200%;
+			height: 230%;
 			transform: initial;
 			top: 0;
 			left: 0;
 			position: fixed;
+			 background-color: #fff;
 		}
   		ul {
   			@media screen and $min-width { 
-  				margin: 0 auto;
-  				margin-top: 4rem;
+  				margin: 4rem auto 0;
+  				z-index: 400;
+  				width: 86%;
+  				height: 60vh;
+  				background-color: #fff;
   			}
   			li {
   				display: inline;

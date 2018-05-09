@@ -463,22 +463,25 @@ body #miyazu-wrapper #miyazu-nav {
 @media screen and (min-width: 0) and (max-width: 768px) {
 
 body #miyazu-wrapper #miyazu-nav {
-			background-color: rgba(255,255,255,1);
 			width: 100%;
-			height: 200%;
+			height: 230%;
 			-webkit-transform: initial;
 			        transform: initial;
 			top: 0;
 			left: 0;
-			position: fixed
+			position: fixed;
+			 background-color: #fff
   	}
 		}
 
 @media screen and (min-width: 0) and (max-width: 768px) {
 
 body #miyazu-wrapper #miyazu-nav ul { 
-  				margin: 0 auto;
-  				margin-top: 4rem
+  				margin: 4rem auto 0;
+  				z-index: 400;
+  				width: 86%;
+  				height: 60vh;
+  				background-color: #fff
   		}
   			}
 
