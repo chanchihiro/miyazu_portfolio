@@ -383,6 +383,15 @@ button{background-color: transparent;border: none;cursor: pointer;outline: none;
 
 /* responsive  適宜変更 */
 
+/* js用 */
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+.dn {
+		display: none !important
+}
+	}
+
 /* main */
 
 body {
@@ -470,7 +479,7 @@ body #miyazu-wrapper #miyazu-nav {
 			top: 0;
 			left: 0;
 			position: fixed;
-			 background-color: #fff
+			background-color: #fff
   	}
 		}
 
@@ -495,7 +504,8 @@ body #miyazu-wrapper #miyazu-nav ul li {
 
 body #miyazu-wrapper #miyazu-nav ul li {
   					display: block;
-  					text-align: center
+  					text-align: center;
+  					margin-bottom: 0.4rem
   			}
   				}
 

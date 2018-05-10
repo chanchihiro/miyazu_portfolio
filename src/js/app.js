@@ -23,6 +23,13 @@ $(document).ready(function(){
   	$('#miyazu-modal-news').css('display','none');
   });
 
+  // menu
+  $('.miyazu-nav-hamburger').on('click',function(){
+  	console.log("こんちは");
+  	$('#miyazu-nav').toggleClass('dn');
+  	$('#miyazu-sns').toggleClass('dn');
+  });
+
   //// three.js
   let scene;
   let sphere;

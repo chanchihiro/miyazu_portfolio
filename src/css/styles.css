@@ -9,6 +9,13 @@ $min-width: (min-width: 0) and (max-width: 768px);
 $middle-width: (min-width: 0) and (max-width: 768px);
 $max-width: (min-width: 769px);
 
+/* js用 */
+.dn {
+	@media screen and $min-width {
+		display: none !important;
+	}
+}
+
 
 /* main */
 body {
@@ -73,7 +80,7 @@ body {
 			top: 0;
 			left: 0;
 			position: fixed;
-			 background-color: #fff;
+			background-color: #fff;
 		}
   		ul {
   			@media screen and $min-width { 
@@ -90,6 +97,7 @@ body {
   				@media screen and $min-width {
   					display: block;
   					text-align: center;
+  					margin-bottom: 0.4rem;
   				}
   				a {
   					padding: 0.2rem 2rem;
