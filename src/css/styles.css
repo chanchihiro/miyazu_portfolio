@@ -330,6 +330,16 @@ body {
   	#miyazu-paragraph-title {
   		font-family: var(--font-family-sub);
   		font-size: 1.8rem;
+		transform: translateY(15px);
+		position: relative;
+		opacity: 0;
+		transition: all 400ms ease-out;
+  		&.is-selected {
+  			transform: translateY(0px);
+  			transition-delay: 160ms;
+  			position: relative;
+  			opacity: 1;
+		}
   		@media screen and $min-width {
   			text-align: center;
   		}
@@ -339,6 +349,16 @@ body {
   		margin-top: 6px;
   		line-height: 1.7;
   		letter-spacing: 2px;
+		transform: translateY(15px);
+		position: relative;
+		opacity: 0;
+		transition: all 400ms ease-out;
+  		&.is-selected {
+  			transform: translateY(0px);
+  			transition-delay: 300ms;
+  			position: relative;
+  			opacity: 1;
+		}
   		@media screen and $min-width {
   			margin-left: 0;
   			width: 90%;
@@ -380,13 +400,43 @@ body {
   		}
   	}
   	#miyazu-news-content1 {
+  		transform: translateY(30px);
+  		position: relative;
+  		opacity: 0;
+  		transition: all 400ms ease-out;
   		overflow: hidden;
+  		&.is-selected {
+  			transform: translateY(0px);
+  			transition-delay: 300ms;
+  			position: relative;
+  			opacity: 1;
+		}
   	}
   	#miyazu-news-content2 {
+  		transform: translateY(30px);
+  		position: relative;
+  		opacity: 0;
+  		transition: all 400ms ease-out;
   		overflow: hidden;
+  		&.is-selected {
+  			transform: translateY(0px);
+  			transition-delay: 360ms;
+  			position: relative;
+  			opacity: 1;
+		}
   	}
   	#miyazu-news-content3 {
+  		transform: translateY(30px);
+  		position: relative;
+  		opacity: 0;
+  		transition: all 400ms ease-out;
   		overflow: hidden;
+  		&.is-selected {
+  			transform: translateY(0px);
+  			transition-delay: 420ms;
+  			position: relative;
+  			opacity: 1;
+		}
   	}
 	#miyazu-news-date {
 		font-family: 'Amiri', serif;
@@ -520,12 +570,22 @@ body {
   	box-sizing: border-box;
   	display: flex;
   	margin-top: 1.5%;
+	transform: translateY(30px);
+	position: relative;
+	opacity: 0;
+	transition: all 400ms ease-out;
   	@media screen and $min-width {
   		width: 87%;
   		flex-direction: column;
   		margin-top: 0;
   		padding-bottom: 2rem;
   	}
+	&.is-selected {
+		transform: translateY(0px);
+		transition-delay: 400ms;
+		position: relative;
+		opacity: 1;
+	}
   	#miyazu-works-big {
   		background-color: #fafafa;
   		width: 50%;

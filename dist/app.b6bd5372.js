@@ -41390,6 +41390,12 @@ $(document).ready(function () {
   $("#miyazu-profole-english").addClass('is-selected');
   $("#miyazu-profole-japan").addClass('is-selected');
   $("#miyazu-profile-image").addClass('is-selected');
+  $("#miyazu-paragraph-text").addClass('is-selected');
+  $("#miyazu-paragraph-title").addClass('is-selected');
+  $("#miyazu-works").addClass('is-selected');
+  $("#miyazu-news-content1").addClass('is-selected');
+  $("#miyazu-news-content2").addClass('is-selected');
+  $("#miyazu-news-content3").addClass('is-selected');
 
   //// three.js
   var scene = void 0;
@@ -41423,7 +41429,7 @@ $(document).ready(function () {
   document.getElementById('stage').appendChild(renderer.domElement);
   renderer.render(scene, camera);
 }); /* import file */
-},{"three":43}],139:[function(require,module,exports) {
+},{"three":43}],176:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -41592,5 +41598,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[139,23])
+},{}]},{},[176,23])
 //# sourceMappingURL=/app.b6bd5372.map

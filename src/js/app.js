@@ -36,6 +36,12 @@ $(document).ready(function(){
   $("#miyazu-profole-english").addClass('is-selected');
   $("#miyazu-profole-japan").addClass('is-selected');
   $("#miyazu-profile-image").addClass('is-selected');
+  $("#miyazu-paragraph-text").addClass('is-selected');
+  $("#miyazu-paragraph-title").addClass('is-selected');
+  $("#miyazu-works").addClass('is-selected');
+  $("#miyazu-news-content1").addClass('is-selected');
+  $("#miyazu-news-content2").addClass('is-selected');
+  $("#miyazu-news-content3").addClass('is-selected');
 
   //// three.js
   let scene;
