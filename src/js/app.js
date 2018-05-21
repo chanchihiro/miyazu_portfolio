@@ -28,6 +28,9 @@ $(document).ready(function(){
   	console.log("こんちは");
   	$('#miyazu-nav').toggleClass('dn');
   	$('#miyazu-sns').toggleClass('dn');
+  	$('.line1').toggleClass('op1');
+  	$('.line2').toggleClass('op');
+  	$('.line3').toggleClass('op3');
   });
 
   // 文字が出る

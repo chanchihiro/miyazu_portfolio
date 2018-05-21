@@ -392,6 +392,25 @@ button{background-color: transparent;border: none;cursor: pointer;outline: none;
 }
 	}
 
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+.op {
+		opacity: 0 !important
+}
+	}
+
+.op1 {
+	-webkit-transform: rotate(45deg) !important;
+	        transform: rotate(45deg) !important;
+	top: 5px !important;
+}
+
+.op3 {
+	-webkit-transform: rotate(-45deg) !important;
+	        transform: rotate(-45deg) !important;
+	bottom: 5px !important;
+}
+
 /* main */
 
 body {
@@ -430,6 +449,20 @@ body .miyazu-nav-hamburger {
 			width: 18px;
 			margin: 0 auto 4px;
 			background-color: #222222;
+			-webkit-transition: all 500ms ease-out;
+			transition: all 500ms ease-out;
+		}
+		body .miyazu-nav-hamburger .line1 {
+			position: relative;
+			-webkit-transform: rotate(0deg);
+			        transform: rotate(0deg);
+			top: 0px;
+		}
+		body .miyazu-nav-hamburger .line3 {
+			position: relative;
+			-webkit-transform: rotate(-0deg);
+			        transform: rotate(-0deg);
+			bottom: 0px;
 		}
   	}
 
