@@ -30,6 +30,13 @@ $(document).ready(function(){
   	$('#miyazu-sns').toggleClass('dn');
   });
 
+  // 文字が出る
+  $(".miyazu-profile-name1").addClass('is-selected');
+  $(".miyazu-profile-name2").addClass('is-selected');
+  $("#miyazu-profole-english").addClass('is-selected');
+  $("#miyazu-profole-japan").addClass('is-selected');
+  $("#miyazu-profile-image").addClass('is-selected');
+
   //// three.js
   let scene;
   let sphere;
