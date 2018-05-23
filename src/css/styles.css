@@ -126,8 +126,7 @@ body {
 				transition: all 400ms ease-out;
 		  		&.is-selected {
 		  			transform: translateY(0px);
-		  			transition-delay: 300ms;
-		  			position: relative;
+		  			transition-delay: 500ms;
 		  			opacity: 1;
 				}
   			}
@@ -707,7 +706,7 @@ body {
 			transition: all 400ms ease-out;
 	  		&.is-selected {
 	  			transform: translateY(0px);
-	  			transition-delay: 500ms;
+	  			transition-delay: 640ms;
 	  			position: relative;
 	  			opacity: 1;
 			}

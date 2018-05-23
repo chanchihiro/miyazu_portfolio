@@ -35,9 +35,9 @@ $(document).ready(function(){
   	$(".snss").toggleClass('is-selected');
   	$("#miyazu-nav").toggleClass('is-selected');
   	if($("#miyazu-nav").hasClass('is-selected')){
-  		$("#miyazu-nav").fadeIn(10);
+  		$("#miyazu-nav").fadeIn(20);
   	}else {
-  		$("#miyazu-nav").fadeOut(10);
+  		$("#miyazu-nav").fadeOut(20);
   	}
   });
 

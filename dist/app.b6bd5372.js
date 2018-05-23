@@ -41389,9 +41389,9 @@ $(document).ready(function () {
     $(".snss").toggleClass('is-selected');
     $("#miyazu-nav").toggleClass('is-selected');
     if ($("#miyazu-nav").hasClass('is-selected')) {
-      $("#miyazu-nav").fadeIn(10);
+      $("#miyazu-nav").fadeIn(20);
     } else {
-      $("#miyazu-nav").fadeOut(10);
+      $("#miyazu-nav").fadeOut(20);
     }
   });
 
@@ -41440,7 +41440,7 @@ $(document).ready(function () {
   document.getElementById('stage').appendChild(renderer.domElement);
   renderer.render(scene, camera);
 }); /* import file */
-},{"three":28}],79:[function(require,module,exports) {
+},{"three":28}],80:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -41609,5 +41609,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[79,4])
+},{}]},{},[80,4])
 //# sourceMappingURL=/app.b6bd5372.map
