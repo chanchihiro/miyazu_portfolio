@@ -34,6 +34,11 @@ $(document).ready(function(){
   	$('.menus').toggleClass('is-selected');
   	$(".snss").toggleClass('is-selected');
   	$("#miyazu-nav").toggleClass('is-selected');
+  	if($("#miyazu-nav").hasClass('is-selected')){
+  		$("#miyazu-nav").fadeIn();
+  	}else {
+  		$("#miyazu-nav").fadeOut();
+  	}
   });
 
   // 文字が出る
