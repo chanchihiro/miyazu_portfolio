@@ -512,8 +512,14 @@ body #miyazu-wrapper #miyazu-nav {
 			top: 0;
 			left: 0;
 			position: fixed;
-			background-color: #fff
+			background-color: #fff;
+			opacity: 0;
+			-webkit-transition: all 400ms ease-out;
+			transition: all 400ms ease-out
   	}
+	  		body #miyazu-wrapper #miyazu-nav.is-selected {
+	  			opacity: 1;
+			}
 		}
 
 @media screen and (min-width: 0) and (max-width: 768px) {
@@ -523,13 +529,25 @@ body #miyazu-wrapper #miyazu-nav ul {
   				z-index: 400;
   				width: 86%;
   				height: 60vh;
-  				background-color: #fff
+				-webkit-transform: translateY(15px);
+				        transform: translateY(15px);
+				position: relative;
+				opacity: 0;
+				-webkit-transition: all 400ms ease-out;
+				transition: all 400ms ease-out
   		}
+		  		body #miyazu-wrapper #miyazu-nav ul.is-selected {
+		  			-webkit-transform: translateY(0px);
+		  			        transform: translateY(0px);
+		  			-webkit-transition-delay: 300ms;
+		  			        transition-delay: 300ms;
+		  			position: relative;
+		  			opacity: 1;
+				}
   			}
 
 body #miyazu-wrapper #miyazu-nav ul li {
   				display: inline;
-  				background-color: #ffffff;
   				font-size: 0.8rem;
   			}
 
@@ -548,7 +566,6 @@ body #miyazu-wrapper #miyazu-nav ul li a {
   					display: inline-block;
   					font-family: 'Amiri', serif;
   					color: #4b4b4b;
-  					background-color: #fff;
   					letter-spacing: 2px;
   				}
 
@@ -1102,7 +1119,7 @@ body #miyazu-profile {
 
 body #miyazu-profile img {
   		width: 90%;
-  		max-width: 520px;
+  		max-width: 640px;
   		border: var(--border);
   		margin-bottom: 1.6rem;
   		-webkit-transform: translateY(30px);
@@ -1355,6 +1372,26 @@ body #miyazu-sns {
 body #miyazu-sns ul {
   		margin: 0 auto;
   	}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body #miyazu-sns ul {
+			-webkit-transform: translateY(15px);
+			        transform: translateY(15px);
+			position: relative;
+			opacity: 0;
+			-webkit-transition: all 400ms ease-out;
+			transition: all 400ms ease-out
+  	}
+	  		body #miyazu-sns ul.is-selected {
+	  			-webkit-transform: translateY(0px);
+	  			        transform: translateY(0px);
+	  			-webkit-transition-delay: 500ms;
+	  			        transition-delay: 500ms;
+	  			position: relative;
+	  			opacity: 1;
+			}
+		}
 
 @media screen and (min-width: 0) and (max-width: 768px) {
 

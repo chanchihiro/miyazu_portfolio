@@ -26,11 +26,14 @@ $(document).ready(function(){
   // menu
   $('.miyazu-nav-hamburger').on('click',function(){
   	console.log("こんちは");
-  	$('#miyazu-nav').toggleClass('dn');
-  	$('#miyazu-sns').toggleClass('dn');
+  	// $('#miyazu-nav').toggleClass('dn');
+  	// $('#miyazu-sns').toggleClass('dn');
   	$('.line1').toggleClass('op1');
   	$('.line2').toggleClass('op');
   	$('.line3').toggleClass('op3');
+  	$('.menus').toggleClass('is-selected');
+  	$(".snss").toggleClass('is-selected');
+  	$("#miyazu-nav").toggleClass('is-selected');
   });
 
   // 文字が出る

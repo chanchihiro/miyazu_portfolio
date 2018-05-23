@@ -41380,11 +41380,14 @@ $(document).ready(function () {
   // menu
   $('.miyazu-nav-hamburger').on('click', function () {
     console.log("こんちは");
-    $('#miyazu-nav').toggleClass('dn');
-    $('#miyazu-sns').toggleClass('dn');
+    // $('#miyazu-nav').toggleClass('dn');
+    // $('#miyazu-sns').toggleClass('dn');
     $('.line1').toggleClass('op1');
     $('.line2').toggleClass('op');
     $('.line3').toggleClass('op3');
+    $('.menus').toggleClass('is-selected');
+    $(".snss").toggleClass('is-selected');
+    $("#miyazu-nav").toggleClass('is-selected');
   });
 
   // 文字が出る
@@ -41432,7 +41435,7 @@ $(document).ready(function () {
   document.getElementById('stage').appendChild(renderer.domElement);
   renderer.render(scene, camera);
 }); /* import file */
-},{"three":24}],70:[function(require,module,exports) {
+},{"three":24}],105:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -41462,7 +41465,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '53106' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '59239' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -41601,5 +41604,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[70,4])
+},{}]},{},[105,4])
 //# sourceMappingURL=/app.b6bd5372.map
