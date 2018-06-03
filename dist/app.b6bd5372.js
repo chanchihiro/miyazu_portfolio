@@ -50435,18 +50435,18 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 $(document).ready(function () {
 
   //// svg animation
-  var time = 100;
-  var timetext = 1400;
+  var time = 1000;
+  var timetext = 3000;
   var trigger = false;
 
   var tl = new TimelineLite({ delay: 0.5 }),
       firstBg = document.querySelectorAll('.text__first-bg'),
       secBg = document.querySelectorAll('.text__second-bg'),
       word = document.querySelectorAll('.text__word');
-  tl.to(firstBg, 0.2, { scaleX: 1 }).to(word, 0.1, { opacity: 1 }, "-=0.1").to(firstBg, 0.2, { scaleX: 0 });
+  tl.to(firstBg, 0.2, { scaleX: 1 }).to(secBg, 0.2, { scaleX: 1 }).to(word, 0.1, { opacity: 1 }, "-=0.1").to(firstBg, 0.2, { scaleX: 0 }).to(secBg, 0.2, { scaleX: 0 });
   trigger = true;
 
-  var duration = 500,
+  var duration = 200,
       epsilon = time / 60 / duration / 4,
       firstCustomMinaAnimation = bezier(.42, .03, .77, .63, epsilon),
       secondCustomMinaAnimation = bezier(.27, .5, .6, .99, epsilon),
@@ -50627,7 +50627,7 @@ $(document).ready(function () {
   document.getElementById('stage').appendChild(renderer.domElement);
   renderer.render(scene, camera);
 });
-},{"three":24,"snapsvg":114}],157:[function(require,module,exports) {
+},{"three":24,"snapsvg":114}],202:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -50796,5 +50796,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[157,3])
+},{}]},{},[202,3])
 //# sourceMappingURL=/app.b6bd5372.map

@@ -7,8 +7,8 @@ import Snap from 'snapsvg';
 $(document).ready(function(){
 
   //// svg animation
-  let time = 100;
-  let timetext = 1400;
+  let time = 1000;
+  let timetext = 3000;
   let trigger = false;
 
   let tl = new TimelineLite({delay: 0.5}),
@@ -17,11 +17,13 @@ $(document).ready(function(){
     word  = document.querySelectorAll('.text__word');
   	tl
 	  .to(firstBg, 0.2, {scaleX:1})
+	  .to(secBg, 0.2, {scaleX:1})
 	  .to(word, 0.1, {opacity:1}, "-=0.1")
 	  .to(firstBg, 0.2, {scaleX:0})
+	  .to(secBg, 0.2, {scaleX:0});
 	trigger = true;
 
-  let duration = 500,
+  let duration = 200,
     epsilon = (time / 60 / duration) / 4,
 	firstCustomMinaAnimation = bezier(.42,.03,.77,.63, epsilon),
 	secondCustomMinaAnimation = bezier(.27,.5,.6,.99, epsilon),
