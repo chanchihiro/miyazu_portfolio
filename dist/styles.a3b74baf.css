@@ -503,6 +503,10 @@ body{font-family:'Montserrat',sans-serif;font-size:14px;color:#37474f}
 
 .form span{font-size:11px}
 
+.text__word {
+	background-color: #000000;
+}
+
 /* js用 */
 
 @media screen and (min-width: 0) and (max-width: 768px) {

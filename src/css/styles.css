@@ -13,7 +13,9 @@ $max-width: (min-width: 769px);
 
 
 .container-fluid{max-width:1400px}.icon{display:inline-block;width:2em;height:2em;font-size:30px}body,html{height:100%}body{font-family:'Montserrat',sans-serif;font-size:14px;color:#37474f}.header{padding:30px 65px;position:absolute;top:0;left:0;width:100%;height:113px;z-index:10;mix-blend-mode:exclusion;-webkit-filter:invert(65%);filter:invert(65%)}.header__logo{width:50px}.header__logo img{width:100%}.header__menu{position:absolute;top:30px;right:65px;width:50px;cursor:pointer}.text__first,.text__second{position:relative}.text__word{opacity:0}.text__first-bg,.text__second-bg{display:block;width:100%;height:100%;position:absolute;left:0;top:0;z-index:100;-webkit-transform-origin:left;-ms-transform-origin:left;transform-origin:left;-webkit-transform:scaleX(0);-ms-transform:scaleX(0);transform:scaleX(0)}.text__first-bg{background-color:#5fbff9}.text__second-bg{background-color:#f06543}.textCenter{padding:80px 0}.textCenter p{font-size:36px;text-align:center}.cards{padding:60px 0}.card{height:468px;width:100%;background-repeat:no-repeat;-webkit-background-size:cover;background-size:cover;background-position:50% 50%;float:left}.card:nth-child(10n+1){width:66.67%}.card:nth-child(10n+2),.card:nth-child(10n+3){width:33.33%}.card:nth-child(10n+4){width:66.67%}.card:nth-child(10n+5),.card:nth-child(10n+6),.card:nth-child(10n+7){width:33.33%}.card:nth-child(10n+8){width:66.67%;height:936px}.card:nth-child(10n+10),.card:nth-child(10n+9){width:33.33%}.form{position:absolute;top:0;left:0;z-index:99999;padding:20px;background:#f9f9f9;opacity:.8}.form div{margin-bottom:10px}.form input,.form label{display:block;font-size:13px}.form input{padding-left:10px;width:250px}.form span{font-size:11px}
-
+.text__word {
+	background-color: #000000;
+}
 
 
 /* js用 */
