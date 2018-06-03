@@ -26,6 +26,7 @@
     "postcss-nested": "^3.0.0",
     "postcss-scss": "^1.0.4",
     "postcss-simple-vars": "^4.1.0",
+    "snapsvg": "^0.5.1",
     "three": "^0.92.0"
   }
 }
