@@ -11,13 +11,18 @@ html(lang="ja")
     div#miyazu-wrapper
      include _header.pug
      include _nav.pug
-     div.miyazu-slides
+     div.miyazu-slides.slider-wrapper
       div.miyazu-slides-slide
-       p.slider__title.text
-        span.text__first
-         span.text__word ヅカメン
-         span.text__first-bg(style="background-color: #3A7E94")
-       img(src="../images/slide1.png")
+       svg(viewBox="0 0 1400 800")
+        defs
+         clipPath(id="image-1")
+          path(id="changing-path-1" d="M1400,800H0V0h1399c0.6,0,1,0.4,1,1V800z")
+        div.slider__info
+         p.slider__title.text
+          span.text__first
+           span.text__word ヅカメン
+           span.text__first-bg(style="background-color: #3A7E94")
+        img(src="../images/slide1.png" clip-path="url(#image-1)")
       div.miyazu-slides-slide
        img(src="../images/slide1.png")
       div.miyazu-slides-slide

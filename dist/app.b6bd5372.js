@@ -50439,7 +50439,7 @@ $(document).ready(function () {
   var timetext = 1400;
   var trigger = false;
 
-  var tl = new TimelineLite({ delay: 1 }),
+  var tl = new TimelineLite({ delay: 0.5 }),
       firstBg = document.querySelectorAll('.text__first-bg'),
       secBg = document.querySelectorAll('.text__second-bg'),
       word = document.querySelectorAll('.text__word');
@@ -50456,6 +50456,48 @@ $(document).ready(function () {
   $('.slider-wrapper').each(function () {
     initSlider($(this));
   });
+
+  function initSlider(sliderWrapper) {
+    //cache jQuery objects
+    var slider = sliderWrapper.find('.slider'),
+        sliderNav = sliderWrapper.find('.slider-navigation'),
+        sliderControls = sliderWrapper.find('.slider-controls').find('li');
+    //store path 'd' attribute values	
+    var pathArray = [];
+    pathArray[0] = slider.data('step1');
+    pathArray[1] = slider.data('step4');
+    pathArray[2] = slider.data('step2');
+    pathArray[3] = slider.data('step5');
+    pathArray[4] = slider.data('step3');
+    pathArray[5] = slider.data('step6');
+
+    slider.on('swipeleft', function (event) {
+      if (trigger) {
+        trigger = false;
+        setTimeout(function () {
+          prevSlide(slider, sliderControls, pathArray);
+        }, time);
+
+        setTimeout(function () {
+          tl.restart();
+          trigger = true;
+        }, timetext);
+      }
+    });
+    slider.on('swiperight', function (event) {
+      if (trigger) {
+        trigger = false;
+        setTimeout(function () {
+          nextSlide(slider, sliderControls, pathArray);
+        }, time);
+
+        setTimeout(function () {
+          tl.restart();
+          trigger = true;
+        }, timetext);
+      }
+    });
+  }
 
   function bezier(x1, y1, x2, y2, epsilon) {
     //https://github.com/arian/cubic-bezier
@@ -50585,7 +50627,7 @@ $(document).ready(function () {
   document.getElementById('stage').appendChild(renderer.domElement);
   renderer.render(scene, camera);
 });
-},{"three":24,"snapsvg":114}],144:[function(require,module,exports) {
+},{"three":24,"snapsvg":114}],157:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -50754,5 +50796,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[144,3])
+},{}]},{},[157,3])
 //# sourceMappingURL=/app.b6bd5372.map

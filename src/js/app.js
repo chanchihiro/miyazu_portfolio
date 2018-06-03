@@ -11,7 +11,7 @@ $(document).ready(function(){
   let timetext = 1400;
   let trigger = false;
 
-  let tl = new TimelineLite({delay: 1}),
+  let tl = new TimelineLite({delay: 0.5}),
     firstBg = document.querySelectorAll('.text__first-bg'),
     secBg = document.querySelectorAll('.text__second-bg'),
     word  = document.querySelectorAll('.text__word');
@@ -31,6 +31,48 @@ $(document).ready(function(){
   $('.slider-wrapper').each(function(){
     initSlider($(this));
   });
+
+  function initSlider(sliderWrapper) {
+  	//cache jQuery objects
+	var slider = sliderWrapper.find('.slider'),
+		sliderNav = sliderWrapper.find('.slider-navigation'),
+		sliderControls = sliderWrapper.find('.slider-controls').find('li');
+	//store path 'd' attribute values	
+	var pathArray = [];
+	pathArray[0] = slider.data('step1');
+	pathArray[1] = slider.data('step4');
+	pathArray[2] = slider.data('step2');
+	pathArray[3] = slider.data('step5');
+	pathArray[4] = slider.data('step3');
+	pathArray[5] = slider.data('step6');
+
+	slider.on('swipeleft', function(event){
+		if(trigger) {
+			trigger = false;
+			setTimeout(function() {
+				prevSlide(slider, sliderControls, pathArray);
+			},time);
+	
+			setTimeout(function() {
+				tl.restart()
+				trigger = true;
+			},timetext);
+		}	
+	});
+	slider.on('swiperight', function(event){
+		if(trigger) {
+			trigger = false;
+			setTimeout(function() {
+				nextSlide(slider, sliderControls, pathArray);
+			},time);
+	
+			setTimeout(function() {
+				tl.restart()
+				trigger = true;
+			},timetext);
+		}		
+	});
+  }
 
   function bezier(x1, y1, x2, y2, epsilon){
     //https://github.com/arian/cubic-bezier
