@@ -50437,11 +50437,70 @@ $(document).ready(function () {
   //// svg animation
   var time = 100;
   var timetext = 1400;
-  var teigger = false;
-  var tl = new TimelineLite(),
+  var trigger = false;
+
+  var tl = new TimelineLite({ delay: 1 }),
       firstBg = document.querySelectorAll('.text__first-bg'),
       secBg = document.querySelectorAll('.text__second-bg'),
       word = document.querySelectorAll('.text__word');
+  tl.to(firstBg, 0.2, { scaleX: 1 }).to(word, 0.1, { opacity: 1 }, "-=0.1").to(firstBg, 0.2, { scaleX: 0 });
+  trigger = true;
+
+  var duration = 500,
+      epsilon = time / 60 / duration / 4,
+      firstCustomMinaAnimation = bezier(.42, .03, .77, .63, epsilon),
+      secondCustomMinaAnimation = bezier(.27, .5, .6, .99, epsilon),
+      animating = false;
+
+  //initialize the slider
+  $('.slider-wrapper').each(function () {
+    initSlider($(this));
+  });
+
+  function bezier(x1, y1, x2, y2, epsilon) {
+    //https://github.com/arian/cubic-bezier
+    var curveX = function curveX(t) {
+      var v = 1 - t;
+      return 3 * v * v * t * x1 + 3 * v * t * t * x2 + t * t * t;
+    };
+    var curveY = function curveY(t) {
+      var v = 1 - t;
+      return 3 * v * v * t * y1 + 3 * v * t * t * y2 + t * t * t;
+    };
+    var derivativeCurveX = function derivativeCurveX(t) {
+      var v = 1 - t;
+      return 3 * (2 * (t - 1) * t + v * v) * x1 + 3 * (-t * t * t + 2 * v * t) * x2;
+    };
+    return function (t) {
+      var x = t,
+          t0,
+          t1,
+          t2,
+          x2,
+          d2,
+          i;
+      // First try a few iterations of Newton's method -- normally very fast.
+      for (t2 = x, i = 0; i < 8; i++) {
+        x2 = curveX(t2) - x;
+        if (Math.abs(x2) < epsilon) return curveY(t2);
+        d2 = derivativeCurveX(t2);
+        if (Math.abs(d2) < 1e-6) break;
+        t2 = t2 - x2 / d2;
+      }
+      t0 = 0, t1 = 1, t2 = x;
+      if (t2 < t0) return curveY(t0);
+      if (t2 > t1) return curveY(t1);
+      // Fallback to the bisection method for reliability.
+      while (t0 < t1) {
+        x2 = curveX(t2);
+        if (Math.abs(x2 - x) < epsilon) return curveY(t2);
+        if (x > x2) t0 = t2;else t1 = t2;
+        t2 = (t1 - t0) * .5 + t0;
+      }
+      // Failure
+      return curveY(t2);
+    };
+  };
 
   //// slick.js
   $('.miyazu-slides').slick({
@@ -50526,7 +50585,7 @@ $(document).ready(function () {
   document.getElementById('stage').appendChild(renderer.domElement);
   renderer.render(scene, camera);
 });
-},{"three":24,"snapsvg":114}],131:[function(require,module,exports) {
+},{"three":24,"snapsvg":114}],144:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -50695,5 +50754,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[131,3])
+},{}]},{},[144,3])
 //# sourceMappingURL=/app.b6bd5372.map
