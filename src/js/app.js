@@ -5,20 +5,14 @@ import Snap from 'snapsvg';
 /* main */
 $(document).ready(function(){
 
-
-  /// svg animation
-  var $circle = Snap( '.circle1' );
-  function anim () {
-    // cx の値を 0 にリセット
-    $circle.attr( { cx: 0 } );
-    // cx の値を 3 秒かけて 500 にアニメーションする
-    $circle.animate( {
-      cx: 500
-    }, 3000, function () {
-      anim();
-    });
-  };
-  anim();
+  //// svg animation
+  let time = 100;
+  let timetext = 1400;
+  let teigger = false;
+  let tl = new TimelineLite(),
+    firstBg = document.querySelectorAll('.text__first-bg'),
+    secBg = document.querySelectorAll('.text__second-bg'),
+    word  = document.querySelectorAll('.text__word');
 
   //// slick.js
   $('.miyazu-slides').slick({

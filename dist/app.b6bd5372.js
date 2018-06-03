@@ -50434,19 +50434,14 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 /* import file */
 $(document).ready(function () {
 
-  /// svg animation
-  var $circle = (0, _snapsvg2.default)('.circle1');
-  function anim() {
-    // cx の値を 0 にリセット
-    $circle.attr({ cx: 0 });
-    // cx の値を 3 秒かけて 500 にアニメーションする
-    $circle.animate({
-      cx: 500
-    }, 3000, function () {
-      anim();
-    });
-  };
-  anim();
+  //// svg animation
+  var time = 100;
+  var timetext = 1400;
+  var teigger = false;
+  var tl = new TimelineLite(),
+      firstBg = document.querySelectorAll('.text__first-bg'),
+      secBg = document.querySelectorAll('.text__second-bg'),
+      word = document.querySelectorAll('.text__word');
 
   //// slick.js
   $('.miyazu-slides').slick({
@@ -50531,7 +50526,7 @@ $(document).ready(function () {
   document.getElementById('stage').appendChild(renderer.domElement);
   renderer.render(scene, camera);
 });
-},{"three":24,"snapsvg":114}],120:[function(require,module,exports) {
+},{"three":24,"snapsvg":114}],131:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -50700,5 +50695,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[120,3])
+},{}]},{},[131,3])
 //# sourceMappingURL=/app.b6bd5372.map
