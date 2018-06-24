@@ -77,7 +77,7 @@ parcelRequire = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({25:[function(require,module,exports) {
+})({45:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -41346,7 +41346,7 @@ exports.Projector = Projector;
 exports.CanvasRenderer = CanvasRenderer;
 exports.SceneUtils = SceneUtils;
 exports.LensFlare = LensFlare;
-},{}],34:[function(require,module,exports) {
+},{}],53:[function(require,module,exports) {
 // Copyright (c) 2017 Adobe Systems Incorporated. All rights reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -41783,7 +41783,7 @@ exports.LensFlare = LensFlare;
     typeof module != "undefined" && module.exports ? module.exports = eve : typeof define === "function" && define.amd ? define("eve", [], function () { return eve; }) : glob.eve = eve;
 })(typeof window != "undefined" ? window : this);
 
-},{}],26:[function(require,module,exports) {
+},{}],44:[function(require,module,exports) {
 var global = (1,eval)("this");
 // Snap.svg 0.5.0
 //
@@ -50415,7 +50415,7 @@ Snap.plugin(function (Snap, Element, Paper, glob) {
 
 return Snap;
 }));
-},{"eve":34}],4:[function(require,module,exports) {
+},{"eve":53}],23:[function(require,module,exports) {
 'use strict';
 
 var _three = require('three');
@@ -50805,7 +50805,7 @@ $(document).ready(function () {
  animate(time => simulation.render(time));
  */
 });
-},{"three":25,"snapsvg":26}],87:[function(require,module,exports) {
+},{"three":45,"snapsvg":44}],55:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -50835,7 +50835,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '55062' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '53182' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -50974,5 +50974,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[87,4])
+},{}]},{},[55,23])
 //# sourceMappingURL=/app.b6bd5372.map
