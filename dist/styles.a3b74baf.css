@@ -626,7 +626,23 @@ body .miyazu-wrapper .miyazu-slides {
 		-webkit-box-align: center;
 		    -ms-flex-align: center;
 		        align-items: center;
+		-webkit-transform: translateY(30px);
+		        transform: translateY(30px);
+  		position: relative;
+  		opacity: 0;
+  		-webkit-transition: all 400ms ease-out;
+  		transition: all 400ms ease-out;
+  		overflow: hidden;
   	}
+
+body .miyazu-wrapper .miyazu-slides.is-selected {
+  			-webkit-transform: translateY(0px);
+  			        transform: translateY(0px);
+  			-webkit-transition-delay: 100ms;
+  			        transition-delay: 100ms;
+  			position: relative;
+  			opacity: 1;
+		}
 
 @media screen and (min-width: 0) and (max-width: 768px) {
 
@@ -777,19 +793,74 @@ body .miyazu-wrapper #miyazu-banners {
   	}
   		}
 
-body .miyazu-wrapper #miyazu-banners #miyazu-banner a {
+body .miyazu-wrapper #miyazu-banners .miyazu-banner {
+			-webkit-transform: translateY(30px);
+			        transform: translateY(30px);
+	  		position: relative;
+	  		opacity: 0;
+	  		-webkit-transition: all 400ms ease-out;
+	  		transition: all 400ms ease-out;
+	  		overflow: hidden;
+  		}
+
+body .miyazu-wrapper #miyazu-banners .miyazu-banner.is-selected {
+	  			-webkit-transform: translateY(0px);
+	  			        transform: translateY(0px);
+	  			-webkit-transition-delay: 300ms;
+	  			        transition-delay: 300ms;
+	  			position: relative;
+	  			opacity: 1;
+			}
+
+body .miyazu-wrapper #miyazu-banners .miyazu-banner a {
   				margin-bottom: 0.7rem;
   				display: block;
   			}
 
-body .miyazu-wrapper #miyazu-banners #miyazu-banner a img {
+body .miyazu-wrapper #miyazu-banners .miyazu-banner a img {
   					width: 320px;
   					border: var(--border);
   				}
 
 @media screen and (min-width: 0) and (max-width: 768px) {
 
-body .miyazu-wrapper #miyazu-banners #miyazu-banner a img {
+body .miyazu-wrapper #miyazu-banners .miyazu-banner a img {
+  						width: 100%
+  				}
+  					}
+
+body .miyazu-wrapper #miyazu-banners .miyazu-banner2 {
+			-webkit-transform: translateY(30px);
+			        transform: translateY(30px);
+	  		position: relative;
+	  		opacity: 0;
+	  		-webkit-transition: all 400ms ease-out;
+	  		transition: all 400ms ease-out;
+	  		overflow: hidden;
+  		}
+
+body .miyazu-wrapper #miyazu-banners .miyazu-banner2.is-selected {
+	  			-webkit-transform: translateY(0px);
+	  			        transform: translateY(0px);
+	  			-webkit-transition-delay: 420ms;
+	  			        transition-delay: 420ms;
+	  			position: relative;
+	  			opacity: 1;
+			}
+
+body .miyazu-wrapper #miyazu-banners .miyazu-banner2 a {
+  				margin-bottom: 0.7rem;
+  				display: block;
+  			}
+
+body .miyazu-wrapper #miyazu-banners .miyazu-banner2 a img {
+  					width: 320px;
+  					border: var(--border);
+  				}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body .miyazu-wrapper #miyazu-banners .miyazu-banner2 a img {
   						width: 100%
   				}
   					}
@@ -803,7 +874,21 @@ body .miyazu-wrapper #miyazu-modal-news {
   		color: #4b4b4b;
   		background-color: #ffffff;
   		overflow: hidden;
+		-webkit-transform: translateY(30px);
+		        transform: translateY(30px);
+  		opacity: 0;
+  		-webkit-transition: all 460ms ease-out;
+  		transition: all 460ms ease-out;
+  		overflow: hidden;
   	}
+
+body .miyazu-wrapper #miyazu-modal-news.is-selected {
+  			-webkit-transform: translateY(0px);
+  			        transform: translateY(0px);
+  			-webkit-transition-delay: 420ms;
+  			        transition-delay: 420ms;
+  			opacity: 1;
+		}
 
 @media screen and (min-width: 0) and (max-width: 768px) {
 

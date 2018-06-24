@@ -77,7 +77,7 @@ parcelRequire = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({45:[function(require,module,exports) {
+})({40:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -41346,7 +41346,7 @@ exports.Projector = Projector;
 exports.CanvasRenderer = CanvasRenderer;
 exports.SceneUtils = SceneUtils;
 exports.LensFlare = LensFlare;
-},{}],53:[function(require,module,exports) {
+},{}],48:[function(require,module,exports) {
 // Copyright (c) 2017 Adobe Systems Incorporated. All rights reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -41783,7 +41783,7 @@ exports.LensFlare = LensFlare;
     typeof module != "undefined" && module.exports ? module.exports = eve : typeof define === "function" && define.amd ? define("eve", [], function () { return eve; }) : glob.eve = eve;
 })(typeof window != "undefined" ? window : this);
 
-},{}],44:[function(require,module,exports) {
+},{}],39:[function(require,module,exports) {
 var global = (1,eval)("this");
 // Snap.svg 0.5.0
 //
@@ -50415,7 +50415,7 @@ Snap.plugin(function (Snap, Element, Paper, glob) {
 
 return Snap;
 }));
-},{"eve":53}],23:[function(require,module,exports) {
+},{"eve":48}],4:[function(require,module,exports) {
 'use strict';
 
 var _three = require('three');
@@ -50583,6 +50583,10 @@ $(document).ready(function () {
 	});
 
 	// 文字が出る
+	$(".miyazu-banner").addClass('is-selected');
+	$(".miyazu-banner2").addClass('is-selected');
+	$(".miyazu-slides").addClass('is-selected');
+	$("#miyazu-modal-news").addClass('is-selected');
 	$(".miyazu-profile-name1").addClass('is-selected');
 	$(".miyazu-profile-name2").addClass('is-selected');
 	$("#miyazu-profole-english").addClass('is-selected');
@@ -50805,7 +50809,7 @@ $(document).ready(function () {
  animate(time => simulation.render(time));
  */
 });
-},{"three":45,"snapsvg":44}],55:[function(require,module,exports) {
+},{"three":40,"snapsvg":39}],108:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -50835,7 +50839,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '53182' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '60185' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -50974,5 +50978,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[55,23])
+},{}]},{},[108,4])
 //# sourceMappingURL=/app.b6bd5372.map

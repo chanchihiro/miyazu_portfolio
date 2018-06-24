@@ -181,6 +181,17 @@ body {
   		display: flex;
 		justify-content: center;
 		align-items: center;
+		transform: translateY(30px);
+  		position: relative;
+  		opacity: 0;
+  		transition: all 400ms ease-out;
+  		overflow: hidden;
+  		&.is-selected {
+  			transform: translateY(0px);
+  			transition-delay: 100ms;
+  			position: relative;
+  			opacity: 1;
+		}
 		@media screen and $min-width {
 			display: block;
 			width: auto;
@@ -279,7 +290,42 @@ body {
   			width: 87%;
   			margin: 0 auto;
   		}
-  		#miyazu-banner {
+  		.miyazu-banner {
+			transform: translateY(30px);
+	  		position: relative;
+	  		opacity: 0;
+	  		transition: all 400ms ease-out;
+	  		overflow: hidden;
+	  		&.is-selected {
+	  			transform: translateY(0px);
+	  			transition-delay: 300ms;
+	  			position: relative;
+	  			opacity: 1;
+			}
+  			a {
+  				margin-bottom: 0.7rem;
+  				display: block;
+  				img {
+  					width: 320px;
+  					border: var(--border);
+  					@media screen and $min-width {
+  						width: 100%;
+  					}
+  				}
+  			}
+  		}
+  		.miyazu-banner2 {
+			transform: translateY(30px);
+	  		position: relative;
+	  		opacity: 0;
+	  		transition: all 400ms ease-out;
+	  		overflow: hidden;
+	  		&.is-selected {
+	  			transform: translateY(0px);
+	  			transition-delay: 420ms;
+	  			position: relative;
+	  			opacity: 1;
+			}
   			a {
   				margin-bottom: 0.7rem;
   				display: block;
@@ -302,6 +348,15 @@ body {
   		color: #4b4b4b;
   		background-color: #ffffff;
   		overflow: hidden;
+		transform: translateY(30px);
+  		opacity: 0;
+  		transition: all 460ms ease-out;
+  		overflow: hidden;
+  		&.is-selected {
+  			transform: translateY(0px);
+  			transition-delay: 420ms;
+  			opacity: 1;
+		}
   		@media screen and $min-width {
   			width: 87%;
   			position: static;

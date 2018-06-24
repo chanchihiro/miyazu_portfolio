@@ -156,6 +156,10 @@ $(document).ready(function(){
   });
 
   // 文字が出る
+  $(".miyazu-banner").addClass('is-selected');
+  $(".miyazu-banner2").addClass('is-selected');
+  $(".miyazu-slides").addClass('is-selected');
+  $("#miyazu-modal-news").addClass('is-selected');
   $(".miyazu-profile-name1").addClass('is-selected');
   $(".miyazu-profile-name2").addClass('is-selected');
   $("#miyazu-profole-english").addClass('is-selected');
