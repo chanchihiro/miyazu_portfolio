@@ -640,7 +640,7 @@ body {
   		cursor: pointer;
   		box-sizing: border-box;
   		border: var(--border);
-  		background-image: url(../images/slide1.png);
+  		background-image: url(../images/slide1.jpg);
   		background-position: center;
   		background-size: cover;
   		@media screen and $min-width {
@@ -651,6 +651,7 @@ body {
   	}
   	.miyazu-works-smalls {
   		display: flex;
+  		display: none;
   		flex-basis: 50%;
   		flex-wrap: wrap;
   		height: 46vh;

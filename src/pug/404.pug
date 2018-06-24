@@ -1,0 +1,20 @@
+doctype html
+include _config.pug
+html(lang="ja")
+  head
+    include _head.pug
+  body
+    div.miyazu-nav-hamburger
+     div.line.line1
+     div.line.line2
+     div.line.line3
+    div.miyazu-wrapper
+     include _header.pug
+     include _nav.pug
+     div#miyazu-works
+      p お探しのページはございません。
+      p URLをお確かめの上、再度ご覧ください。
+      p miyazu-daizo.com
+    footer#miyazu-footer
+     p#miyazu-footer-text ©︎MIYAZU DAIZO All Rights Reserved.
+    include _scripts.pug
