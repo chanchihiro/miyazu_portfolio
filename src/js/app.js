@@ -134,12 +134,11 @@ $(document).ready(function(){
 
   //// banners
   $('#miyazu-modal-button_close').on('click',function(){
-  	$('#miyazu-modal-news').css('display','none');
+  	$('#miyazu-modal-news').removeClass('is-selected');
   });
 
   // menu
   $('.miyazu-nav-hamburger').on('click',function(){
-  	console.log("こんちは");
   	// $('#miyazu-nav').toggleClass('dn');
   	// $('#miyazu-sns').toggleClass('dn');
   	$('.line1').toggleClass('op1');

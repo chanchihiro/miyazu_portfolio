@@ -50561,12 +50561,11 @@ $(document).ready(function () {
 
 	//// banners
 	$('#miyazu-modal-button_close').on('click', function () {
-		$('#miyazu-modal-news').css('display', 'none');
+		$('#miyazu-modal-news').removeClass('is-selected');
 	});
 
 	// menu
 	$('.miyazu-nav-hamburger').on('click', function () {
-		console.log("こんちは");
 		// $('#miyazu-nav').toggleClass('dn');
 		// $('#miyazu-sns').toggleClass('dn');
 		$('.line1').toggleClass('op1');
@@ -50809,7 +50808,7 @@ $(document).ready(function () {
  animate(time => simulation.render(time));
  */
 });
-},{"three":40,"snapsvg":39}],108:[function(require,module,exports) {
+},{"three":40,"snapsvg":39}],112:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -50978,5 +50977,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[108,4])
+},{}]},{},[112,4])
 //# sourceMappingURL=/app.b6bd5372.map
