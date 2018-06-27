@@ -812,6 +812,14 @@ body .miyazu-wrapper #miyazu-banners .miyazu-banner.is-selected {
 	  			opacity: 1;
 			}
 
+body .miyazu-wrapper #miyazu-banners .miyazu-banner.is-selected:hover {
+		  			-webkit-transition-delay:0ms;
+		  			        transition-delay:0ms;
+		  			-webkit-transition: all 100ms ease-out;
+		  			transition: all 100ms ease-out;
+		  			opacity:0.5;
+		  		}
+
 body .miyazu-wrapper #miyazu-banners .miyazu-banner a {
   				margin-bottom: 0.7rem;
   				display: block;

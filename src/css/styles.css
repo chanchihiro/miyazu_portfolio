@@ -301,6 +301,11 @@ body {
 	  			transition-delay: 300ms;
 	  			position: relative;
 	  			opacity: 1;
+		  		&:hover {
+		  			transition-delay:0ms;
+		  			transition: all 100ms ease-out;
+		  			opacity:0.5;
+		  		}
 			}
   			a {
   				margin-bottom: 0.7rem;
