@@ -1466,6 +1466,7 @@ body #miyazu-footer #miyazu-footer-text {
 
 body #miyazu-sns {
   	position: absolute;
+  	z-index: 100;
   	top: 40%;
   	right: -23px;
   }

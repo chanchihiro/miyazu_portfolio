@@ -760,6 +760,7 @@ body {
   }
   #miyazu-sns {
   	position: absolute;
+  	z-index: 100;
   	top: 40%;
   	right: -23px;
   	@media screen and $min-width {
