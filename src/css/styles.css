@@ -238,11 +238,17 @@ body {
 				border: var(--border);
 				margin: 3rem 0.4rem 0rem;
   			}
+  			.slide_link {
+  				width: 70%;
+  				height: 100%;
+  				display: block;
+  			}
   			img {
   				width: 64%;
    				min-width: 700px;
   				margin: 0 auto;
   				border: var(--border);
+  				cursor: pointer;
   				@media screen and $min-width {
   					min-width: initial;
   					width: auto;
@@ -250,10 +256,6 @@ body {
   					vertical-align:middle;
   					border: none;
   				}
-  			}
-  			.slide_link {
-  				width: 70%;
-  				display: block;
   			}
   		}
   		#miyazu-slides-button_arrow_left {
