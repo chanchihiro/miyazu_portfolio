@@ -206,6 +206,9 @@ body {
 			left: 140px;
 			background-image: url(../images/arrow2.png);
 			background-size: cover;
+			&:hover {
+				opacity: 0.6;
+			}
 			@media screen and $min-width {
 				display: none !important;
 			}
@@ -218,6 +221,9 @@ body {
 			height: 22px;
 			background-image: url(../images/arrow.png);
 			background-size: cover;
+			&:hover {
+				opacity: 0.6;
+			}
 			@media screen and $min-width {
 				display: none !important;
 			}
@@ -303,12 +309,12 @@ body {
 	  			transition-delay: 300ms;
 	  			position: relative;
 	  			opacity: 1;
-		  		&:hover {
-		  			transition-delay:0ms;
-		  			transition: all 100ms ease-out;
-		  			opacity:0.5;
-		  		}
 			}
+	  		&:hover {
+	  			transition-delay:0ms;
+	  			transition: all 100ms ease-out;
+	  			opacity:0.5;
+	  		}
   			a {
   				margin-bottom: 0.7rem;
   				display: block;
@@ -333,6 +339,11 @@ body {
 	  			position: relative;
 	  			opacity: 1;
 			}
+	  		&:hover {
+	  			transition-delay:0ms;
+	  			transition: all 100ms ease-out;
+	  			opacity:0.5;
+	  		}
   			a {
   				margin-bottom: 0.7rem;
   				display: block;
@@ -721,6 +732,30 @@ body {
   			display: block;
   		}
   	}
+  	#miyazu-works-big2 {
+  		background-color: #fafafa;
+  		width: 50%;
+  		height: 44vh;
+  		margin-right: 2%;
+  		flex-basis: 50%;
+  		overflow: hidden;
+  		cursor: pointer;
+  		box-sizing: border-box;
+  		border: var(--border);
+  		background-image: url(../images/slide2.jpg);
+  		background-position: center;
+  		background-size: cover;
+  		@media screen and $min-width {
+  			flex-basis: 100%;
+  			width: 100%;
+  			margin-bottom: 1.6rem;
+  		}
+  		.works_big_1 {
+  			width: 100%;
+  			height: 100%;
+  			display: block;
+  		}
+  	}
   	.miyazu-works-smalls {
   		display: flex;
   		display: none;
@@ -801,6 +836,9 @@ body {
 		  		border-radius: 50%;
 		  		background-color: #ffffff;
 		  		margin-bottom: 0.9rem;
+		  		&:hover {
+		  			opacity: 0.6;
+		  		}
 		  		@media screen and $min-width {
 		  			width: 36px;
 		  			height: 36px;
