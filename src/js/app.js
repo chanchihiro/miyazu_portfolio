@@ -26,8 +26,8 @@ $(function(){
     $("#fakeLoader").fakeLoader({
       timeToHide: 1200,
       zIndex: "999",
-      spinner: "spinner2",
-      bgColor: "#b8b8b8",
+      spinner: "spinner1",
+      bgColor: "#dcdcdc",
       //imagePath: ""
     });
   });
