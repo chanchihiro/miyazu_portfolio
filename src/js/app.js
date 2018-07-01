@@ -26,7 +26,7 @@ $(function(){
     $("#fakeLoader").fakeLoader({
       zIndex: "999",
       spinner: "spinner2",
-      bgColor: "#30B298",
+      bgColor: "#f2f2f1",
       //imagePath: ""
     });
   });

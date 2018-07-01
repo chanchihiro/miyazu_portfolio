@@ -50585,7 +50585,7 @@ $(function () {
 		$("#fakeLoader").fakeLoader({
 			zIndex: "999",
 			spinner: "spinner2",
-			bgColor: "#30B298"
+			bgColor: "#f2f2f1"
 			//imagePath: ""
 		});
 	});
@@ -50965,7 +50965,7 @@ $(function () {
  animate(time => simulation.render(time));
  */
 }); /* import file */
-},{"three":30,"snapsvg":29,"fakeloader":103}],111:[function(require,module,exports) {
+},{"three":30,"snapsvg":29,"fakeloader":103}],112:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -51134,5 +51134,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[111,5])
+},{}]},{},[112,5])
 //# sourceMappingURL=/app.b6bd5372.map
