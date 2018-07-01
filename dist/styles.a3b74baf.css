@@ -926,8 +926,8 @@ body .miyazu-wrapper #miyazu-nav ul {
 		  		body .miyazu-wrapper #miyazu-nav ul.is-selected {
 		  			-webkit-transform: translateY(0px);
 		  			        transform: translateY(0px);
-		  			-webkit-transition-delay: 500ms;
-		  			        transition-delay: 500ms;
+		  			-webkit-transition-delay: 1700ms;
+		  			        transition-delay: 1700ms;
 		  			opacity: 1;
 				}
   			}
@@ -1026,8 +1026,8 @@ body .miyazu-wrapper .miyazu-slides {
 body .miyazu-wrapper .miyazu-slides.is-selected {
   			-webkit-transform: translateY(0px);
   			        transform: translateY(0px);
-  			-webkit-transition-delay: 100ms;
-  			        transition-delay: 100ms;
+  			-webkit-transition-delay: 1300ms;
+  			        transition-delay: 1300ms;
   			position: relative;
   			opacity: 1;
 		}
@@ -1206,8 +1206,8 @@ body .miyazu-wrapper #miyazu-banners .miyazu-banner {
 body .miyazu-wrapper #miyazu-banners .miyazu-banner.is-selected {
 	  			-webkit-transform: translateY(0px);
 	  			        transform: translateY(0px);
-	  			-webkit-transition-delay: 300ms;
-	  			        transition-delay: 300ms;
+	  			-webkit-transition-delay: 1500ms;
+	  			        transition-delay: 1500ms;
 	  			position: relative;
 	  			opacity: 1;
 			}
@@ -1250,8 +1250,8 @@ body .miyazu-wrapper #miyazu-banners .miyazu-banner2 {
 body .miyazu-wrapper #miyazu-banners .miyazu-banner2.is-selected {
 	  			-webkit-transform: translateY(0px);
 	  			        transform: translateY(0px);
-	  			-webkit-transition-delay: 420ms;
-	  			        transition-delay: 420ms;
+	  			-webkit-transition-delay: 1620ms;
+	  			        transition-delay: 1620ms;
 	  			position: relative;
 	  			opacity: 1;
 			}
@@ -1301,8 +1301,8 @@ body .miyazu-wrapper #miyazu-modal-news {
 body .miyazu-wrapper #miyazu-modal-news.is-selected {
   			-webkit-transform: translateY(0px);
   			        transform: translateY(0px);
-  			-webkit-transition-delay: 420ms;
-  			        transition-delay: 420ms;
+  			-webkit-transition-delay: 1620ms;
+  			        transition-delay: 1620ms;
   			opacity: 1;
 		}
 
@@ -1427,8 +1427,8 @@ body #miyazu-paragraph #miyazu-paragraph-title {
 body #miyazu-paragraph #miyazu-paragraph-title.is-selected {
   			-webkit-transform: translateY(0px);
   			        transform: translateY(0px);
-  			-webkit-transition-delay: 160ms;
-  			        transition-delay: 160ms;
+  			-webkit-transition-delay: 1360ms;
+  			        transition-delay: 1360ms;
   			position: relative;
   			opacity: 1;
 		}
@@ -1456,8 +1456,8 @@ body #miyazu-paragraph #miyazu-paragraph-text {
 body #miyazu-paragraph #miyazu-paragraph-text.is-selected {
   			-webkit-transform: translateY(0px);
   			        transform: translateY(0px);
-  			-webkit-transition-delay: 300ms;
-  			        transition-delay: 300ms;
+  			-webkit-transition-delay: 1500ms;
+  			        transition-delay: 1500ms;
   			position: relative;
   			opacity: 1;
 		}
@@ -1534,8 +1534,8 @@ body #miyazu-news #miyazu-news-content1 {
 body #miyazu-news #miyazu-news-content1.is-selected {
   			-webkit-transform: translateY(0px);
   			        transform: translateY(0px);
-  			-webkit-transition-delay: 300ms;
-  			        transition-delay: 300ms;
+  			-webkit-transition-delay: 1500ms;
+  			        transition-delay: 1500ms;
   			position: relative;
   			opacity: 1;
 		}
@@ -1553,8 +1553,8 @@ body #miyazu-news #miyazu-news-content2 {
 body #miyazu-news #miyazu-news-content2.is-selected {
   			-webkit-transform: translateY(0px);
   			        transform: translateY(0px);
-  			-webkit-transition-delay: 360ms;
-  			        transition-delay: 360ms;
+  			-webkit-transition-delay: 1560ms;
+  			        transition-delay: 1560ms;
   			position: relative;
   			opacity: 1;
 		}
@@ -1572,8 +1572,8 @@ body #miyazu-news #miyazu-news-content3 {
 body #miyazu-news #miyazu-news-content3.is-selected {
   			-webkit-transform: translateY(0px);
   			        transform: translateY(0px);
-  			-webkit-transition-delay: 420ms;
-  			        transition-delay: 420ms;
+  			-webkit-transition-delay: 1620ms;
+  			        transition-delay: 1620ms;
   			position: relative;
   			opacity: 1;
 		}
@@ -1650,8 +1650,8 @@ body #miyazu-profile img {
 body #miyazu-profile img.is-selected {
   			-webkit-transform: translateY(0px);
   			        transform: translateY(0px);
-  			-webkit-transition-delay: 100ms;
-  			        transition-delay: 100ms;
+  			-webkit-transition-delay: 1300ms;
+  			        transition-delay: 1300ms;
   			position: relative;
   			opacity: 1;
 		}
@@ -1685,8 +1685,8 @@ body #miyazu-profile .miyazu-profile-text h2 {
 body #miyazu-profile .miyazu-profile-text .miyazu-profile-name1.is-selected {
 	  			-webkit-transform: translateY(0px);
 	  			        transform: translateY(0px);
-	  			-webkit-transition-delay: 400ms;
-	  			        transition-delay: 400ms;
+	  			-webkit-transition-delay: 1600ms;
+	  			        transition-delay: 1600ms;
 	  			position: relative;
 	  			opacity: 1;
   			}
@@ -1694,8 +1694,8 @@ body #miyazu-profile .miyazu-profile-text .miyazu-profile-name1.is-selected {
 body #miyazu-profile .miyazu-profile-text .miyazu-profile-name2.is-selected {
 	  			-webkit-transform: translateY(0px);
 	  			        transform: translateY(0px);
-	  			-webkit-transition-delay: 540ms;
-	  			        transition-delay: 540ms;
+	  			-webkit-transition-delay: 1740ms;
+	  			        transition-delay: 1740ms;
 	  			position: relative;
 	  			opacity: 1;
   			}
@@ -1728,8 +1728,8 @@ body #miyazu-profile .miyazu-profile-text #miyazu-profole-english {
 body #miyazu-profile .miyazu-profile-text #miyazu-profole-english.is-selected {
 	  			-webkit-transform: translateY(0px);
 	  			        transform: translateY(0px);
-	  			-webkit-transition-delay: 580ms;
-	  			        transition-delay: 580ms;
+	  			-webkit-transition-delay: 1780ms;
+	  			        transition-delay: 1780ms;
 	  			position: relative;
 	  			opacity: 1;
   			}
@@ -1741,8 +1741,8 @@ body #miyazu-profile .miyazu-profile-text #miyazu-profole-japan {
 body #miyazu-profile .miyazu-profile-text #miyazu-profole-japan.is-selected {
 	  			-webkit-transform: translateY(0px);
 	  			        transform: translateY(0px);
-	  			-webkit-transition-delay: 440ms;
-	  			        transition-delay: 440ms;
+	  			-webkit-transition-delay: 1640ms;
+	  			        transition-delay: 1640ms;
 	  			position: relative;
 	  			opacity: 1;
   			}
@@ -1781,8 +1781,8 @@ body #miyazu-works {
 body #miyazu-works.is-selected {
 		-webkit-transform: translateY(0px);
 		        transform: translateY(0px);
-		-webkit-transition-delay: 400ms;
-		        transition-delay: 400ms;
+		-webkit-transition-delay: 1600ms;
+		        transition-delay: 1600ms;
 		position: relative;
 		opacity: 1;
 	}
@@ -1952,8 +1952,8 @@ body #miyazu-sns ul {
 	  		body #miyazu-sns ul.is-selected {
 	  			-webkit-transform: translateY(0px);
 	  			        transform: translateY(0px);
-	  			-webkit-transition-delay: 640ms;
-	  			        transition-delay: 640ms;
+	  			-webkit-transition-delay: 1840ms;
+	  			        transition-delay: 1840ms;
 	  			position: relative;
 	  			opacity: 1;
 			}

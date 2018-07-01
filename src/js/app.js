@@ -24,9 +24,10 @@ $(function(){
   */
   $(document).ready(function(){
     $("#fakeLoader").fakeLoader({
+      timeToHide: 1200,
       zIndex: "999",
       spinner: "spinner2",
-      bgColor: "#f2f2f1",
+      bgColor: "#b8b8b8",
       //imagePath: ""
     });
   });
@@ -37,7 +38,7 @@ $(function(){
   let timetext = 3000;
   let trigger = false;
 
-  let tl = new TimelineLite({delay: 0.5}),
+  let tl = new TimelineLite({delay: 1.8}),
     firstBg = document.querySelectorAll('.text__first-bg'),
     secBg = document.querySelectorAll('.text__second-bg'),
     word  = document.querySelectorAll('.text__word');

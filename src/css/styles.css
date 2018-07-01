@@ -129,7 +129,7 @@ body {
 				transition: all 400ms ease-out;
 		  		&.is-selected {
 		  			transform: translateY(0px);
-		  			transition-delay: 500ms;
+		  			transition-delay: 1700ms;
 		  			opacity: 1;
 				}
   			}
@@ -196,7 +196,7 @@ body {
   		overflow: hidden;
   		&.is-selected {
   			transform: translateY(0px);
-  			transition-delay: 100ms;
+  			transition-delay: 1300ms;
   			position: relative;
   			opacity: 1;
 		}
@@ -316,7 +316,7 @@ body {
 	  		overflow: hidden;
 	  		&.is-selected {
 	  			transform: translateY(0px);
-	  			transition-delay: 300ms;
+	  			transition-delay: 1500ms;
 	  			position: relative;
 	  			opacity: 1;
 			}
@@ -345,7 +345,7 @@ body {
 	  		overflow: hidden;
 	  		&.is-selected {
 	  			transform: translateY(0px);
-	  			transition-delay: 420ms;
+	  			transition-delay: 1620ms;
 	  			position: relative;
 	  			opacity: 1;
 			}
@@ -382,7 +382,7 @@ body {
   		overflow: hidden;
   		&.is-selected {
   			transform: translateY(0px);
-  			transition-delay: 420ms;
+  			transition-delay: 1620ms;
   			opacity: 1;
 		}
   		@media screen and $min-width {
@@ -468,7 +468,7 @@ body {
 		transition: all 400ms ease-out;
   		&.is-selected {
   			transform: translateY(0px);
-  			transition-delay: 160ms;
+  			transition-delay: 1360ms;
   			position: relative;
   			opacity: 1;
 		}
@@ -487,7 +487,7 @@ body {
 		transition: all 400ms ease-out;
   		&.is-selected {
   			transform: translateY(0px);
-  			transition-delay: 300ms;
+  			transition-delay: 1500ms;
   			position: relative;
   			opacity: 1;
 		}
@@ -539,7 +539,7 @@ body {
   		overflow: hidden;
   		&.is-selected {
   			transform: translateY(0px);
-  			transition-delay: 300ms;
+  			transition-delay: 1500ms;
   			position: relative;
   			opacity: 1;
 		}
@@ -552,7 +552,7 @@ body {
   		overflow: hidden;
   		&.is-selected {
   			transform: translateY(0px);
-  			transition-delay: 360ms;
+  			transition-delay: 1560ms;
   			position: relative;
   			opacity: 1;
 		}
@@ -565,7 +565,7 @@ body {
   		overflow: hidden;
   		&.is-selected {
   			transform: translateY(0px);
-  			transition-delay: 420ms;
+  			transition-delay: 1620ms;
   			position: relative;
   			opacity: 1;
 		}
@@ -620,7 +620,7 @@ body {
   		transition: all 400ms ease-out;
   		&.is-selected {
   			transform: translateY(0px);
-  			transition-delay: 100ms;
+  			transition-delay: 1300ms;
   			position: relative;
   			opacity: 1;
 		}
@@ -645,7 +645,7 @@ body {
   		.miyazu-profile-name1 {
   			&.is-selected {
 	  			transform: translateY(0px);
-	  			transition-delay: 400ms;
+	  			transition-delay: 1600ms;
 	  			position: relative;
 	  			opacity: 1;
   			}	
@@ -653,7 +653,7 @@ body {
   		.miyazu-profile-name2 {
   			&.is-selected {
 	  			transform: translateY(0px);
-	  			transition-delay: 540ms;
+	  			transition-delay: 1740ms;
 	  			position: relative;
 	  			opacity: 1;
   			}	
@@ -679,7 +679,7 @@ body {
   			letter-spacing: 0px;
   			&.is-selected {
 	  			transform: translateY(0px);
-	  			transition-delay: 580ms;
+	  			transition-delay: 1780ms;
 	  			position: relative;
 	  			opacity: 1;
   			}
@@ -688,7 +688,7 @@ body {
   			margin-bottom: 1.4rem;
   			&.is-selected {
 	  			transform: translateY(0px);
-	  			transition-delay: 440ms;
+	  			transition-delay: 1640ms;
 	  			position: relative;
 	  			opacity: 1;
   			}
@@ -714,7 +714,7 @@ body {
   	}
 	&.is-selected {
 		transform: translateY(0px);
-		transition-delay: 400ms;
+		transition-delay: 1600ms;
 		position: relative;
 		opacity: 1;
 	}
@@ -833,7 +833,7 @@ body {
 			transition: all 400ms ease-out;
 	  		&.is-selected {
 	  			transform: translateY(0px);
-	  			transition-delay: 640ms;
+	  			transition-delay: 1840ms;
 	  			position: relative;
 	  			opacity: 1;
 			}

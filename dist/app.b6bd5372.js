@@ -77,7 +77,7 @@ parcelRequire = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({30:[function(require,module,exports) {
+})({29:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -41783,7 +41783,7 @@ exports.LensFlare = LensFlare;
     typeof module != "undefined" && module.exports ? module.exports = eve : typeof define === "function" && define.amd ? define("eve", [], function () { return eve; }) : glob.eve = eve;
 })(typeof window != "undefined" ? window : this);
 
-},{}],29:[function(require,module,exports) {
+},{}],31:[function(require,module,exports) {
 var global = (1,eval)("this");
 // Snap.svg 0.5.0
 //
@@ -50415,7 +50415,7 @@ Snap.plugin(function (Snap, Element, Paper, glob) {
 
 return Snap;
 }));
-},{"eve":38}],103:[function(require,module,exports) {
+},{"eve":38}],30:[function(require,module,exports) {
 /*--------------------------------------------------------------------
  *JAVASCRIPT "FakeLoader.js"
  *Version:    1.1.0 - 2014
@@ -50583,9 +50583,10 @@ $(function () {
  */
 	$(document).ready(function () {
 		$("#fakeLoader").fakeLoader({
+			timeToHide: 1200,
 			zIndex: "999",
 			spinner: "spinner2",
-			bgColor: "#f2f2f1"
+			bgColor: "#b8b8b8"
 			//imagePath: ""
 		});
 	});
@@ -50595,7 +50596,7 @@ $(function () {
 	var timetext = 3000;
 	var trigger = false;
 
-	var tl = new TimelineLite({ delay: 0.5 }),
+	var tl = new TimelineLite({ delay: 1.8 }),
 	    firstBg = document.querySelectorAll('.text__first-bg'),
 	    secBg = document.querySelectorAll('.text__second-bg'),
 	    word = document.querySelectorAll('.text__word');
@@ -50965,7 +50966,7 @@ $(function () {
  animate(time => simulation.render(time));
  */
 }); /* import file */
-},{"three":30,"snapsvg":29,"fakeloader":103}],112:[function(require,module,exports) {
+},{"three":29,"snapsvg":31,"fakeloader":30}],115:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -50995,7 +50996,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '54581' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '56736' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -51134,5 +51135,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[112,5])
+},{}]},{},[115,5])
 //# sourceMappingURL=/app.b6bd5372.map
