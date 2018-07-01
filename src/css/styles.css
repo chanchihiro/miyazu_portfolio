@@ -4,6 +4,7 @@
 @import "./lib/slick.css";
 @import "./lib/slick-theme.css";
 @import "./slider.css";
+@import "./fakeLoader.css";
 
 /* responsive  適宜変更 */
 $min-width: (min-width: 0) and (max-width: 768px);

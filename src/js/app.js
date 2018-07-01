@@ -4,8 +4,8 @@ import Snap from 'snapsvg';
 
 /* main */
 $(function(){
-
-  /* 読み込み
+  
+  /*
   var allImage = $("img");
   var allImageCount = allImage.length;
   var completeImageCount = 0;
@@ -21,6 +21,15 @@ $(function(){
     });
   }
   */
+
+  $("#fakeloader").fakeLoader({
+    timeToHide: 2000,
+    zIndex: "999",
+    spinner: "spinner2",
+    bgColor: "#30B298",
+    //imagePath: ""
+  });
+
 
   //// svg animation
   let time = 1000;

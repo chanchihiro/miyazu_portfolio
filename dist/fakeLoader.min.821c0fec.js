@@ -77,110 +77,43 @@ parcelRequire = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({36:[function(require,module,exports) {
-var bundleURL = null;
-function getBundleURLCached() {
-  if (!bundleURL) {
-    bundleURL = getBundleURL();
-  }
-
-  return bundleURL;
-}
-
-function getBundleURL() {
-  // Attempt to find the URL of the current script and use that as the base URL
-  try {
-    throw new Error();
-  } catch (err) {
-    var matches = ('' + err.stack).match(/(https?|file|ftp):\/\/[^)\n]+/g);
-    if (matches) {
-      return getBaseURL(matches[0]);
-    }
-  }
-
-  return '/';
-}
-
-function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp):\/\/.+)\/[^/]+$/, '$1') + '/';
-}
-
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-},{}],18:[function(require,module,exports) {
-var bundle = require('./bundle-url');
-
-function updateLink(link) {
-  var newLink = link.cloneNode();
-  newLink.onload = function () {
-    link.remove();
-  };
-  newLink.href = link.href.split('?')[0] + '?' + Date.now();
-  link.parentNode.insertBefore(newLink, link.nextSibling);
-}
-
-var cssTimeout = null;
-function reloadCSS() {
-  if (cssTimeout) {
-    return;
-  }
-
-  cssTimeout = setTimeout(function () {
-    var links = document.querySelectorAll('link[rel="stylesheet"]');
-    for (var i = 0; i < links.length; i++) {
-      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
-        updateLink(links[i]);
-      }
-    }
-
-    cssTimeout = null;
-  }, 50);
-}
-
-module.exports = reloadCSS;
-},{"./bundle-url":36}],20:[function(require,module,exports) {
-
-        var reloadCSS = require('_css_loader');
-        module.hot.dispose(reloadCSS);
-        module.hot.accept(reloadCSS);
-      
-},{"_css_loader":18}],21:[function(require,module,exports) {
-
-        var reloadCSS = require('_css_loader');
-        module.hot.dispose(reloadCSS);
-        module.hot.accept(reloadCSS);
-      
-},{"_css_loader":18}],27:[function(require,module,exports) {
-
-        var reloadCSS = require('_css_loader');
-        module.hot.dispose(reloadCSS);
-        module.hot.accept(reloadCSS);
-      
-},{"_css_loader":18}],28:[function(require,module,exports) {
-
-        var reloadCSS = require('_css_loader');
-        module.hot.dispose(reloadCSS);
-        module.hot.accept(reloadCSS);
-      
-},{"./../../images/ajax-loader.gif":31,"./../../js/lib/slick/fonts/slick.eot":32,"./../../js/lib/slick/fonts/slick.woff":33,"./../../js/lib/slick/fonts/slick.ttf":34,"./../../js/lib/slick/fonts/slick.svg":35,"_css_loader":18}],22:[function(require,module,exports) {
-
-        var reloadCSS = require('_css_loader');
-        module.hot.dispose(reloadCSS);
-        module.hot.accept(reloadCSS);
-      
-},{"_css_loader":18}],23:[function(require,module,exports) {
-
-        var reloadCSS = require('_css_loader');
-        module.hot.dispose(reloadCSS);
-        module.hot.accept(reloadCSS);
-      
-},{"_css_loader":18}],3:[function(require,module,exports) {
-
-        var reloadCSS = require('_css_loader');
-        module.hot.dispose(reloadCSS);
-        module.hot.accept(reloadCSS);
-      
-},{"./reset.css":20,"./variables.css":21,"./lib/slick.css":27,"./lib/slick-theme.css":28,"./slider.css":22,"./fakeLoader.css":23,"./../images/arrow2.png":24,"./../images/arrow.png":25,"./../images/slide1.jpg":13,"./../images/slide2.jpg":14,"./../images/slide1.png":26,"_css_loader":18}],40:[function(require,module,exports) {
+})({4:[function(require,module,exports) {
+!function (i) {
+  function s() {
+    var s = i(window).width(),
+        c = i(window).height(),
+        d = i(".fl").outerWidth(),
+        e = i(".fl").outerHeight();i(".fl").css({ position: "absolute", left: s / 2 - d / 2, top: c / 2 - e / 2 });
+  }i.fn.fakeLoader = function (c) {
+    var d = i.extend({ timeToHide: 1200, pos: "fixed", top: "0px", left: "0px", width: "100%", height: "100%", zIndex: "999", bgColor: "#2ecc71", spinner: "spinner7", imagePath: "" }, c),
+        e = '<div class="fl spinner1"><div class="double-bounce1"></div><div class="double-bounce2"></div></div>',
+        l = '<div class="fl spinner2"><div class="spinner-container container1"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div><div class="spinner-container container2"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div><div class="spinner-container container3"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div></div>',
+        n = '<div class="fl spinner3"><div class="dot1"></div><div class="dot2"></div></div>',
+        v = '<div class="fl spinner4"></div>',
+        a = '<div class="fl spinner5"><div class="cube1"></div><div class="cube2"></div></div>',
+        r = '<div class="fl spinner6"><div class="rect1"></div><div class="rect2"></div><div class="rect3"></div><div class="rect4"></div><div class="rect5"></div></div>',
+        t = '<div class="fl spinner7"><div class="circ1"></div><div class="circ2"></div><div class="circ3"></div><div class="circ4"></div></div>',
+        o = i(this),
+        h = { position: d.pos, width: d.width, height: d.height, top: d.top, left: d.left };return o.css(h), o.each(function () {
+      var i = d.spinner;switch (i) {case "spinner1":
+          o.html(e);break;case "spinner2":
+          o.html(l);break;case "spinner3":
+          o.html(n);break;case "spinner4":
+          o.html(v);break;case "spinner5":
+          o.html(a);break;case "spinner6":
+          o.html(r);break;case "spinner7":
+          o.html(t);break;default:
+          o.html(e);}"" != d.imagePath && o.html('<div class="fl"><img src="' + d.imagePath + '"></div>'), s();
+    }), setTimeout(function () {
+      i(o).fadeOut();
+    }, d.timeToHide), this.css({ backgroundColor: d.bgColor, zIndex: d.zIndex });
+  }, i(window).load(function () {
+    s(), i(window).resize(function () {
+      s();
+    });
+  });
+}(jQuery);
+},{}],40:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -349,88 +282,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}],42:[function(require,module,exports) {
-var getBundleURL = require('./bundle-url').getBundleURL;
-
-function loadBundlesLazy(bundles) {
-  if (!Array.isArray(bundles)) {
-    bundles = [bundles];
-  }
-
-  var id = bundles[bundles.length - 1];
-
-  try {
-    return Promise.resolve(require(id));
-  } catch (err) {
-    if (err.code === 'MODULE_NOT_FOUND') {
-      return new LazyPromise(function (resolve, reject) {
-        loadBundles(bundles).then(resolve, reject);
-      });
-    }
-
-    throw err;
-  }
-}
-
-function loadBundles(bundles) {
-  var id = bundles[bundles.length - 1];
-
-  return Promise.all(bundles.slice(0, -1).map(loadBundle)).then(function () {
-    return require(id);
-  });
-}
-
-var bundleLoaders = {};
-function registerBundleLoader(type, loader) {
-  bundleLoaders[type] = loader;
-}
-
-module.exports = exports = loadBundlesLazy;
-exports.load = loadBundles;
-exports.register = registerBundleLoader;
-
-var bundles = {};
-function loadBundle(bundle) {
-  var id;
-  if (Array.isArray(bundle)) {
-    id = bundle[1];
-    bundle = bundle[0];
-  }
-
-  if (bundles[bundle]) {
-    return bundles[bundle];
-  }
-
-  var type = (bundle.substring(bundle.lastIndexOf('.') + 1, bundle.length) || bundle).toLowerCase();
-  var bundleLoader = bundleLoaders[type];
-  if (bundleLoader) {
-    return bundles[bundle] = bundleLoader(getBundleURL() + bundle).then(function (resolved) {
-      if (resolved) {
-        module.bundle.modules[id] = [function (require, module) {
-          module.exports = resolved;
-        }, {}];
-      }
-
-      return resolved;
-    });
-  }
-}
-
-function LazyPromise(executor) {
-  this.executor = executor;
-  this.promise = null;
-}
-
-LazyPromise.prototype.then = function (onSuccess, onError) {
-  if (this.promise === null) this.promise = new Promise(this.executor);
-  return this.promise.then(onSuccess, onError);
-};
-
-LazyPromise.prototype.catch = function (onError) {
-  if (this.promise === null) this.promise = new Promise(this.executor);
-  return this.promise.catch(onError);
-};
-},{"./bundle-url":36}],0:[function(require,module,exports) {
-var b=require(42);b.load([["ajax-loader.5951cde3.gif",31],["slick.29d4c64f.eot",32],["slick.526dd301.woff",33],["slick.efb232c4.ttf",34],["slick.fcb6734e.svg",35],["arrow2.e54e5543.png",24],["arrow.2b8fda1f.png",25],["slide1.5ec8952e.jpg",13],["slide2.ff5d5d0e.jpg",14],["slide1.66ad2b13.png",26]]);
-},{}]},{},[40,0])
-//# sourceMappingURL=/styles.a3b74baf.map
+},{}]},{},[40,4])
+//# sourceMappingURL=/fakeLoader.min.821c0fec.map
