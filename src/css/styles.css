@@ -721,6 +721,9 @@ body {
   		background-image: url(../images/slide1.jpg);
   		background-position: center;
   		background-size: cover;
+  		&:hover {
+  			opacity: 0.8;
+  		}
   		@media screen and $min-width {
   			flex-basis: 100%;
   			width: 100%;
@@ -745,6 +748,9 @@ body {
   		background-image: url(../images/slide2.jpg);
   		background-position: center;
   		background-size: cover;
+  		&:hover {
+  			opacity: 0.8;
+  		}
   		@media screen and $min-width {
   			flex-basis: 100%;
   			width: 100%;

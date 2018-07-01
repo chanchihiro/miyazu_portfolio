@@ -77,7 +77,7 @@ parcelRequire = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({44:[function(require,module,exports) {
+})({27:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -41346,7 +41346,7 @@ exports.Projector = Projector;
 exports.CanvasRenderer = CanvasRenderer;
 exports.SceneUtils = SceneUtils;
 exports.LensFlare = LensFlare;
-},{}],53:[function(require,module,exports) {
+},{}],36:[function(require,module,exports) {
 // Copyright (c) 2017 Adobe Systems Incorporated. All rights reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -41783,7 +41783,7 @@ exports.LensFlare = LensFlare;
     typeof module != "undefined" && module.exports ? module.exports = eve : typeof define === "function" && define.amd ? define("eve", [], function () { return eve; }) : glob.eve = eve;
 })(typeof window != "undefined" ? window : this);
 
-},{}],45:[function(require,module,exports) {
+},{}],28:[function(require,module,exports) {
 var global = (1,eval)("this");
 // Snap.svg 0.5.0
 //
@@ -50415,7 +50415,7 @@ Snap.plugin(function (Snap, Element, Paper, glob) {
 
 return Snap;
 }));
-},{"eve":53}],22:[function(require,module,exports) {
+},{"eve":36}],4:[function(require,module,exports) {
 'use strict';
 
 var _three = require('three');
@@ -50432,7 +50432,23 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 /* main */
 /* import file */
-$(document).ready(function () {
+$(function () {
+
+	/* 読み込み
+ var allImage = $("img");
+ var allImageCount = allImage.length;
+ var completeImageCount = 0;
+  for(var i = 0; i < allImageCount; i++){
+   $(allImage[i]).bind("load", function(){
+     completeImageCount ++;
+     if (allImageCount == completeImageCount){
+       // 処理
+       alert('ready!');
+       $("body").css("display","block");
+     }
+   });
+ }
+ */
 
 	//// svg animation
 	var time = 1000;
@@ -50808,7 +50824,7 @@ $(document).ready(function () {
  animate(time => simulation.render(time));
  */
 });
-},{"three":44,"snapsvg":45}],94:[function(require,module,exports) {
+},{"three":27,"snapsvg":28}],118:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -50838,7 +50854,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '50514' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '58444' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -50977,5 +50993,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[94,22])
+},{}]},{},[118,4])
 //# sourceMappingURL=/app.b6bd5372.map

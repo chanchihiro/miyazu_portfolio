@@ -2,9 +2,25 @@
 import * as THREE from 'three';
 import Snap from 'snapsvg';
 
-
 /* main */
-$(document).ready(function(){
+$(function(){
+	
+  /* 読み込み
+  var allImage = $("img");
+  var allImageCount = allImage.length;
+  var completeImageCount = 0;
+
+  for(var i = 0; i < allImageCount; i++){
+    $(allImage[i]).bind("load", function(){
+      completeImageCount ++;
+      if (allImageCount == completeImageCount){
+        // 処理
+        alert('ready!');
+        $("body").css("display","block");
+      }
+    });
+  }
+  */
 
   //// svg animation
   let time = 1000;

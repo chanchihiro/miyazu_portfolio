@@ -1468,6 +1468,10 @@ body #miyazu-works #miyazu-works-big {
   		background-size: cover;
   	}
 
+body #miyazu-works #miyazu-works-big:hover {
+  			opacity: 0.8;
+  		}
+
 @media screen and (min-width: 0) and (max-width: 768px) {
 
 body #miyazu-works #miyazu-works-big {
@@ -1500,6 +1504,10 @@ body #miyazu-works #miyazu-works-big2 {
   		background-position: center;
   		background-size: cover;
   	}
+
+body #miyazu-works #miyazu-works-big2:hover {
+  			opacity: 0.8;
+  		}
 
 @media screen and (min-width: 0) and (max-width: 768px) {
 
