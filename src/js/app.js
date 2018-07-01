@@ -1,6 +1,7 @@
 /* import file */
 import * as THREE from 'three';
 import Snap from 'snapsvg';
+import * as fakeLoader from "fakeloader";
 
 /* main */
 $(function(){
@@ -21,13 +22,13 @@ $(function(){
     });
   }
   */
-
-  $("#fakeloader").fakeLoader({
-    timeToHide: 2000,
-    zIndex: "999",
-    spinner: "spinner2",
-    bgColor: "#30B298",
-    //imagePath: ""
+  $(document).ready(function(){
+    $("#fakeLoader").fakeLoader({
+      zIndex: "999",
+      spinner: "spinner2",
+      bgColor: "#30B298",
+      //imagePath: ""
+    });
   });
 
 
