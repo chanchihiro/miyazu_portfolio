@@ -531,8 +531,8 @@ body .miyazu-wrapper {
   	position: fixed;
   	border: var(--border);
   	width: 94%;
-  	height: 92vh;
-	top: 50%;
+  	height: 89vh;
+	top: 51%;
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
 	        transform: translate(-50%, -50%);
@@ -651,25 +651,30 @@ body .miyazu-wrapper #miyazu-nav ul li a img {
 	  				}
 	  					}
 
-body .miyazu-wrapper #miyazu-nav ul li:nth-child(3) {
+body .miyazu-wrapper #miyazu-nav ul .title_logo {
   				border: none;
   				padding: 0px 1rem;
-  				margin:  0px 1rem;
+  				margin:  0px 0.4rem;
   				background-color: rgba(255,255,255,0);
+  				position: relative;
+  				top: -4px;
   			}
 
 @media screen and (min-width: 0) and (max-width: 768px) {
 
-body .miyazu-wrapper #miyazu-nav ul li:nth-child(3) { 
+body .miyazu-wrapper #miyazu-nav ul .title_logo { 
   					display: none
   			}
   				}
 
-body .miyazu-wrapper #miyazu-nav ul li:nth-child(3) a {
-  					padding-top: 8px;
+body .miyazu-wrapper #miyazu-nav ul .title_logo a {
   					border: none;
   					background-color: rgba(255,255,255,0);
   				}
+
+body .miyazu-wrapper #miyazu-nav ul .title_logo a:hover {
+  						opacity: 0.6;
+  					}
 
 body .miyazu-wrapper .miyazu-slides {
   		width: 100%;

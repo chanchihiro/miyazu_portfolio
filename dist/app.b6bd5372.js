@@ -50601,6 +50601,7 @@ $(function () {
 	$(".miyazu-banner").addClass('is-selected');
 	$(".miyazu-banner2").addClass('is-selected');
 	$(".miyazu-slides").addClass('is-selected');
+	$(".title_logo").addClass('is-selected');
 	$("#miyazu-modal-news").addClass('is-selected');
 	$(".miyazu-profile-name1").addClass('is-selected');
 	$(".miyazu-profile-name2").addClass('is-selected');
@@ -50824,7 +50825,7 @@ $(function () {
  animate(time => simulation.render(time));
  */
 });
-},{"three":27,"snapsvg":28}],118:[function(require,module,exports) {
+},{"three":27,"snapsvg":28}],203:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -50993,5 +50994,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[118,4])
+},{}]},{},[203,4])
 //# sourceMappingURL=/app.b6bd5372.map

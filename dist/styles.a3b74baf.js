@@ -174,7 +174,7 @@ module.exports = reloadCSS;
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./reset.css":19,"./variables.css":20,"./lib/slick.css":25,"./lib/slick-theme.css":26,"./slider.css":21,"./../images/arrow2.png":22,"./../images/arrow.png":23,"./../images/slide1.jpg":12,"./../images/slide2.jpg":13,"./../images/slide1.png":24,"_css_loader":17}],156:[function(require,module,exports) {
+},{"./reset.css":19,"./variables.css":20,"./lib/slick.css":25,"./lib/slick-theme.css":26,"./slider.css":21,"./../images/arrow2.png":22,"./../images/arrow.png":23,"./../images/slide1.jpg":12,"./../images/slide2.jpg":13,"./../images/slide1.png":24,"_css_loader":17}],208:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -343,7 +343,7 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}],157:[function(require,module,exports) {
+},{}],209:[function(require,module,exports) {
 var getBundleURL = require('./bundle-url').getBundleURL;
 
 function loadBundlesLazy(bundles) {
@@ -425,6 +425,6 @@ LazyPromise.prototype.catch = function (onError) {
   return this.promise.catch(onError);
 };
 },{"./bundle-url":34}],0:[function(require,module,exports) {
-var b=require(157);b.load([["ajax-loader.5951cde3.gif",29],["slick.29d4c64f.eot",30],["slick.526dd301.woff",31],["slick.efb232c4.ttf",32],["slick.fcb6734e.svg",33],["arrow2.e54e5543.png",22],["arrow.2b8fda1f.png",23],["slide1.5ec8952e.jpg",12],["slide2.ff5d5d0e.jpg",13],["slide1.66ad2b13.png",24]]);
-},{}]},{},[156,0])
+var b=require(209);b.load([["ajax-loader.5951cde3.gif",29],["slick.29d4c64f.eot",30],["slick.526dd301.woff",31],["slick.efb232c4.ttf",32],["slick.fcb6734e.svg",33],["arrow2.e54e5543.png",22],["arrow.2b8fda1f.png",23],["slide1.5ec8952e.jpg",12],["slide2.ff5d5d0e.jpg",13],["slide1.66ad2b13.png",24]]);
+},{}]},{},[208,0])
 //# sourceMappingURL=/styles.a3b74baf.map

@@ -4,7 +4,7 @@ import Snap from 'snapsvg';
 
 /* main */
 $(function(){
-	
+
   /* 読み込み
   var allImage = $("img");
   var allImageCount = allImage.length;
@@ -174,6 +174,7 @@ $(function(){
   $(".miyazu-banner").addClass('is-selected');
   $(".miyazu-banner2").addClass('is-selected');
   $(".miyazu-slides").addClass('is-selected');
+  $(".title_logo").addClass('is-selected');
   $("#miyazu-modal-news").addClass('is-selected');
   $(".miyazu-profile-name1").addClass('is-selected');
   $(".miyazu-profile-name2").addClass('is-selected');
