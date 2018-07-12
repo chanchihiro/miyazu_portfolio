@@ -77,7 +77,7 @@ parcelRequire = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({29:[function(require,module,exports) {
+})({39:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -41346,7 +41346,7 @@ exports.Projector = Projector;
 exports.CanvasRenderer = CanvasRenderer;
 exports.SceneUtils = SceneUtils;
 exports.LensFlare = LensFlare;
-},{}],38:[function(require,module,exports) {
+},{}],41:[function(require,module,exports) {
 // Copyright (c) 2017 Adobe Systems Incorporated. All rights reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -41783,7 +41783,7 @@ exports.LensFlare = LensFlare;
     typeof module != "undefined" && module.exports ? module.exports = eve : typeof define === "function" && define.amd ? define("eve", [], function () { return eve; }) : glob.eve = eve;
 })(typeof window != "undefined" ? window : this);
 
-},{}],31:[function(require,module,exports) {
+},{}],40:[function(require,module,exports) {
 var global = (1,eval)("this");
 // Snap.svg 0.5.0
 //
@@ -50415,7 +50415,7 @@ Snap.plugin(function (Snap, Element, Paper, glob) {
 
 return Snap;
 }));
-},{"eve":38}],30:[function(require,module,exports) {
+},{"eve":41}],38:[function(require,module,exports) {
 /*--------------------------------------------------------------------
  *JAVASCRIPT "FakeLoader.js"
  *Version:    1.1.0 - 2014
@@ -50730,11 +50730,11 @@ $(function () {
 		$('.line3').toggleClass('op3');
 		$('.menus').toggleClass('is-selected');
 		$(".snss").toggleClass('is-selected');
-		$("#miyazu-nav").toggleClass('is-selected');
-		if ($("#miyazu-nav").hasClass('is-selected')) {
-			$("#miyazu-nav").fadeIn(20);
+		$("#miyazu-nav").toggleClass('selected');
+		if ($("#miyazu-nav").hasClass('selected')) {
+			$("#miyazu-nav").fadeIn(300);
 		} else {
-			$("#miyazu-nav").fadeOut(20);
+			$("#miyazu-nav").fadeOut(300);
 		}
 	});
 
@@ -50966,7 +50966,7 @@ $(function () {
  animate(time => simulation.render(time));
  */
 }); /* import file */
-},{"three":29,"snapsvg":31,"fakeloader":30}],121:[function(require,module,exports) {
+},{"three":39,"snapsvg":40,"fakeloader":38}],56:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -50996,7 +50996,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '56736' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '50778' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -51135,5 +51135,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[121,5])
+},{}]},{},[56,5])
 //# sourceMappingURL=/app.b6bd5372.map

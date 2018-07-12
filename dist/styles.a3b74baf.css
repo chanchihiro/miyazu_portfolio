@@ -900,13 +900,10 @@ body .miyazu-wrapper #miyazu-nav {
 			left: 0;
 			position: fixed;
 			background-color: #fff;
-			opacity: 0;
 			-webkit-transition: all 400ms ease-out;
-			transition: all 400ms ease-out
+			transition: all 400ms ease-out;
+			display: none
   	}
-	  		body .miyazu-wrapper #miyazu-nav.is-selected {
-	  			opacity: 1;
-			}
 		}
 
 @media screen and (min-width: 0) and (max-width: 768px) {
@@ -919,7 +916,6 @@ body .miyazu-wrapper #miyazu-nav ul {
 				-webkit-transform: translateY(15px);
 				        transform: translateY(15px);
 				position: relative;
-				opacity: 0;
 				-webkit-transition: all 400ms ease-out;
 				transition: all 400ms ease-out
   		}

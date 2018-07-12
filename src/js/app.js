@@ -173,11 +173,11 @@ $(function(){
   	$('.line3').toggleClass('op3');
   	$('.menus').toggleClass('is-selected');
   	$(".snss").toggleClass('is-selected');
-  	$("#miyazu-nav").toggleClass('is-selected');
-  	if($("#miyazu-nav").hasClass('is-selected')){
-  		$("#miyazu-nav").fadeIn(20);
+  	$("#miyazu-nav").toggleClass('selected');
+  	if($("#miyazu-nav").hasClass('selected')){
+  		$("#miyazu-nav").fadeIn(300);
   	}else {
-  		$("#miyazu-nav").fadeOut(20);
+  		$("#miyazu-nav").fadeOut(300);
   	}
   });
 
