@@ -818,21 +818,11 @@ body {
   		transform: translate(50%, -50%);
   		top: 48%;
   		position: fixed;
-  	}
+  		display: none;
+		transition: all 400ms ease-out;
+	}
   	ul {
   		margin: 0 auto;
-  		@media screen and $min-width {
-			transform: translateY(15px);
-			position: relative;
-			opacity: 0;
-			transition: all 400ms ease-out;
-	  		&.is-selected {
-	  			transform: translateY(0px);
-	  			transition-delay: 400ms;
-	  			position: relative;
-	  			opacity: 1;
-			}
-		}
 	  	li {
 	  		@media screen and $min-width {
 	  			float: left;

@@ -1925,33 +1925,16 @@ body #miyazu-sns {
   		-webkit-transform: translate(50%, -50%);
   		        transform: translate(50%, -50%);
   		top: 48%;
-  		position: fixed
+  		position: fixed;
+  		display: none;
+		-webkit-transition: all 400ms ease-out;
+		transition: all 400ms ease-out
   }
-  	}
+	}
 
 body #miyazu-sns ul {
   		margin: 0 auto;
   	}
-
-@media screen and (min-width: 0) and (max-width: 768px) {
-
-body #miyazu-sns ul {
-			-webkit-transform: translateY(15px);
-			        transform: translateY(15px);
-			position: relative;
-			opacity: 0;
-			-webkit-transition: all 400ms ease-out;
-			transition: all 400ms ease-out
-  	}
-	  		body #miyazu-sns ul.is-selected {
-	  			-webkit-transform: translateY(0px);
-	  			        transform: translateY(0px);
-	  			-webkit-transition-delay: 400ms;
-	  			        transition-delay: 400ms;
-	  			position: relative;
-	  			opacity: 1;
-			}
-		}
 
 @media screen and (min-width: 0) and (max-width: 768px) {
 

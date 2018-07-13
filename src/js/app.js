@@ -171,11 +171,17 @@ $(function(){
   	$('.line1').toggleClass('op1');
   	$('.line2').toggleClass('op');
   	$('.line3').toggleClass('op3');
+  	$("#miyazu-sns").toggleClass('selected');
   	$('#miyazu-nav').toggleClass('selected');
   	if($('#miyazu-nav').hasClass('selected')){
   		$('#miyazu-nav').fadeIn(100);
   	}else {
   		$('#miyazu-nav').fadeOut(100);
+  	};
+  	if($('#miyazu-sns').hasClass('selected')){
+  		$('#miyazu-sns').fadeIn(100);
+  	}else {
+  		$('#miyazu-sns').fadeOut(100);
   	}
   });
 
