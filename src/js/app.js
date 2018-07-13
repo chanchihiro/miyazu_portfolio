@@ -171,13 +171,11 @@ $(function(){
   	$('.line1').toggleClass('op1');
   	$('.line2').toggleClass('op');
   	$('.line3').toggleClass('op3');
-  	$('.menus').toggleClass('is-selected');
-  	$(".snss").toggleClass('is-selected');
-  	$("#miyazu-nav").toggleClass('selected');
-  	if($("#miyazu-nav").hasClass('selected')){
-  		$("#miyazu-nav").fadeIn(300);
+  	$('#miyazu-nav').toggleClass('selected');
+  	if($('#miyazu-nav').hasClass('selected')){
+  		$('#miyazu-nav').fadeIn(100);
   	}else {
-  		$("#miyazu-nav").fadeOut(300);
+  		$('#miyazu-nav').fadeOut(100);
   	}
   });
 

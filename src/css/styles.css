@@ -111,7 +111,6 @@ body {
 			left: 0;
 			position: fixed;
 			background-color: #fff;
-			transition: all 400ms ease-out;
 			display: none;
 		}
   		ul {
@@ -125,7 +124,7 @@ body {
 				transition: all 400ms ease-out;
 		  		&.is-selected {
 		  			transform: translateY(0px);
-		  			transition-delay: 1700ms;
+		  			transition-delay: 400ms;
 		  			opacity: 1;
 				}
   			}
@@ -829,7 +828,7 @@ body {
 			transition: all 400ms ease-out;
 	  		&.is-selected {
 	  			transform: translateY(0px);
-	  			transition-delay: 1840ms;
+	  			transition-delay: 400ms;
 	  			position: relative;
 	  			opacity: 1;
 			}

@@ -50728,13 +50728,11 @@ $(function () {
 		$('.line1').toggleClass('op1');
 		$('.line2').toggleClass('op');
 		$('.line3').toggleClass('op3');
-		$('.menus').toggleClass('is-selected');
-		$(".snss").toggleClass('is-selected');
-		$("#miyazu-nav").toggleClass('selected');
-		if ($("#miyazu-nav").hasClass('selected')) {
-			$("#miyazu-nav").fadeIn(300);
+		$('#miyazu-nav').toggleClass('selected');
+		if ($('#miyazu-nav').hasClass('selected')) {
+			$('#miyazu-nav').fadeIn(100);
 		} else {
-			$("#miyazu-nav").fadeOut(300);
+			$('#miyazu-nav').fadeOut(100);
 		}
 	});
 
@@ -50966,7 +50964,7 @@ $(function () {
  animate(time => simulation.render(time));
  */
 }); /* import file */
-},{"three":39,"snapsvg":40,"fakeloader":38}],56:[function(require,module,exports) {
+},{"three":39,"snapsvg":40,"fakeloader":38}],65:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -51135,5 +51133,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[56,5])
+},{}]},{},[65,5])
 //# sourceMappingURL=/app.b6bd5372.map

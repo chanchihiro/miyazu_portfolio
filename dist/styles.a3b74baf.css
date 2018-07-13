@@ -900,8 +900,6 @@ body .miyazu-wrapper #miyazu-nav {
 			left: 0;
 			position: fixed;
 			background-color: #fff;
-			-webkit-transition: all 400ms ease-out;
-			transition: all 400ms ease-out;
 			display: none
   	}
 		}
@@ -922,8 +920,8 @@ body .miyazu-wrapper #miyazu-nav ul {
 		  		body .miyazu-wrapper #miyazu-nav ul.is-selected {
 		  			-webkit-transform: translateY(0px);
 		  			        transform: translateY(0px);
-		  			-webkit-transition-delay: 1700ms;
-		  			        transition-delay: 1700ms;
+		  			-webkit-transition-delay: 400ms;
+		  			        transition-delay: 400ms;
 		  			opacity: 1;
 				}
   			}
@@ -1948,8 +1946,8 @@ body #miyazu-sns ul {
 	  		body #miyazu-sns ul.is-selected {
 	  			-webkit-transform: translateY(0px);
 	  			        transform: translateY(0px);
-	  			-webkit-transition-delay: 1840ms;
-	  			        transition-delay: 1840ms;
+	  			-webkit-transition-delay: 400ms;
+	  			        transition-delay: 400ms;
 	  			position: relative;
 	  			opacity: 1;
 			}
