@@ -96,7 +96,6 @@ body {
   		transform: translate(-50%, -50%);
   		min-height: initial;
   		-webkit-overflow-scrolling: touch;
-
   	}
   	#miyazu-nav {
   		width: 900px;
@@ -115,6 +114,7 @@ body {
 			position: fixed;
 			background-color: #fff;
 			display: none;
+			padding-top: 100px;
 		}
 		.top-title {
 			display: none;
@@ -845,7 +845,7 @@ body {
   		display: flex;
   		right: 50%;
   		transform: translate(50%, -50%);
-  		top: 48%;
+  		top: 75%;
   		position: fixed;
   		display: none;
 		transition: all 400ms ease-out;

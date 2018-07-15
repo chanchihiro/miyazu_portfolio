@@ -877,7 +877,6 @@ body .miyazu-wrapper {
   		min-height: initial;
   		-webkit-overflow-scrolling: touch
   }
-
   	}
 
 body .miyazu-wrapper #miyazu-nav {
@@ -904,7 +903,8 @@ body .miyazu-wrapper #miyazu-nav {
 			left: 0;
 			position: fixed;
 			background-color: #fff;
-			display: none
+			display: none;
+			padding-top: 100px
   	}
 		}
 
@@ -1976,7 +1976,7 @@ body #miyazu-sns {
   		right: 50%;
   		-webkit-transform: translate(50%, -50%);
   		        transform: translate(50%, -50%);
-  		top: 48%;
+  		top: 75%;
   		position: fixed;
   		display: none;
 		-webkit-transition: all 400ms ease-out;
