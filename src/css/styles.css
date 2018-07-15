@@ -55,7 +55,7 @@ body {
 		height: 42px;
 		position: fixed;
 		z-index: 200;
-		right: 1px;
+		right: 4px;
 		top: 10px;
 		line-height: 30px;
 		box-sizing: border-box;
@@ -92,7 +92,7 @@ body {
   	@media screen and $min-width {
   		position: fixed;
   		overflow: scroll;
-  		height: 84vh;
+  		height: 82vh;
   		transform: translate(-50%, -50%);
   		min-height: initial;
   		-webkit-overflow-scrolling: touch;

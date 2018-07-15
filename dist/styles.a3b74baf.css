@@ -824,7 +824,7 @@ body .miyazu-nav-hamburger {
 		height: 42px;
 		position: fixed;
 		z-index: 200;
-		right: 1px;
+		right: 4px;
 		top: 10px;
 		line-height: 30px;
 		-webkit-box-sizing: border-box;
@@ -871,7 +871,7 @@ body .miyazu-wrapper {
 body .miyazu-wrapper {
   		position: fixed;
   		overflow: scroll;
-  		height: 84vh;
+  		height: 82vh;
   		-webkit-transform: translate(-50%, -50%);
   		        transform: translate(-50%, -50%);
   		min-height: initial;
