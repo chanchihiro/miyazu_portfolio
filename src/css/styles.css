@@ -92,9 +92,11 @@ body {
   	@media screen and $min-width {
   		position: fixed;
   		overflow: scroll;
-  		height: 88vh;
+  		height: 84vh;
+  		transform: translate(-50%, -50%);
   		min-height: initial;
   		-webkit-overflow-scrolling: touch;
+
   	}
   	#miyazu-nav {
   		width: 900px;

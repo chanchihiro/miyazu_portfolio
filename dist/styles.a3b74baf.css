@@ -871,10 +871,13 @@ body .miyazu-wrapper {
 body .miyazu-wrapper {
   		position: fixed;
   		overflow: scroll;
-  		height: 88vh;
+  		height: 84vh;
+  		-webkit-transform: translate(-50%, -50%);
+  		        transform: translate(-50%, -50%);
   		min-height: initial;
   		-webkit-overflow-scrolling: touch
   }
+
   	}
 
 body .miyazu-wrapper #miyazu-nav {

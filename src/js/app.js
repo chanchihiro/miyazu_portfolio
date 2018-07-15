@@ -5,6 +5,11 @@ import * as fakeLoader from "fakeloader";
 
 /* main */
 $(function(){
+
+	// スクロール禁止
+	$(window).on('touchmove.noScroll', function(e) {
+	    e.preventDefault();
+	});
   
   /*
   var allImage = $("img");
