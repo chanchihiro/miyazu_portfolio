@@ -184,9 +184,9 @@ $(function(){
   		$('#miyazu-nav').fadeOut(100);
   	};
   	if($('#miyazu-sns').hasClass('selected')){
-  		$('#miyazu-sns').fadeIn(100);
+  		$('#miyazu-sns').fadeIn(200);
   	}else {
-  		$('#miyazu-sns').fadeOut(100);
+  		$('#miyazu-sns').fadeOut(200);
   	}
   });
 

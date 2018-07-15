@@ -50741,9 +50741,9 @@ $(function () {
 			$('#miyazu-nav').fadeOut(100);
 		};
 		if ($('#miyazu-sns').hasClass('selected')) {
-			$('#miyazu-sns').fadeIn(100);
+			$('#miyazu-sns').fadeIn(200);
 		} else {
-			$('#miyazu-sns').fadeOut(100);
+			$('#miyazu-sns').fadeOut(200);
 		}
 	});
 
@@ -50975,7 +50975,7 @@ $(function () {
  animate(time => simulation.render(time));
  */
 }); /* import file */
-},{"three":50,"snapsvg":49,"fakeloader":51}],110:[function(require,module,exports) {
+},{"three":50,"snapsvg":49,"fakeloader":51}],147:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -51144,5 +51144,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[110,25])
+},{}]},{},[147,25])
 //# sourceMappingURL=/app.b6bd5372.map
