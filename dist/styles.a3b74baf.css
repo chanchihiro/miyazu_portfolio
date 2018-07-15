@@ -798,6 +798,20 @@ button{background-color: transparent;border: none;cursor: pointer;outline: none;
 	bottom: 5px !important;
 }
 
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+.slider__info2 {
+		display: none
+}
+	}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+.slider__info3 {
+		display: none
+}
+	}
+
 /* main */
 
 body {
