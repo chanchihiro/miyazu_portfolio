@@ -890,6 +890,7 @@ body .miyazu-wrapper #miyazu-nav {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
+		text-align: center;
   	}
 
 @media screen and (min-width: 0) and (max-width: 768px) {
@@ -907,10 +908,27 @@ body .miyazu-wrapper #miyazu-nav {
   	}
 		}
 
+body .miyazu-wrapper #miyazu-nav .top-title {
+			display: none;
+		}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body .miyazu-wrapper #miyazu-nav .top-title {
+				width: 200px;
+				display: inline-block;
+				margin: 2rem auto 0
+		}
+			}
+
+body .miyazu-wrapper #miyazu-nav .top-title img {
+				width: 100%;
+			}
+
 @media screen and (min-width: 0) and (max-width: 768px) {
 
 body .miyazu-wrapper #miyazu-nav ul { 
-  				margin: 4rem auto 0;
+  				margin: 0rem auto 0;
   				z-index: 400;
   				width: 86%;
   				height: 60vh;

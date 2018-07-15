@@ -105,6 +105,7 @@ body {
 		transform: translate(-50%, -20px);
 		z-index: 100;
 		display: flex;
+		text-align: center;
 		@media screen and $min-width {
 			width: 100%;
 			height: 230%;
@@ -115,9 +116,20 @@ body {
 			background-color: #fff;
 			display: none;
 		}
+		.top-title {
+			display: none;
+			@media screen and $min-width {
+				width: 200px;
+				display: inline-block;
+				margin: 2rem auto 0;
+			}
+			img {
+				width: 100%;
+			}
+		}
   		ul {
   			@media screen and $min-width { 
-  				margin: 4rem auto 0;
+  				margin: 0rem auto 0;
   				z-index: 400;
   				width: 86%;
   				height: 60vh;
