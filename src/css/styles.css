@@ -519,7 +519,7 @@ body {
   	color: #4b4b4b;
   	padding: 0px 4rem;
   	@media screen and $min-width {
-  		margin: 3rem auto;
+  		margin: 1rem auto;
   		width: 87%;
   		padding: 0px 1rem;
   	}
@@ -537,7 +537,8 @@ body {
   		font-family: var(--font-family-sub);
   		padding: 2rem 0rem;
   		@media screen and $min-width {
-  			padding: 1rem 0px 0px;
+  			padding: 1.4rem 0px 0.8rem;
+  			font-size: 1rem;
   		}
   	}
   	#miyazu-news-content1 {
@@ -552,6 +553,9 @@ body {
   			position: relative;
   			opacity: 1;
 		}
+		@media screen and $min-width {
+			margin-bottom: 12px;
+		}
   	}
   	#miyazu-news-content2 {
   		transform: translateY(30px);
@@ -564,6 +568,9 @@ body {
   			transition-delay: 1560ms;
   			position: relative;
   			opacity: 1;
+		}
+		@media screen and $min-width {
+			margin-bottom: 12px;
 		}
   	}
   	#miyazu-news-content3 {
@@ -578,6 +585,9 @@ body {
   			position: relative;
   			opacity: 1;
 		}
+		@media screen and $min-width {
+			margin-bottom: 12px;
+		}
   	}
 	#miyazu-news-date {
 		font-family: 'Amiri', serif;
@@ -589,11 +599,16 @@ body {
 		@media screen and $min-width {
 			margin-bottom: 0px;
 			line-height: 1;
+			font-size: 9px;
+			display: block;
 		}
 	}
 	#miyazu-news-content {
 		font-size: 0.8rem;
 		display: inline-block;
+		@media screen and $min-width { 
+			font-size: 0.7rem;
+		}
 	}
 	#miyazu-news-button {
 		color: #4b4b4b;
