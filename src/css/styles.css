@@ -34,6 +34,12 @@ $max-width: (min-width: 769px);
 	transform: rotate(-45deg) !important;
 	bottom: 5px !important;
 }
+
+.slider__info {
+	@media screen and $min-width {
+		display: none;
+	}
+}
 .slider__info2 {
 	@media screen and $min-width {
 		display: none;
@@ -118,7 +124,7 @@ body {
 		text-align: center;
 		@media screen and $min-width {
 			width: 100%;
-			height: 120%;
+			height: 230%;
 			transform: initial;
 			top: 0;
 			left: 0;
@@ -262,7 +268,7 @@ body {
   			overflow: hidden;
   			@media screen and $min-width {
   				width: 100%;
-  				height: 330px;
+  				height: 280px;
   				text-align: center;
   				overflow: hidden;
   				box-sizing: border-box;
@@ -494,6 +500,8 @@ body {
 		}
   		@media screen and $min-width {
   			text-align: center;
+  			padding: 0.4rem 0px 0.8rem;
+  			font-size: 1rem;
   		}
   	}
   	#miyazu-paragraph-text {
@@ -516,6 +524,8 @@ body {
   			width: 90%;
   			margin: 0 auto;
   			text-align: justify;
+  			font-size: 0.7rem;
+  			letter-spacing: 1px;
   		}
   	}
   }
@@ -560,7 +570,7 @@ body {
   		overflow: hidden;
   		&.is-selected {
   			transform: translateY(0px);
-  			transition-delay: 1500ms;
+  			transition-delay: 1620ms;
   			position: relative;
   			opacity: 1;
 		}
@@ -576,7 +586,7 @@ body {
   		overflow: hidden;
   		&.is-selected {
   			transform: translateY(0px);
-  			transition-delay: 1560ms;
+  			transition-delay: 1680ms;
   			position: relative;
   			opacity: 1;
 		}
@@ -592,7 +602,39 @@ body {
   		overflow: hidden;
   		&.is-selected {
   			transform: translateY(0px);
-  			transition-delay: 1620ms;
+  			transition-delay: 1740ms;
+  			position: relative;
+  			opacity: 1;
+		}
+		@media screen and $min-width {
+			margin-bottom: 12px;
+		}
+  	}
+  	#miyazu-news-content4 {
+  		transform: translateY(30px);
+  		position: relative;
+  		opacity: 0;
+  		transition: all 400ms ease-out;
+  		overflow: hidden;
+  		&.is-selected {
+  			transform: translateY(0px);
+  			transition-delay: 1560ms;
+  			position: relative;
+  			opacity: 1;
+		}
+		@media screen and $min-width {
+			margin-bottom: 12px;
+		}
+  	}
+  	#miyazu-news-content5 {
+  		transform: translateY(30px);
+  		position: relative;
+  		opacity: 0;
+  		transition: all 400ms ease-out;
+  		overflow: hidden;
+  		&.is-selected {
+  			transform: translateY(0px);
+  			transition-delay: 1500ms;
   			position: relative;
   			opacity: 1;
 		}
@@ -717,6 +759,9 @@ body {
 	  			transition-delay: 1780ms;
 	  			position: relative;
 	  			opacity: 1;
+  			}
+  			@media screen and $min-width {
+  				line-height: 1.4;
   			}
   		}
   		#miyazu-profole-japan {

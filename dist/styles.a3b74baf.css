@@ -800,6 +800,13 @@ button{background-color: transparent;border: none;cursor: pointer;outline: none;
 
 @media screen and (min-width: 0) and (max-width: 768px) {
 
+.slider__info {
+		display: none
+}
+	}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+
 .slider__info2 {
 		display: none
 }
@@ -910,7 +917,7 @@ body .miyazu-wrapper #miyazu-nav {
 
 body .miyazu-wrapper #miyazu-nav {
 			width: 100%;
-			height: 120%;
+			height: 230%;
 			-webkit-transform: initial;
 			        transform: initial;
 			top: 0;
@@ -1123,7 +1130,7 @@ body .miyazu-wrapper .miyazu-slides .miyazu-slides-slide {
 
 body .miyazu-wrapper .miyazu-slides .miyazu-slides-slide {
   				width: 100%;
-  				height: 330px;
+  				height: 280px;
   				text-align: center;
   				overflow: hidden;
   				-webkit-box-sizing: border-box;
@@ -1465,7 +1472,9 @@ body #miyazu-paragraph #miyazu-paragraph-title.is-selected {
 @media screen and (min-width: 0) and (max-width: 768px) {
 
 body #miyazu-paragraph #miyazu-paragraph-title {
-  			text-align: center
+  			text-align: center;
+  			padding: 0.4rem 0px 0.8rem;
+  			font-size: 1rem
   	}
   		}
 
@@ -1497,7 +1506,9 @@ body #miyazu-paragraph #miyazu-paragraph-text {
   			margin-left: 0;
   			width: 90%;
   			margin: 0 auto;
-  			text-align: justify
+  			text-align: justify;
+  			font-size: 0.7rem;
+  			letter-spacing: 1px
   	}
   		}
 
@@ -1564,8 +1575,8 @@ body #miyazu-news #miyazu-news-content1 {
 body #miyazu-news #miyazu-news-content1.is-selected {
   			-webkit-transform: translateY(0px);
   			        transform: translateY(0px);
-  			-webkit-transition-delay: 1500ms;
-  			        transition-delay: 1500ms;
+  			-webkit-transition-delay: 1620ms;
+  			        transition-delay: 1620ms;
   			position: relative;
   			opacity: 1;
 		}
@@ -1590,8 +1601,8 @@ body #miyazu-news #miyazu-news-content2 {
 body #miyazu-news #miyazu-news-content2.is-selected {
   			-webkit-transform: translateY(0px);
   			        transform: translateY(0px);
-  			-webkit-transition-delay: 1560ms;
-  			        transition-delay: 1560ms;
+  			-webkit-transition-delay: 1680ms;
+  			        transition-delay: 1680ms;
   			position: relative;
   			opacity: 1;
 		}
@@ -1616,8 +1627,8 @@ body #miyazu-news #miyazu-news-content3 {
 body #miyazu-news #miyazu-news-content3.is-selected {
   			-webkit-transform: translateY(0px);
   			        transform: translateY(0px);
-  			-webkit-transition-delay: 1620ms;
-  			        transition-delay: 1620ms;
+  			-webkit-transition-delay: 1740ms;
+  			        transition-delay: 1740ms;
   			position: relative;
   			opacity: 1;
 		}
@@ -1625,6 +1636,58 @@ body #miyazu-news #miyazu-news-content3.is-selected {
 @media screen and (min-width: 0) and (max-width: 768px) {
 
 body #miyazu-news #miyazu-news-content3 {
+			margin-bottom: 12px
+  	}
+		}
+
+body #miyazu-news #miyazu-news-content4 {
+  		-webkit-transform: translateY(30px);
+  		        transform: translateY(30px);
+  		position: relative;
+  		opacity: 0;
+  		-webkit-transition: all 400ms ease-out;
+  		transition: all 400ms ease-out;
+  		overflow: hidden;
+  	}
+
+body #miyazu-news #miyazu-news-content4.is-selected {
+  			-webkit-transform: translateY(0px);
+  			        transform: translateY(0px);
+  			-webkit-transition-delay: 1560ms;
+  			        transition-delay: 1560ms;
+  			position: relative;
+  			opacity: 1;
+		}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body #miyazu-news #miyazu-news-content4 {
+			margin-bottom: 12px
+  	}
+		}
+
+body #miyazu-news #miyazu-news-content5 {
+  		-webkit-transform: translateY(30px);
+  		        transform: translateY(30px);
+  		position: relative;
+  		opacity: 0;
+  		-webkit-transition: all 400ms ease-out;
+  		transition: all 400ms ease-out;
+  		overflow: hidden;
+  	}
+
+body #miyazu-news #miyazu-news-content5.is-selected {
+  			-webkit-transform: translateY(0px);
+  			        transform: translateY(0px);
+  			-webkit-transition-delay: 1500ms;
+  			        transition-delay: 1500ms;
+  			position: relative;
+  			opacity: 1;
+		}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body #miyazu-news #miyazu-news-content5 {
 			margin-bottom: 12px
   	}
 		}
@@ -1792,6 +1855,13 @@ body #miyazu-profile .miyazu-profile-text #miyazu-profole-english.is-selected {
 	  			        transition-delay: 1780ms;
 	  			position: relative;
 	  			opacity: 1;
+  			}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body #miyazu-profile .miyazu-profile-text #miyazu-profole-english {
+  				line-height: 1.4
+  		}
   			}
 
 body #miyazu-profile .miyazu-profile-text #miyazu-profole-japan {

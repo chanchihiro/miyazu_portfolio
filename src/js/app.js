@@ -27,6 +27,7 @@ $(function(){
     });
   }
   */
+  // loader
   $(document).ready(function(){
     $("#fakeLoader").fakeLoader({
       timeToHide: 1200,
@@ -207,6 +208,8 @@ $(function(){
   $("#miyazu-news-content1").addClass('is-selected');
   $("#miyazu-news-content2").addClass('is-selected');
   $("#miyazu-news-content3").addClass('is-selected');
+  $("#miyazu-news-content4").addClass('is-selected');
+  $("#miyazu-news-content5").addClass('is-selected');
 
   //// three.js
   let scene;

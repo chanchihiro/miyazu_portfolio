@@ -77,7 +77,7 @@ parcelRequire = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({27:[function(require,module,exports) {
+})({96:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -41346,7 +41346,7 @@ exports.Projector = Projector;
 exports.CanvasRenderer = CanvasRenderer;
 exports.SceneUtils = SceneUtils;
 exports.LensFlare = LensFlare;
-},{}],46:[function(require,module,exports) {
+},{}],106:[function(require,module,exports) {
 // Copyright (c) 2017 Adobe Systems Incorporated. All rights reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -41783,7 +41783,7 @@ exports.LensFlare = LensFlare;
     typeof module != "undefined" && module.exports ? module.exports = eve : typeof define === "function" && define.amd ? define("eve", [], function () { return eve; }) : glob.eve = eve;
 })(typeof window != "undefined" ? window : this);
 
-},{}],28:[function(require,module,exports) {
+},{}],97:[function(require,module,exports) {
 var global = (1,eval)("this");
 // Snap.svg 0.5.0
 //
@@ -50415,7 +50415,7 @@ Snap.plugin(function (Snap, Element, Paper, glob) {
 
 return Snap;
 }));
-},{"eve":46}],26:[function(require,module,exports) {
+},{"eve":106}],98:[function(require,module,exports) {
 /*--------------------------------------------------------------------
  *JAVASCRIPT "FakeLoader.js"
  *Version:    1.1.0 - 2014
@@ -50544,7 +50544,7 @@ return Snap;
 
 
 }(jQuery));
-},{}],5:[function(require,module,exports) {
+},{}],73:[function(require,module,exports) {
 'use strict';
 
 var _three = require('three');
@@ -50586,6 +50586,7 @@ $(function () {
    });
  }
  */
+	// loader
 	$(document).ready(function () {
 		$("#fakeLoader").fakeLoader({
 			timeToHide: 1200,
@@ -50764,6 +50765,8 @@ $(function () {
 	$("#miyazu-news-content1").addClass('is-selected');
 	$("#miyazu-news-content2").addClass('is-selected');
 	$("#miyazu-news-content3").addClass('is-selected');
+	$("#miyazu-news-content4").addClass('is-selected');
+	$("#miyazu-news-content5").addClass('is-selected');
 
 	//// three.js
 	var scene = void 0;
@@ -50975,7 +50978,7 @@ $(function () {
  animate(time => simulation.render(time));
  */
 }); /* import file */
-},{"three":27,"snapsvg":28,"fakeloader":26}],47:[function(require,module,exports) {
+},{"three":96,"snapsvg":97,"fakeloader":98}],161:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -51005,7 +51008,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '60185' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '56407' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -51144,5 +51147,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[47,5])
+},{}]},{},[161,73])
 //# sourceMappingURL=/app.b6bd5372.map
