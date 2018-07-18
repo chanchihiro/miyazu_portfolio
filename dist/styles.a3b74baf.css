@@ -1758,7 +1758,7 @@ body #miyazu-profile {
   	}
 
 body #miyazu-profile img {
-  		width: 90%;
+  		width: 80%;
   		max-width: 640px;
   		border: var(--border);
   		margin-bottom: 1.6rem;
