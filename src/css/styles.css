@@ -676,6 +676,8 @@ body {
 	}
   }
   #miyazu-profile {
+  	position: relative;
+  	height: 89vh;
   	width: 720px;
   	margin: 0 auto;
   	box-sizing: border-box;
