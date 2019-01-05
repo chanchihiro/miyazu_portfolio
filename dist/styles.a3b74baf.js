@@ -180,7 +180,7 @@ module.exports = reloadCSS;
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./reset.css":41,"./variables.css":42,"./lib/slick.css":48,"./lib/slick-theme.css":49,"./slider.css":43,"./fakeLoader.css":44,"./../images/arrow2.png":45,"./../images/arrow.png":46,"./../images/slide1.jpg":34,"./../images/slide2.jpg":35,"./../images/slide1.png":47,"_css_loader":39}],115:[function(require,module,exports) {
+},{"./reset.css":41,"./variables.css":42,"./lib/slick.css":48,"./lib/slick-theme.css":49,"./slider.css":43,"./fakeLoader.css":44,"./../images/arrow2.png":45,"./../images/arrow.png":46,"./../images/slide1.jpg":34,"./../images/slide2.jpg":35,"./../images/slide1.png":47,"_css_loader":39}],62:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -210,7 +210,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '65353' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '64453' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -349,7 +349,7 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}],116:[function(require,module,exports) {
+},{}],64:[function(require,module,exports) {
 var getBundleURL = require('./bundle-url').getBundleURL;
 
 function loadBundlesLazy(bundles) {
@@ -431,6 +431,6 @@ LazyPromise.prototype.catch = function (onError) {
   return this.promise.catch(onError);
 };
 },{"./bundle-url":58}],0:[function(require,module,exports) {
-var b=require(116);b.load([["ajax-loader.5951cde3.gif",53],["slick.29d4c64f.eot",54],["slick.526dd301.woff",55],["slick.efb232c4.ttf",56],["slick.fcb6734e.svg",57],["arrow2.e54e5543.png",45],["arrow.2b8fda1f.png",46],["slide1.5ec8952e.jpg",34],["slide2.ff5d5d0e.jpg",35],["slide1.66ad2b13.png",47]]);
-},{}]},{},[115,0])
+var b=require(64);b.load([["ajax-loader.5951cde3.gif",53],["slick.29d4c64f.eot",54],["slick.526dd301.woff",55],["slick.efb232c4.ttf",56],["slick.fcb6734e.svg",57],["arrow2.e54e5543.png",45],["arrow.2b8fda1f.png",46],["slide1.5ec8952e.jpg",34],["slide2.ff5d5d0e.jpg",35],["slide1.66ad2b13.png",47]]);
+},{}]},{},[62,0])
 //# sourceMappingURL=/styles.a3b74baf.map
