@@ -1993,6 +1993,43 @@ body #miyazu-works #miyazu-works-big2 .works_big_1 {
   			display: block;
   		}
 
+body #miyazu-works #miyazu-works-big3 {
+  		background-color: #fafafa;
+  		width: 50%;
+  		height: 44vh;
+  		margin-right: 2%;
+  		-ms-flex-preferred-size: 50%;
+  		    flex-basis: 50%;
+  		overflow: hidden;
+  		cursor: pointer;
+  		-webkit-box-sizing: border-box;
+  		        box-sizing: border-box;
+  		border: var(--border);
+  		background-image: url(slide2.ff5d5d0e.jpg);
+  		background-position: center;
+  		background-size: cover;
+  	}
+
+body #miyazu-works #miyazu-works-big3:hover {
+  			opacity: 0.8;
+  		}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body #miyazu-works #miyazu-works-big3 {
+  			-ms-flex-preferred-size: 100%;
+  			    flex-basis: 100%;
+  			width: 100%;
+  			margin-bottom: 1.6rem
+  	}
+  		}
+
+body #miyazu-works #miyazu-works-big3 .works_big_3 {
+  			width: 100%;
+  			height: 100%;
+  			display: block;
+  		}
+
 body #miyazu-works .miyazu-works-smalls {
   		display: -webkit-box;
   		display: -ms-flexbox;

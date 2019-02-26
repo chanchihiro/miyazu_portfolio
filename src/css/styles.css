@@ -854,6 +854,33 @@ body {
   			display: block;
   		}
   	}
+  	#miyazu-works-big3 {
+  		background-color: #fafafa;
+  		width: 50%;
+  		height: 44vh;
+  		margin-right: 2%;
+  		flex-basis: 50%;
+  		overflow: hidden;
+  		cursor: pointer;
+  		box-sizing: border-box;
+  		border: var(--border);
+  		background-image: url(../images/slide2.jpg);
+  		background-position: center;
+  		background-size: cover;
+  		&:hover {
+  			opacity: 0.8;
+  		}
+  		@media screen and $min-width {
+  			flex-basis: 100%;
+  			width: 100%;
+  			margin-bottom: 1.6rem;
+  		}
+  		.works_big_3 {
+  			width: 100%;
+  			height: 100%;
+  			display: block;
+  		}
+  	}
   	.miyazu-works-smalls {
   		display: flex;
   		display: none;

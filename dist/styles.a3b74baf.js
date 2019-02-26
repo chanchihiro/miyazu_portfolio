@@ -77,7 +77,7 @@ parcelRequire = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({59:[function(require,module,exports) {
+})({58:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -107,7 +107,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],39:[function(require,module,exports) {
+},{}],40:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -138,49 +138,49 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":59}],41:[function(require,module,exports) {
+},{"./bundle-url":58}],41:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":39}],42:[function(require,module,exports) {
+},{"_css_loader":40}],42:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":39}],48:[function(require,module,exports) {
+},{"_css_loader":40}],49:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":39}],49:[function(require,module,exports) {
+},{"_css_loader":40}],48:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./../../images/ajax-loader.gif":53,"./../../js/lib/slick/fonts/slick.eot":54,"./../../js/lib/slick/fonts/slick.woff":55,"./../../js/lib/slick/fonts/slick.ttf":56,"./../../js/lib/slick/fonts/slick.svg":57,"_css_loader":39}],45:[function(require,module,exports) {
+},{"./../../images/ajax-loader.gif":50,"./../../js/lib/slick/fonts/slick.eot":55,"./../../js/lib/slick/fonts/slick.woff":54,"./../../js/lib/slick/fonts/slick.ttf":56,"./../../js/lib/slick/fonts/slick.svg":57,"_css_loader":40}],43:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":39}],46:[function(require,module,exports) {
+},{"_css_loader":40}],44:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":39}],24:[function(require,module,exports) {
+},{"_css_loader":40}],24:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./reset.css":41,"./variables.css":42,"./lib/slick.css":48,"./lib/slick-theme.css":49,"./slider.css":45,"./fakeLoader.css":46,"./../images/arrow2.png":43,"./../images/arrow.png":44,"./../images/slide1.jpg":36,"./../images/slide2.jpg":34,"./../images/slide1.png":47,"_css_loader":39}],62:[function(require,module,exports) {
+},{"./reset.css":41,"./variables.css":42,"./lib/slick.css":49,"./lib/slick-theme.css":48,"./slider.css":43,"./fakeLoader.css":44,"./../images/arrow2.png":45,"./../images/arrow.png":46,"./../images/slide1.jpg":31,"./../images/slide2.jpg":36,"./../images/slide1.png":47,"_css_loader":40}],113:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -210,7 +210,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '59247' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '55184' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -349,7 +349,7 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}],64:[function(require,module,exports) {
+},{}],114:[function(require,module,exports) {
 var getBundleURL = require('./bundle-url').getBundleURL;
 
 function loadBundlesLazy(bundles) {
@@ -430,7 +430,7 @@ LazyPromise.prototype.catch = function (onError) {
   if (this.promise === null) this.promise = new Promise(this.executor);
   return this.promise.catch(onError);
 };
-},{"./bundle-url":59}],0:[function(require,module,exports) {
-var b=require(64);b.load([["ajax-loader.5951cde3.gif",53],["slick.29d4c64f.eot",54],["slick.526dd301.woff",55],["slick.efb232c4.ttf",56],["slick.fcb6734e.svg",57],["arrow2.e54e5543.png",43],["arrow.2b8fda1f.png",44],["slide1.5ec8952e.jpg",36],["slide2.ff5d5d0e.jpg",34],["slide1.66ad2b13.png",47]]);
-},{}]},{},[62,0])
+},{"./bundle-url":58}],0:[function(require,module,exports) {
+var b=require(114);b.load([["ajax-loader.5951cde3.gif",50],["slick.29d4c64f.eot",55],["slick.526dd301.woff",54],["slick.efb232c4.ttf",56],["slick.fcb6734e.svg",57],["arrow2.e54e5543.png",45],["arrow.2b8fda1f.png",46],["slide1.5ec8952e.jpg",31],["slide2.ff5d5d0e.jpg",36],["slide1.66ad2b13.png",47]]);
+},{}]},{},[113,0])
 //# sourceMappingURL=/styles.a3b74baf.map
