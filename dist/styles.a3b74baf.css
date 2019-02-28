@@ -1520,7 +1520,8 @@ body #miyazu-news {
   	border: var(--border);
   	background-color: #ffffff;
   	height: 84%;
-  	overflow: scroll;
+  	overflow: scrollY;
+  	-ms-overflow-style: none;
   	color: #4b4b4b;
   	padding: 0px 4rem;
   }
@@ -1692,6 +1693,84 @@ body #miyazu-news #miyazu-news-content5 {
   	}
 		}
 
+body #miyazu-news #miyazu-news-content6 {
+  		-webkit-transform: translateY(30px);
+  		        transform: translateY(30px);
+  		position: relative;
+  		opacity: 0;
+  		-webkit-transition: all 400ms ease-out;
+  		transition: all 400ms ease-out;
+  		overflow: hidden;
+  	}
+
+body #miyazu-news #miyazu-news-content6.is-selected {
+  			-webkit-transform: translateY(0px);
+  			        transform: translateY(0px);
+  			-webkit-transition-delay: 1440ms;
+  			        transition-delay: 1440ms;
+  			position: relative;
+  			opacity: 1;
+		}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body #miyazu-news #miyazu-news-content6 {
+			margin-bottom: 12px
+  	}
+		}
+
+body #miyazu-news #miyazu-news-content7 {
+  		-webkit-transform: translateY(30px);
+  		        transform: translateY(30px);
+  		position: relative;
+  		opacity: 0;
+  		-webkit-transition: all 400ms ease-out;
+  		transition: all 400ms ease-out;
+  		overflow: hidden;
+  	}
+
+body #miyazu-news #miyazu-news-content7.is-selected {
+  			-webkit-transform: translateY(0px);
+  			        transform: translateY(0px);
+  			-webkit-transition-delay: 1380ms;
+  			        transition-delay: 1380ms;
+  			position: relative;
+  			opacity: 1;
+		}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body #miyazu-news #miyazu-news-content7 {
+			margin-bottom: 12px
+  	}
+		}
+
+body #miyazu-news #miyazu-news-content8 {
+  		-webkit-transform: translateY(30px);
+  		        transform: translateY(30px);
+  		position: relative;
+  		opacity: 0;
+  		-webkit-transition: all 400ms ease-out;
+  		transition: all 400ms ease-out;
+  		overflow: hidden;
+  	}
+
+body #miyazu-news #miyazu-news-content8.is-selected {
+  			-webkit-transform: translateY(0px);
+  			        transform: translateY(0px);
+  			-webkit-transition-delay: 1320ms;
+  			        transition-delay: 1320ms;
+  			position: relative;
+  			opacity: 1;
+		}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body #miyazu-news #miyazu-news-content8 {
+			margin-bottom: 12px
+  	}
+		}
+
 body #miyazu-news #miyazu-news-date {
 		font-family: 'Amiri', serif;
 		font-size: 0.9rem;
@@ -1739,6 +1818,10 @@ body #miyazu-news #miyazu-news-button {
 	}
 		}
 
+body #miyazu-news::-webkit-scrollbar {
+    display: none;
+  }
+
 body #miyazu-profile {
   	position: relative;
   	height: 89vh;
@@ -1747,7 +1830,8 @@ body #miyazu-profile {
   	-webkit-box-sizing: border-box;
   	        box-sizing: border-box;
   	padding: 5rem 0px;
-  	overflow: scroll;
+  	overflow: scrollY;
+  	-ms-overflow-style: none;
   	text-align: center;
   }
 
@@ -1757,6 +1841,10 @@ body #miyazu-profile {
   		width: 96%;
   		padding: 3rem 0px
   }
+  	}
+
+body #miyazu-profile #miyazu-profile::-webkit-scrollbar {
+  		display: none;
   	}
 
 body #miyazu-profile img {
@@ -2058,7 +2146,7 @@ body #miyazu-works .miyazu-works-smalls .miyazu-works-small {
 	  		-webkit-box-sizing: border-box;
 	  		        box-sizing: border-box;
 	  		border: var(--border);
-	  		background-image: url(slide1.66ad2b13.png);
+	  		background-image: url(slide3.4832bea4.jpg);
 	  		background-position: center;
 	  		background-size: cover;
 	  	}

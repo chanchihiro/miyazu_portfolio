@@ -210,6 +210,9 @@ $(function(){
   $("#miyazu-news-content3").addClass('is-selected');
   $("#miyazu-news-content4").addClass('is-selected');
   $("#miyazu-news-content5").addClass('is-selected');
+  $("#miyazu-news-content6").addClass('is-selected');
+  $("#miyazu-news-content7").addClass('is-selected');
+  $("#miyazu-news-content8").addClass('is-selected');
 
   //// three.js
   let scene;

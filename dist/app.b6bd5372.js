@@ -77,7 +77,7 @@ parcelRequire = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({53:[function(require,module,exports) {
+})({36:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -41346,7 +41346,7 @@ exports.Projector = Projector;
 exports.CanvasRenderer = CanvasRenderer;
 exports.SceneUtils = SceneUtils;
 exports.LensFlare = LensFlare;
-},{}],60:[function(require,module,exports) {
+},{}],46:[function(require,module,exports) {
 // Copyright (c) 2017 Adobe Systems Incorporated. All rights reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -41783,7 +41783,7 @@ exports.LensFlare = LensFlare;
     typeof module != "undefined" && module.exports ? module.exports = eve : typeof define === "function" && define.amd ? define("eve", [], function () { return eve; }) : glob.eve = eve;
 })(typeof window != "undefined" ? window : this);
 
-},{}],51:[function(require,module,exports) {
+},{}],37:[function(require,module,exports) {
 var global = (1,eval)("this");
 // Snap.svg 0.5.0
 //
@@ -50415,7 +50415,7 @@ Snap.plugin(function (Snap, Element, Paper, glob) {
 
 return Snap;
 }));
-},{"eve":60}],52:[function(require,module,exports) {
+},{"eve":46}],38:[function(require,module,exports) {
 /*--------------------------------------------------------------------
  *JAVASCRIPT "FakeLoader.js"
  *Version:    1.1.0 - 2014
@@ -50544,7 +50544,7 @@ return Snap;
 
 
 }(jQuery));
-},{}],26:[function(require,module,exports) {
+},{}],4:[function(require,module,exports) {
 'use strict';
 
 var _three = require('three');
@@ -50767,6 +50767,9 @@ $(function () {
 	$("#miyazu-news-content3").addClass('is-selected');
 	$("#miyazu-news-content4").addClass('is-selected');
 	$("#miyazu-news-content5").addClass('is-selected');
+	$("#miyazu-news-content6").addClass('is-selected');
+	$("#miyazu-news-content7").addClass('is-selected');
+	$("#miyazu-news-content8").addClass('is-selected');
 
 	//// three.js
 	var scene = void 0;
@@ -50978,7 +50981,7 @@ $(function () {
  animate(time => simulation.render(time));
  */
 }); /* import file */
-},{"three":53,"snapsvg":51,"fakeloader":52}],62:[function(require,module,exports) {
+},{"three":36,"snapsvg":37,"fakeloader":38}],97:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -51008,7 +51011,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '55184' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '55588' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -51147,5 +51150,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[62,26])
+},{}]},{},[97,4])
 //# sourceMappingURL=/app.b6bd5372.map

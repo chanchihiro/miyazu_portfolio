@@ -21,6 +21,22 @@ html(lang="ja")
         div.slider__info
          p.slider__title.text
           span.text__first
+           span.text__word 遅れてきたGS
+           span.text__first-bg(style="background-color: #000")
+         p.slider__desc.text
+          span.text__second
+           span.text__word A LATE GROUP SOUNDS
+           span.text__second-bg(style="background-color: #999")
+        a.slide_link(href="https://note.mu/8282d8282/n/n12d00e1e0c49" target="/blank")
+        img(src="../images/slide3.jpg" clip-path="url(#image-1)")
+      div.miyazu-slides-slide
+       svg(viewBox="0 0 0 0")
+        defs
+         clipPath(id="image-1")
+          path(id="changing-path-1" d="M1400,800H0V0h1399c0.6,0,1,0.4,1,1V800z")
+        div.slider__info
+         p.slider__title.text
+          span.text__first
            span.text__word SPORTSMEN IN
            span.text__first-bg(style="background-color: #000")
          p.slider__desc.text
@@ -45,22 +61,6 @@ html(lang="ja")
            span.text__second-bg(style="background-color: #999")
         a.slide_link(href="https://note.mu/8282d8282/n/nfdb612bb00c3" target="/blank")
         img(src="../images/slide2.jpg" clip-path="url(#image-1)")
-      div.miyazu-slides-slide
-       svg(viewBox="0 0 0 0")
-        defs
-         clipPath(id="image-1")
-          path(id="changing-path-1" d="M1400,800H0V0h1399c0.6,0,1,0.4,1,1V800z")
-        div.slider__info
-         p.slider__title.text
-          span.text__first
-           span.text__word 遅れてきたGS
-           span.text__first-bg(style="background-color: #000")
-         p.slider__desc.text
-          span.text__second
-           span.text__word A LATE GROUP SOUNDS
-           span.text__second-bg(style="background-color: #999")
-        a.slide_link(href="https://note.mu/8282d8282/n/n12d00e1e0c49" target="/blank")
-        img(src="../images/slide3.jpg" clip-path="url(#image-1)")
       //- div.miyazu-slides-slide
        img(src="../images/slide1.png")
      div#miyazu-banners
@@ -74,17 +74,13 @@ html(lang="ja")
       button#miyazu-modal-button_close ×
       h3#miyazu-modal-title News
       div#miyazu-modal-content1
+       p#miyazu-modal-date 2018.02.01
+       a#miyazu-modal-content(href="https://note.mu/8282d8282/n/nfdb612bb00c3" target="_blank") 「遅れてきたGS（グループサウンズ）3」をアップいたしました。
+      div#miyazu-modal-content2
        p#miyazu-modal-date 2019.01.13
        a#miyazu-modal-content(href="https://note.mu/8282d8282/n/n225eff679129" target="_blank") 「遅れてきたGS（グループサウンズ）2」をアップいたしました。
-      div#miyazu-modal-content1
+      div#miyazu-modal-content3
        p#miyazu-modal-date 2019.01.06
        a#miyazu-modal-content(href="https://note.mu/8282d8282/n/n117b47c31ae1" target="_blank") 「遅れてきたGS（グループサウンズ）1」をアップいたしました。
-      div#miyazu-modal-content1
-       p#miyazu-modal-date 2018.07.16
-       p#miyazu-modal-content 7月28日(土)/29日（日）桐蔭横浜大学オープンキャンパス 両日ともブースにおります
-      div#miyazu-modal-content2
-       p#miyazu-modal-date 2018.07.01
-       p#miyazu-modal-content ウェブサイトを公開しました。
-      a(href="news.pug")#miyazu-modal-button_more もっとみる
      include _footer.pug
     include _scripts.pug

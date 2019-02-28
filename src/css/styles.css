@@ -536,7 +536,8 @@ body {
   	border: var(--border);
   	background-color: #ffffff;
   	height: 84%;
-  	overflow: scroll;
+  	overflow: scrollY;
+  	-ms-overflow-style: none;
   	color: #4b4b4b;
   	padding: 0px 4rem;
   	@media screen and $min-width {
@@ -642,6 +643,54 @@ body {
 			margin-bottom: 12px;
 		}
   	}
+  	#miyazu-news-content6 {
+  		transform: translateY(30px);
+  		position: relative;
+  		opacity: 0;
+  		transition: all 400ms ease-out;
+  		overflow: hidden;
+  		&.is-selected {
+  			transform: translateY(0px);
+  			transition-delay: 1440ms;
+  			position: relative;
+  			opacity: 1;
+		}
+		@media screen and $min-width {
+			margin-bottom: 12px;
+		}
+  	}
+  	#miyazu-news-content7 {
+  		transform: translateY(30px);
+  		position: relative;
+  		opacity: 0;
+  		transition: all 400ms ease-out;
+  		overflow: hidden;
+  		&.is-selected {
+  			transform: translateY(0px);
+  			transition-delay: 1380ms;
+  			position: relative;
+  			opacity: 1;
+		}
+		@media screen and $min-width {
+			margin-bottom: 12px;
+		}
+  	}
+  	#miyazu-news-content8 {
+  		transform: translateY(30px);
+  		position: relative;
+  		opacity: 0;
+  		transition: all 400ms ease-out;
+  		overflow: hidden;
+  		&.is-selected {
+  			transform: translateY(0px);
+  			transition-delay: 1320ms;
+  			position: relative;
+  			opacity: 1;
+		}
+		@media screen and $min-width {
+			margin-bottom: 12px;
+		}
+  	}
 	#miyazu-news-date {
 		font-family: 'Amiri', serif;
 		font-size: 0.9rem;
@@ -675,6 +724,9 @@ body {
 		}
 	}
   }
+  #miyazu-news::-webkit-scrollbar {
+    display: none;
+  }
   #miyazu-profile {
   	position: relative;
   	height: 89vh;
@@ -682,11 +734,15 @@ body {
   	margin: 0 auto;
   	box-sizing: border-box;
   	padding: 5rem 0px;
-  	overflow: scroll;
+  	overflow: scrollY;
+  	-ms-overflow-style: none;
   	text-align: center;
   	@media screen and $min-width {
   		width: 96%;
   		padding: 3rem 0px;
+  	}
+  	#miyazu-profile::-webkit-scrollbar {
+  		display: none;
   	}
   	img {
   		width: 80%;
@@ -899,7 +955,7 @@ body {
 	  		margin-bottom: 3%;
 	  		box-sizing: border-box;
 	  		border: var(--border);
-	  		background-image: url(../images/slide1.png);
+	  		background-image: url(../images/slide3.jpg);
 	  		background-position: center;
 	  		background-size: cover;
 	  	}
