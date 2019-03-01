@@ -10,7 +10,14 @@ $(function(){
 	$(window).on('touchmove.noScroll', function(e) {
 	    e.preventDefault();
 	});
-  
+
+
+
+  // 画像をどうにかする
+  var p = document.getElementById('ichimaime');
+  p.addEventListener('click', function() {
+  	console.log("はい！");
+  })
   /*
   var allImage = $("img");
   var allImageCount = allImage.length;
