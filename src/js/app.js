@@ -1,5 +1,4 @@
 /* import file */
-import * as THREE from 'three';
 import Snap from 'snapsvg';
 import * as fakeLoader from "fakeloader";
 
@@ -14,10 +13,6 @@ $(function(){
 
 
   // 画像をどうにかする
-  var p = document.getElementById('ichimaime');
-  p.addEventListener('click', function() {
-  	console.log("はい！");
-  })
   /*
   var allImage = $("img");
   var allImageCount = allImage.length;
