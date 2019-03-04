@@ -52,6 +52,19 @@ $max-width: (min-width: 769px);
 	}
 }
 
+.slider__info4 {
+	margin-left: 1%;
+    position: absolute;
+    top: 78%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    color: #000;
+	@media screen and $min-width {
+		display: none;
+	}
+}
+
 
 ::selection {
     background: #000;
@@ -845,12 +858,19 @@ body {
   		}
   	}
   }
+  #miyazu-works::-webkit-scrollbar {
+  	display: none;
+  }
   #miyazu-works {
   	width: 80%;
   	max-width: 1080px;
+  	height: calc(78% + 1px);
+  	overflow-y: scroll;
+  	-ms-overflow-style: none;
   	margin: 0 auto;
   	box-sizing: border-box;
   	display: flex;
+  	flex-wrap: wrap;
   	margin-top: 1.5%;
 	transform: translateY(30px);
 	position: relative;
@@ -873,7 +893,7 @@ body {
   		width: 50%;
   		height: 44vh;
   		margin-right: 2%;
-  		flex-basis: 50%;
+  		flex-basis: 48%;
   		overflow: hidden;
   		cursor: pointer;
   		box-sizing: border-box;
@@ -897,10 +917,10 @@ body {
   	}
   	#miyazu-works-big2 {
   		background-color: #fafafa;
-  		width: 50%;
+  		width: 40%;
   		height: 44vh;
   		margin-right: 2%;
-  		flex-basis: 50%;
+  		flex-basis: 48%;
   		overflow: hidden;
   		cursor: pointer;
   		box-sizing: border-box;
@@ -924,15 +944,17 @@ body {
   	}
   	#miyazu-works-big3 {
   		background-color: #fafafa;
+  		margin-top: 20px;
+  		margin-bottom: 40px;
   		width: 50%;
   		height: 44vh;
   		margin-right: 2%;
-  		flex-basis: 50%;
+  		flex-basis: 48%;
   		overflow: hidden;
   		cursor: pointer;
   		box-sizing: border-box;
   		border: var(--border);
-  		background-image: url(../images/slide2.jpg);
+  		background-image: url(../images/slide3.jpg);
   		background-position: center;
   		background-size: cover;
   		&:hover {
