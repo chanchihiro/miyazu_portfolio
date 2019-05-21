@@ -162,7 +162,7 @@ module.exports = reloadCSS;
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./../../images/ajax-loader.gif":32,"./../../js/lib/slick/fonts/slick.eot":34,"./../../js/lib/slick/fonts/slick.woff":33,"./../../js/lib/slick/fonts/slick.ttf":35,"./../../js/lib/slick/fonts/slick.svg":36,"_css_loader":19}],23:[function(require,module,exports) {
+},{"./../../images/ajax-loader.gif":32,"./../../js/lib/slick/fonts/slick.eot":33,"./../../js/lib/slick/fonts/slick.woff":34,"./../../js/lib/slick/fonts/slick.ttf":35,"./../../js/lib/slick/fonts/slick.svg":36,"_css_loader":19}],23:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
@@ -210,7 +210,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '50875' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '51053' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -431,6 +431,6 @@ LazyPromise.prototype.catch = function (onError) {
   return this.promise.catch(onError);
 };
 },{"./bundle-url":37}],0:[function(require,module,exports) {
-var b=require(42);b.load([["ajax-loader.5951cde3.gif",32],["slick.29d4c64f.eot",34],["slick.526dd301.woff",33],["slick.efb232c4.ttf",35],["slick.fcb6734e.svg",36],["arrow2.e54e5543.png",25],["arrow.2b8fda1f.png",26],["slide1.5ec8952e.jpg",14],["slide2.ff5d5d0e.jpg",15],["slide3.4832bea4.jpg",13]]);
+var b=require(42);b.load([["ajax-loader.5951cde3.gif",32],["slick.29d4c64f.eot",33],["slick.526dd301.woff",34],["slick.efb232c4.ttf",35],["slick.fcb6734e.svg",36],["arrow2.e54e5543.png",25],["arrow.2b8fda1f.png",26],["slide1.5ec8952e.jpg",14],["slide2.ff5d5d0e.jpg",15],["slide3.4832bea4.jpg",13]]);
 },{}]},{},[40,0])
 //# sourceMappingURL=/styles.a3b74baf.map
