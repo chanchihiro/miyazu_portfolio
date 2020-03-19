@@ -180,7 +180,7 @@ module.exports = reloadCSS;
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./reset.css":22,"./variables.css":23,"./lib/slick.css":29,"./lib/slick-theme.css":28,"./slider.css":26,"./fakeLoader.css":25,"./../images/arrow2.png":24,"./../images/arrow.png":27,"./../images/slide1.jpg":15,"./../images/slide2.png":14,"./../images/slide3.jpg":18,"./../images/slide3.png":13,"_css_loader":21}],92:[function(require,module,exports) {
+},{"./reset.css":22,"./variables.css":23,"./lib/slick.css":29,"./lib/slick-theme.css":28,"./slider.css":26,"./fakeLoader.css":25,"./../images/arrow2.png":24,"./../images/arrow.png":27,"./../images/slide1.jpg":15,"./../images/slide2.png":14,"./../images/slide3.jpg":18,"./../images/slide3.png":13,"_css_loader":21}],94:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -349,7 +349,7 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}],93:[function(require,module,exports) {
+},{}],95:[function(require,module,exports) {
 var getBundleURL = require('./bundle-url').getBundleURL;
 
 function loadBundlesLazy(bundles) {
@@ -431,6 +431,6 @@ LazyPromise.prototype.catch = function (onError) {
   return this.promise.catch(onError);
 };
 },{"./bundle-url":35}],0:[function(require,module,exports) {
-var b=require(93);b.load([["ajax-loader.5951cde3.gif",30],["slick.29d4c64f.eot",31],["slick.526dd301.woff",32],["slick.efb232c4.ttf",33],["slick.fcb6734e.svg",34],["arrow2.e54e5543.png",24],["arrow.2b8fda1f.png",27],["slide1.5ec8952e.jpg",15],["slide2.923757dc.png",14],["slide3.4832bea4.jpg",18],["slide3.920f9f76.png",13]]);
-},{}]},{},[92,0])
+var b=require(95);b.load([["ajax-loader.5951cde3.gif",30],["slick.29d4c64f.eot",31],["slick.526dd301.woff",32],["slick.efb232c4.ttf",33],["slick.fcb6734e.svg",34],["arrow2.e54e5543.png",24],["arrow.2b8fda1f.png",27],["slide1.5ec8952e.jpg",15],["slide2.923757dc.png",14],["slide3.4832bea4.jpg",18],["slide3.920f9f76.png",13]]);
+},{}]},{},[94,0])
 //# sourceMappingURL=/styles.a3b74baf.map
