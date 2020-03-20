@@ -77,7 +77,7 @@ parcelRequire = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({39:[function(require,module,exports) {
+})({47:[function(require,module,exports) {
 // Copyright (c) 2017 Adobe Systems Incorporated. All rights reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -514,7 +514,7 @@ parcelRequire = (function (modules, cache, entry) {
     typeof module != "undefined" && module.exports ? module.exports = eve : typeof define === "function" && define.amd ? define("eve", [], function () { return eve; }) : glob.eve = eve;
 })(typeof window != "undefined" ? window : this);
 
-},{}],36:[function(require,module,exports) {
+},{}],38:[function(require,module,exports) {
 var global = (1,eval)("this");
 // Snap.svg 0.5.0
 //
@@ -9146,7 +9146,7 @@ Snap.plugin(function (Snap, Element, Paper, glob) {
 
 return Snap;
 }));
-},{"eve":39}],37:[function(require,module,exports) {
+},{"eve":47}],39:[function(require,module,exports) {
 /*--------------------------------------------------------------------
  *JAVASCRIPT "FakeLoader.js"
  *Version:    1.1.0 - 2014
@@ -9275,7 +9275,7 @@ return Snap;
 
 
 }(jQuery));
-},{}],6:[function(require,module,exports) {
+},{}],4:[function(require,module,exports) {
 'use strict';
 
 var _snapsvg = require('snapsvg');
@@ -9322,7 +9322,7 @@ $(function () {
 			zIndex: "999",
 			spinner: "spinner1",
 			bgColor: "#dcdcdc"
-			//imagePath: ""
+			//imagePath: ""	
 		});
 	});
 
@@ -9438,7 +9438,7 @@ $(function () {
 
 	//// slick.js
 	$('.miyazu-slides').slick({
-		autoplay: true,
+		autoplay: false,
 		draggable: true,
 		infinite: true,
 		centerMode: true,
@@ -9710,7 +9710,7 @@ $(function () {
  animate(time => simulation.render(time));
  */
 });
-},{"snapsvg":36,"fakeloader":37}],41:[function(require,module,exports) {
+},{"snapsvg":38,"fakeloader":39}],84:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -9740,7 +9740,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '50763' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '60714' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -9879,5 +9879,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[41,6])
+},{}]},{},[84,4])
 //# sourceMappingURL=/app.b6bd5372.map

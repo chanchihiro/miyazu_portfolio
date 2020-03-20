@@ -3,7 +3,7 @@
 .slider>li.visible{position:relative;z-index:2;opacity:1}
 .slider>li.visible .text span.text__word{opacity:0}
 .slider>li.is-animating{z-index:3;opacity:1}
-.slider__info{margin-left:20%;position:absolute;top:14%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);left:0;color:#000}
+.slider__info{margin-left:14%;position:absolute;top:14%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);left:80px;color:#000}
 .slider__info2{margin-left:1%;position:absolute;top:12%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);left:0;color:#000}
 .slider__info3{margin-left:51%;position:absolute;top:12%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);left:0;color:#000}
 .slider__title{font-weight:300;font-size:28px;margin-bottom:7px;overflow:hidden}

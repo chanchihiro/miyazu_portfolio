@@ -78,6 +78,10 @@ $max-width: (min-width: 769px);
 	}
 }
 
+.slider__info6 {
+	display: none;
+}
+
 ::selection {
     background: #000;
     color: #fff;
@@ -299,7 +303,7 @@ body {
 			}
 		}
   		.miyazu-slides-slide {
-  			width: 70%;
+  			width: 100%;
   			margin: 0 auto;
   			overflow: hidden;
   			@media screen and $min-width {

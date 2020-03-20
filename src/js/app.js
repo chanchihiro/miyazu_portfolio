@@ -32,13 +32,13 @@ $(function(){
   // loader
   $(document).ready(function(){
     $("#fakeLoader").fakeLoader({
-      timeToHide: 1200,
-      zIndex: "999",
-      spinner: "spinner1",
-      bgColor: "#dcdcdc",
-      //imagePath: ""
-    });
-  });
+      timeToHide: 1200,	
+      zIndex: "999",	
+      spinner: "spinner1",	
+      bgColor: "#dcdcdc",	
+      //imagePath: ""	
+    });	
+  });	
 
 
   //// svg animation
@@ -154,7 +154,7 @@ $(function(){
 
   //// slick.js
   $('.miyazu-slides').slick({
-  	autoplay: true,
+  	autoplay: false,
   	draggable: true,
   	infinite: true,
   	centerMode: true,
