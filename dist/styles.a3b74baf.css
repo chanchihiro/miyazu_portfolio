@@ -1210,8 +1210,89 @@ body .miyazu-wrapper .miyazu-slides .miyazu-slides-slide .slide_link {
   				height: 600px;
   				position: absolute;
   				float: left;
-  				z-index: 200;
-  			}
+				z-index: 200;
+			}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body .miyazu-wrapper .miyazu-slides .miyazu-slides-slide .slide_link {
+					position: absolute;
+					width: 30%;
+					height: 100%
+			}
+				}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body .miyazu-wrapper .miyazu-slides .miyazu-slides-slide .sli01 {
+					display: none
+			}
+				}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body .miyazu-wrapper .miyazu-slides .miyazu-slides-slide .sli02 {
+					display: none
+			}
+				}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body .miyazu-wrapper .miyazu-slides .miyazu-slides-slide .sli03 {
+					display: none
+			}
+				}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body .miyazu-wrapper .miyazu-slides .miyazu-slides-slide .sli04 {
+					display: none
+			}
+				}
+
+body .miyazu-wrapper .miyazu-slides .miyazu-slides-slide .slisp01 {
+				display: none;
+			}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body .miyazu-wrapper .miyazu-slides .miyazu-slides-slide .slisp01 {
+					display: block
+			}
+				}
+
+body .miyazu-wrapper .miyazu-slides .miyazu-slides-slide .slisp02 {
+				display: none;
+			}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body .miyazu-wrapper .miyazu-slides .miyazu-slides-slide .slisp02 {
+					display: block
+			}
+				}
+
+body .miyazu-wrapper .miyazu-slides .miyazu-slides-slide .slisp03 {
+				display: none;
+			}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body .miyazu-wrapper .miyazu-slides .miyazu-slides-slide .slisp03 {
+					display: block
+			}
+				}
+
+body .miyazu-wrapper .miyazu-slides .miyazu-slides-slide .slisp04 {
+				display: none;
+			}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body .miyazu-wrapper .miyazu-slides .miyazu-slides-slide .slisp04 {
+					display: block
+			}
+				}
 
 body .miyazu-wrapper .miyazu-slides .miyazu-slides-slide img {
   				width: 64%;

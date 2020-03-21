@@ -9438,7 +9438,7 @@ $(function () {
 
 	//// slick.js
 	$('.miyazu-slides').slick({
-		autoplay: false,
+		autoplay: true,
 		draggable: true,
 		infinite: true,
 		centerMode: true,
@@ -9710,7 +9710,7 @@ $(function () {
  animate(time => simulation.render(time));
  */
 });
-},{"snapsvg":38,"fakeloader":39}],84:[function(require,module,exports) {
+},{"snapsvg":38,"fakeloader":39}],147:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -9879,5 +9879,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[84,4])
+},{}]},{},[147,4])
 //# sourceMappingURL=/app.b6bd5372.map

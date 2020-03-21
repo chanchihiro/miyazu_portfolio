@@ -154,7 +154,7 @@ $(function(){
 
   //// slick.js
   $('.miyazu-slides').slick({
-  	autoplay: false,
+  	autoplay: true,
   	draggable: true,
   	infinite: true,
   	centerMode: true,

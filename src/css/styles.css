@@ -323,8 +323,57 @@ body {
   				height: 600px;
   				position: absolute;
   				float: left;
-  				z-index: 200;
-  			}
+				z-index: 200;
+				@media screen and $min-width {
+					position: absolute;
+					width: 30%;
+					height: 100%;
+				}
+			}
+			.sli01 {
+				@media screen and $min-width {
+					display: none;
+				}
+			}
+			.sli02 {
+				@media screen and $min-width {
+					display: none;
+				}
+			}
+			.sli03 {
+				@media screen and $min-width {
+					display: none;
+				}
+			}
+			.sli04 {
+				@media screen and $min-width {
+					display: none;
+				}
+			}
+			.slisp01 {
+				display: none;
+				@media screen and $min-width {
+					display: block;
+				}
+			}
+			.slisp02 {
+				display: none;
+				@media screen and $min-width {
+					display: block;
+				}
+			}
+			.slisp03 {
+				display: none;
+				@media screen and $min-width {
+					display: block;
+				}
+			}
+			.slisp04 {
+				display: none;
+				@media screen and $min-width {
+					display: block;
+				}
+			}
   			img {
   				width: 64%;
    				min-width: 700px;
