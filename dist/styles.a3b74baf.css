@@ -920,7 +920,7 @@ body .miyazu-nav-hamburger {
 			        transform: rotate(-0deg);
 			bottom: 0px;
 		}
-  	}
+	  }
 
 body .miyazu-wrapper {
   	position: fixed;
@@ -1657,8 +1657,8 @@ body #miyazu-news {
   	        box-sizing: border-box;
   	border: var(--border);
   	background-color: #ffffff;
-  	height: 84%;
-  	overflow: scrollY;
+  	height: 93%;
+  	overflow: scroll;
   	-ms-overflow-style: none;
   	color: #4b4b4b;
   	padding: 0px 4rem;
@@ -1891,7 +1891,7 @@ body #miyazu-news #miyazu-news-content8 {
   		-webkit-transition: all 400ms ease-out;
   		transition: all 400ms ease-out;
   		overflow: hidden;
-  	}
+	}
 
 body #miyazu-news #miyazu-news-content8.is-selected {
   			-webkit-transform: translateY(0px);
@@ -1906,7 +1906,7 @@ body #miyazu-news #miyazu-news-content8.is-selected {
 
 body #miyazu-news #miyazu-news-content8 {
 			margin-bottom: 12px
-  	}
+	}
 		}
 
 body #miyazu-news #miyazu-news-date {

@@ -77,7 +77,7 @@ parcelRequire = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({47:[function(require,module,exports) {
+})({67:[function(require,module,exports) {
 // Copyright (c) 2017 Adobe Systems Incorporated. All rights reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -514,7 +514,7 @@ parcelRequire = (function (modules, cache, entry) {
     typeof module != "undefined" && module.exports ? module.exports = eve : typeof define === "function" && define.amd ? define("eve", [], function () { return eve; }) : glob.eve = eve;
 })(typeof window != "undefined" ? window : this);
 
-},{}],38:[function(require,module,exports) {
+},{}],60:[function(require,module,exports) {
 var global = (1,eval)("this");
 // Snap.svg 0.5.0
 //
@@ -9146,7 +9146,7 @@ Snap.plugin(function (Snap, Element, Paper, glob) {
 
 return Snap;
 }));
-},{"eve":47}],39:[function(require,module,exports) {
+},{"eve":67}],61:[function(require,module,exports) {
 /*--------------------------------------------------------------------
  *JAVASCRIPT "FakeLoader.js"
  *Version:    1.1.0 - 2014
@@ -9275,7 +9275,7 @@ return Snap;
 
 
 }(jQuery));
-},{}],4:[function(require,module,exports) {
+},{}],27:[function(require,module,exports) {
 'use strict';
 
 var _snapsvg = require('snapsvg');
@@ -9710,7 +9710,7 @@ $(function () {
  animate(time => simulation.render(time));
  */
 });
-},{"snapsvg":38,"fakeloader":39}],147:[function(require,module,exports) {
+},{"snapsvg":60,"fakeloader":61}],69:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -9740,7 +9740,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '60714' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '53807' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -9879,5 +9879,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[147,4])
+},{}]},{},[69,27])
 //# sourceMappingURL=/app.b6bd5372.map
