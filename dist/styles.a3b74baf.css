@@ -1657,7 +1657,7 @@ body #miyazu-news {
   	        box-sizing: border-box;
   	border: var(--border);
   	background-color: #ffffff;
-  	height: 93%;
+  	height: 84%;
   	overflow: scroll;
   	-ms-overflow-style: none;
   	color: #4b4b4b;
@@ -1667,7 +1667,8 @@ body #miyazu-news {
 @media screen and (min-width: 0) and (max-width: 768px) {
 
 body #miyazu-news {
-  		margin: 1rem auto;
+		margin: 1rem auto;
+		height: 93%;  
   		width: 87%;
   		padding: 0px 1rem
   }
