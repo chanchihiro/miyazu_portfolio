@@ -77,7 +77,7 @@ parcelRequire = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({79:[function(require,module,exports) {
+})({63:[function(require,module,exports) {
 
 // shim for using process in browser
 var process = module.exports = {};
@@ -264,7 +264,7 @@ process.chdir = function (dir) {
 process.umask = function () {
     return 0;
 };
-},{}],77:[function(require,module,exports) {
+},{}],61:[function(require,module,exports) {
 var global = (1,eval)("this");
 var process = require("process");
 /*!
@@ -10632,7 +10632,7 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-},{"process":79}],42:[function(require,module,exports) {
+},{"process":63}],41:[function(require,module,exports) {
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 /*
@@ -11083,7 +11083,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     }return o;
   };
 });
-},{"jquery":77}],80:[function(require,module,exports) {
+},{"jquery":61}],64:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -11113,7 +11113,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '50064' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '53163' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -11252,5 +11252,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[80,42])
+},{}]},{},[64,41])
 //# sourceMappingURL=/slick.min.d4860123.map
