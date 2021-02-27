@@ -77,7 +77,7 @@ parcelRequire = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({56:[function(require,module,exports) {
+})({62:[function(require,module,exports) {
 // Copyright (c) 2017 Adobe Systems Incorporated. All rights reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -9146,7 +9146,7 @@ Snap.plugin(function (Snap, Element, Paper, glob) {
 
 return Snap;
 }));
-},{"eve":56}],53:[function(require,module,exports) {
+},{"eve":62}],55:[function(require,module,exports) {
 /*--------------------------------------------------------------------
  *JAVASCRIPT "FakeLoader.js"
  *Version:    1.1.0 - 2014
@@ -9275,7 +9275,7 @@ return Snap;
 
 
 }(jQuery));
-},{}],9:[function(require,module,exports) {
+},{}],27:[function(require,module,exports) {
 'use strict';
 
 var _snapsvg = require('snapsvg');
@@ -9710,7 +9710,7 @@ $(function () {
  animate(time => simulation.render(time));
  */
 });
-},{"snapsvg":54,"fakeloader":53}],58:[function(require,module,exports) {
+},{"snapsvg":54,"fakeloader":55}],64:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -9740,7 +9740,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '52706' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '49894' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -9879,5 +9879,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[58,9])
+},{}]},{},[64,27])
 //# sourceMappingURL=/app.b6bd5372.map

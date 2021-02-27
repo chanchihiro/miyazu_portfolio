@@ -1294,6 +1294,17 @@ body .miyazu-wrapper .miyazu-slides .miyazu-slides-slide .slisp04 {
 			}
 				}
 
+body .miyazu-wrapper .miyazu-slides .miyazu-slides-slide .slisp05 {
+				display: none;
+			}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+
+body .miyazu-wrapper .miyazu-slides .miyazu-slides-slide .slisp05 {
+					display: block
+			}
+				}
+
 body .miyazu-wrapper .miyazu-slides .miyazu-slides-slide img {
   				width: 64%;
    				min-width: 700px;

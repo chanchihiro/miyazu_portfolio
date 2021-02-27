@@ -374,6 +374,12 @@ body {
 					display: block;
 				}
 			}
+			.slisp05 {
+				display: none;
+				@media screen and $min-width {
+					display: block;
+				}
+			}
   			img {
   				width: 64%;
    				min-width: 700px;
