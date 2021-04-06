@@ -162,7 +162,7 @@ module.exports = reloadCSS;
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./../../images/ajax-loader.gif":53,"./../../js/lib/slick/fonts/slick.eot":56,"./../../js/lib/slick/fonts/slick.woff":57,"./../../js/lib/slick/fonts/slick.ttf":58,"./../../js/lib/slick/fonts/slick.svg":59,"_css_loader":43}],46:[function(require,module,exports) {
+},{"./../../images/ajax-loader.gif":53,"./../../js/lib/slick/fonts/slick.eot":55,"./../../js/lib/slick/fonts/slick.woff":56,"./../../js/lib/slick/fonts/slick.ttf":57,"./../../js/lib/slick/fonts/slick.svg":58,"_css_loader":43}],46:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
@@ -180,7 +180,7 @@ module.exports = reloadCSS;
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./reset.css":44,"./variables.css":45,"./lib/slick.css":51,"./lib/slick-theme.css":52,"./slider.css":46,"./fakeLoader.css":47,"./../images/arrow2.png":48,"./../images/arrow.png":49,"./../images/slide1.jpg":39,"./../images/slide2.png":37,"./../images/slide3.jpg":38,"./../images/slide3.png":50,"_css_loader":43}],197:[function(require,module,exports) {
+},{"./reset.css":44,"./variables.css":45,"./lib/slick.css":51,"./lib/slick-theme.css":52,"./slider.css":46,"./fakeLoader.css":47,"./../images/arrow2.png":48,"./../images/arrow.png":49,"./../images/slide1.jpg":39,"./../images/slide2.png":36,"./../images/slide3.jpg":38,"./../images/slide3.png":50,"_css_loader":43}],64:[function(require,module,exports) {
 
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -210,7 +210,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '49894' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '63812' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -349,7 +349,7 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}],198:[function(require,module,exports) {
+},{}],66:[function(require,module,exports) {
 var getBundleURL = require('./bundle-url').getBundleURL;
 
 function loadBundlesLazy(bundles) {
@@ -431,6 +431,6 @@ LazyPromise.prototype.catch = function (onError) {
   return this.promise.catch(onError);
 };
 },{"./bundle-url":60}],0:[function(require,module,exports) {
-var b=require(198);b.load([["ajax-loader.5951cde3.gif",53],["slick.29d4c64f.eot",56],["slick.526dd301.woff",57],["slick.efb232c4.ttf",58],["slick.fcb6734e.svg",59],["arrow2.e54e5543.png",48],["arrow.2b8fda1f.png",49],["slide1.5ec8952e.jpg",39],["slide2.923757dc.png",37],["slide3.4832bea4.jpg",38],["slide3.920f9f76.png",50]]);
-},{}]},{},[197,0])
+var b=require(66);b.load([["ajax-loader.5951cde3.gif",53],["slick.29d4c64f.eot",55],["slick.526dd301.woff",56],["slick.efb232c4.ttf",57],["slick.fcb6734e.svg",58],["arrow2.e54e5543.png",48],["arrow.2b8fda1f.png",49],["slide1.5ec8952e.jpg",39],["slide2.923757dc.png",36],["slide3.4832bea4.jpg",38],["slide3.920f9f76.png",50]]);
+},{}]},{},[64,0])
 //# sourceMappingURL=/styles.a3b74baf.map
