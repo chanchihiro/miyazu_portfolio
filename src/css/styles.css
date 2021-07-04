@@ -11,6 +11,9 @@ $min-width: (min-width: 0) and (max-width: 768px);
 $middle-width: (min-width: 0) and (max-width: 768px);
 $max-width: (min-width: 769px);
 
+h1 {
+	opacity: 0;
+}
 
 /* js用 */
 .dn {
